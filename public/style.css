@@ -116,6 +116,19 @@ body {
 }
 
 
+.preload-container {
+    display: none; 
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.preload {
+    width: 0;
+    height: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
 
 
 /* About Section */

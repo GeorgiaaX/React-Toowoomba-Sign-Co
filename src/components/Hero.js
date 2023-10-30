@@ -25,6 +25,16 @@ export default function Hero(props) {
                     </Col>
                 </Row>
             </div>
+
+
+        <div className="preload-container">
+            <div className="preload" style={{ backgroundImage: `url("./images/hero-parklake.jpg")` }}></div>
+            <div className="preload" style={{ backgroundImage: `url("./images/hero-hot-property.jpg")` }}></div>
+            <div className="preload" style={{ backgroundImage: `url("./images/hero-ez-kandy.jpg")` }}></div>
+            <div className="preload" style={{ backgroundImage: `url("./images/hero-bradnams.jpg")` }}></div>
+            <div className="preload" style={{ backgroundImage: `url("./images/hero-byd.jpg")` }}></div>
+        </div>
+
         </Container>
     );
 }
