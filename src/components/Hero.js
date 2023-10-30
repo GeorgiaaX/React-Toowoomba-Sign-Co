@@ -1,13 +1,53 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import ModalButton from './ModalButton';
 
+    const images = [
+        "./images/hero-parklake.jpg",
+        "./images/hero-hot-property.jpg",
+        "./images/hero-ez-kandy.jpg",
+        "./images/hero-bradnams.jpg",
+        "./images/hero-byd.jpg"
+    ];
+
 export default function Hero(props) {
+    const [activeImageIndex, setActiveImageIndex] = useState(0);
+
+
+    useEffect(() => {
+        // Preload images
+        images.forEach(src => {
+            const img = new Image();
+            img.src = src;
+        });
+
+        // Change active image every 5 seconds
+        const interval = setInterval(() => {
+            setActiveImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+        }, 5000);
+
+        return () => clearInterval(interval);
+    }, []);
+
     const { title, subheading, lastWord } = props.heading;
 
+
     return (
-        <Container fluid className="hero-section p-5 text-center bg-image rounded-3 d-flex flex-column justify-content-center align-items-center">
-            <div style={{ flex: 1 }}></div>
+        <Container fluid className="hero-section p-5 text-center rounded-3 d-flex flex-column align-items-center">
+            {images.map((img, index) => (
+                <div 
+                    key={img} 
+                    className={`background-image ${activeImageIndex === index ? 'active' : ''}`}
+                    style={{
+                        backgroundImage: `
+                            linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+                            radial-gradient(ellipse at left top, rgba(12, 19, 31, 0.6) 0%, transparent 50%),
+                            radial-gradient(ellipse at right bottom, rgba(12, 140, 233, 1) 0%, transparent 50%),
+                            url(${img})
+                        `
+                    }}>
+                    </div>
+            ))}
 
             <div className="hero-headings">
                 <Row className="justify-content-start">
@@ -25,21 +65,8 @@ export default function Hero(props) {
                     </Col>
                 </Row>
             </div>
-
-
-        <div className="preload-container">
-            <div className="preload" style={{ backgroundImage: `url("./images/hero-parklake.jpg")` }}></div>
-            <div className="preload" style={{ backgroundImage: `url("./images/hero-hot-property.jpg")` }}></div>
-            <div className="preload" style={{ backgroundImage: `url("./images/hero-ez-kandy.jpg")` }}></div>
-            <div className="preload" style={{ backgroundImage: `url("./images/hero-bradnams.jpg")` }}></div>
-            <div className="preload" style={{ backgroundImage: `url("./images/hero-byd.jpg")` }}></div>
-        </div>
-
         </Container>
     );
 }
-
-
-
 
 

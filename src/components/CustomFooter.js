@@ -41,7 +41,7 @@ function CustomFooter() {
       <Container className="text-center text-md-start mt-5">
         <Row className="mt-3">
           <Col md={3} lg={4} xl={3} className="mx-auto mb-4">
-            <h6 className="text-uppercase fw-bold">Toowoomba Signs Co</h6>
+            <h6 className="text-uppercase fw-bold">Toowoomba Sign Co</h6>
             <hr className="mb-4 mt-0 d-inline-block mx-auto" style={{ width: '60px', backgroundColor: '#0C8CE9', height: '2px' }} />
             <p>
               Proudly servicing the darling downs region for all their signage needs!

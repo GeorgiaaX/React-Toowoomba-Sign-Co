@@ -8,7 +8,7 @@ function AboutCarousel() {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="../images/bayplaza.jpg"
+            src="../images/kfc.jpg"
             alt="First slide"
             loading = "lazy"
           />
@@ -16,7 +16,7 @@ function AboutCarousel() {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="../images/kfc.jpg"
+            src="../images/dominoes.jpg"
             alt="Second slide"
             loading = "lazy"
 
@@ -25,7 +25,7 @@ function AboutCarousel() {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="../images/dominoes.jpg"
+            src="../images/bayplaza.jpg"
             alt="Third slide"
             loading = "lazy"
 
