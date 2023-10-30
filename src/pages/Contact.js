@@ -6,6 +6,13 @@ import ContactDetails from '../components/ContactDetails';
 import ContactForm from '../components/ContactForm';
 
 export default function Contact() {
+
+    const [, forceUpdate] = React.useState();
+
+    React.useEffect(() => {
+    forceUpdate({});
+    }, []);
+    
     const contactFormRef = React.createRef();
 
     return (
