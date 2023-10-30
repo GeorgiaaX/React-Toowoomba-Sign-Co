@@ -5,7 +5,7 @@ import Carousel from 'react-bootstrap/Carousel';
 function AboutCarousel() {
   return (
     <div className="about-carousel-container">
-      <Carousel prevLabel="" nextLabel="" indicators={false} fade>
+      <Carousel prevLabel="" nextLabel="" indicators={false}>
         <Carousel.Item>
           <img
             className="d-block w-100"
