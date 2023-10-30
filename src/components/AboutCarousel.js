@@ -10,6 +10,7 @@ function AboutCarousel() {
             className="d-block w-100"
             src="../images/bayplaza.jpg"
             alt="First slide"
+            loading = "lazy"
           />
         </Carousel.Item>
         <Carousel.Item>
@@ -17,6 +18,8 @@ function AboutCarousel() {
             className="d-block w-100"
             src="../images/kfc.jpg"
             alt="Second slide"
+            loading = "lazy"
+
           />
         </Carousel.Item>
         <Carousel.Item>
@@ -24,6 +27,8 @@ function AboutCarousel() {
             className="d-block w-100"
             src="../images/dominoes.jpg"
             alt="Third slide"
+            loading = "lazy"
+
           />
         </Carousel.Item>
       </Carousel>
