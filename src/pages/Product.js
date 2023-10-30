@@ -1,13 +1,27 @@
-
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import products from '../data/products';
-// import ProductDetail from '../components/ProductDetail'; 
 import Navbar from '../components/Navbar'; 
 import Header from '../components/Header'; 
 import CustomFooter from '../components/CustomFooter';
 
 function Product() {
+
+
+    useEffect(() => {
+        const handleBackButtonEvent = (event) => {
+          window.location.reload(true);
+        };
+    
+        window.addEventListener('popstate', handleBackButtonEvent);
+    
+        return () => {
+          window.removeEventListener('popstate', handleBackButtonEvent);
+        };
+      }, []);
+
+      
+
     const { productId } = useParams();
     const productData = products[productId];
 

@@ -13,7 +13,6 @@ function App() {
     window.addEventListener('popstate', handleBackButtonEvent);
 
     return () => {
-      // Cleanup the event listener on component unmount
       window.removeEventListener('popstate', handleBackButtonEvent);
     };
   }, []);
