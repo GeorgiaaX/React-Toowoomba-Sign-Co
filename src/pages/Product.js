@@ -5,6 +5,7 @@ import products from '../data/products';
 // import ProductDetail from '../components/ProductDetail'; 
 import Navbar from '../components/Navbar'; 
 import Header from '../components/Header'; 
+import CustomFooter from '../components/CustomFooter';
 
 function Product() {
     const { productId } = useParams();
@@ -33,6 +34,15 @@ function Product() {
                     }}
                 />
             </section>
+
+
+
+
+
+                    <section>
+                        <CustomFooter />
+                    </section>
+
         </div>
       
 
