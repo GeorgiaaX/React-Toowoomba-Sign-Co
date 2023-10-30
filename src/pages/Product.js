@@ -1,6 +1,4 @@
 import React, { useEffect } from 'react';
-import { useParams } from 'react-router-dom';
-import products from '../data/products';
 import Navbar from '../components/Navbar'; 
 import Header from '../components/Header'; 
 import CustomFooter from '../components/CustomFooter';
@@ -21,14 +19,6 @@ function Product() {
       }, []);
 
       
-
-    const { productId } = useParams();
-    const productData = products[productId];
-
-    if (!productData) {
-        return <div>Product not found</div>;
-    }
-
     return (
         <div>
 
@@ -42,9 +32,9 @@ function Product() {
                     isGenericPage={true} 
                     isContactPage={false} 
                     heading={{ 
-                        title: productData.name,
-                        lastWord: "",
-                        subheading: productData.services,
+                        title: "Building and",
+                        lastWord: "Shopface",
+                        subheading: "illuminated signs",
                     }}
                 />
             </section>
