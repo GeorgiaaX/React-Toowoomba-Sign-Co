@@ -65,6 +65,8 @@ export default function Hero(props) {
                     </Col>
                 </Row>
             </div>
+
+            <div style  = {{height: '20px'}}></div>
         </Container>
     );
 }
