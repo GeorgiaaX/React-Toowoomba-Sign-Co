@@ -1,6 +1,6 @@
 /* standardised body style properities */
 body {
-    background-color: #0c131f !important;
+    background-color: #0c131f;
     color: #ffffff;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
@@ -326,13 +326,13 @@ body {
 
 
 .contact-form {
-    width: 600px !important;
-    margin: 150px auto 200px auto !important;
-    padding: 40px !important;
+    width: 600px;
+    margin: 150px auto 200px auto;
+    padding: 40px;
     font-size: 0.9rem !important;
-    background-color: rgba(47, 49, 52) !important;
-    border: 1.5px solid rgb(12, 140, 233) !important;
-    border-radius: 8px !important;
+    background-color: rgba(47, 49, 52);
+    border: 1.5px solid rgb(12, 140, 233);
+    border-radius: 8px;
 }
 
 .quote-subheading {
