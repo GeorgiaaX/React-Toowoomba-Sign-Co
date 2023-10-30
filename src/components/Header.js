@@ -11,7 +11,7 @@ export default function Hero(props) {
 
         <div className = "header-card">
              <div className="header-logo d-flex justify-content-center align-items-center">
-                <img src="./images/logo.png" className="brand-image" alt="logo"/>
+                <img src="../images/logo.png" className="brand-image" alt="logo"/>
              </div>
 
              <div className = "hero-headings">
@@ -21,7 +21,7 @@ export default function Hero(props) {
                             {title} <b className="bold-word">{lastWord}</b>
                         </h1>
                         <h4 className="mb-3 hero-subheading">{subheading}</h4>
-                        {props.isHomePage && 
+                        {props.isGenericPage && 
                             <ModalButton />
                         }
 

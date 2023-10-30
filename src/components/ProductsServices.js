@@ -28,6 +28,12 @@ function ProductsServices() {
                         bordered: false,
                     })}
                     {renderProductColumn({
+                        iconClass: "fas fa-sign-hanging",
+                        title: "Structural Signage",
+                        description: "New Structures & Framework / Signs for Existing Structures / Freestanding Signage  / Architectural Signage",
+                        bordered: true,
+                    })}
+                    {renderProductColumn({
                         iconClass: "fas fa-diamond-turn-right",
                         title: "Directional and Wayfinding",
                         description: "Directional Pylons / Wayfinding Signage",
@@ -37,13 +43,13 @@ function ProductsServices() {
                         iconClass: "fas fa-tv",
                         title: "Window Graphics and Display",
                         description: "Window Frosting / One Way Vision / Privacy Film / Printed Vinyl Graphics / Cut Vinyl Lettering",
-                        bordered: true,
+                        bordered: false,
                     })}
                     {renderProductColumn({
                         iconClass: "fas fa-car-side",
                         title: "Vehicle Fleet Branding",
                         description: "Vehicle Wraps / Magnetic Vehicle Signs / Vehicle Branding",
-                        bordered: false,
+                        bordered: true,
                     })}
                     {renderProductColumn({
                         iconClass: "fas fa-bag-shopping",
@@ -55,12 +61,6 @@ function ProductsServices() {
                         iconClass: "fas fa-truck",
                         title: "Truck Lining and Scrolling",
                         description: "Truck & Trailer Lining & Scrolling / Printed Vinyl Graphics / Cut Vinyl Lettering",
-                        bordered: true,
-                    })}
-                    {renderProductColumn({
-                        iconClass: "fas fa-sign-hanging",
-                        title: "Structural Signage",
-                        description: "",
                         bordered: false,
                     })}
                 </Row>
