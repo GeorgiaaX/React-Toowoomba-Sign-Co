@@ -49,22 +49,28 @@ export default function Hero(props) {
                     </div>
             ))}
 
-            <div className="hero-headings">
-                <Row className="justify-content-start">
-                    <Col xs={12} className="text-white">
-                        <h1 className="mb-3 hero-title">
-                            {title} <b className="hero-text">{lastWord}</b>
-                        </h1>
-                        <h4 className="mb-3 hero-subheading">{subheading}</h4>
-                        {props.isHomePage && 
-                            <ModalButton />
-                        }
-                        <div style={{ textAlign: 'left' }}>
-                            {props.children}
-                        </div>
-                    </Col>
-                </Row>
-            </div>
+           
+<div className="hero-card d-flex flex-column justify-content-center align-items-center">
+    <div className="header-logo d-flex justify-content-center align-items-center">
+        <img src="./images/logo.png" className="brand-image" alt="logo"/>
+    </div>
+    <div className="hero-headings">
+        <Row className="justify-content-start">
+            <Col xs={12} className="text-white text-center"> {/* Added 'text-center' for horizontal centering of text */}
+                <h1 className="mb-3 hero-title">
+                    {title} <b className="hero-text">{lastWord}</b>
+                </h1>
+                <h4 className="mb-3 hero-subheading">{subheading}</h4>
+                {props.isHomePage && 
+                    <ModalButton />
+                }
+                <div style={{ textAlign: 'center' }}> {/* Changed 'left' to 'center' for child content */}
+                    {props.children}
+                </div>
+            </Col>
+        </Row>
+    </div>
+</div>
         </Container>
     );
 }

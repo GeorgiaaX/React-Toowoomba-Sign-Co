@@ -34,6 +34,12 @@ body {
     overflow: hidden;
 } 
 
+.header-logo {
+    top: 120px;
+    z-index: 2; 
+    margin-bottom: 20px;
+}
+
 /* Hero section */
 
 .hero-section {
@@ -65,19 +71,24 @@ body {
     opacity: 1;
 }
 
-.hero-headings {
-    margin-bottom: 10px !important;
+.hero-card {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center; 
 }
 
 
 .hero-section h1 {
     position: relative;
+    margin-bottom: 0px;
     z-index: 1; 
     text-shadow: 2px 5px 10px rgba(0, 0, 0, 0.7);
 }
 
 .hero-title {
-    font-size: 5rem;
+    font-size: 4rem;
     padding-bottom: 30px;
 }
 
@@ -88,38 +99,13 @@ body {
 }
 
 .hero-text {
-    animation: cycleColors 5s linear infinite;
+    color:#0C8CE9
 }
 
-@keyframes cycleColors {
-    0%, 100% {
-        color: #0C8CE9;
-    }
-    25% {
-        color: #ff007f;
-    }
-    50% {
-        color: #FFD900;
-    }
-    75% {
-        color: #00FFA3;
-    }
+.brand-image {
+    height: 120px;
+    margin-bottom: 5px;
 }
-
-.preload-container {
-    display: none; 
-    width: 0;
-    height: 0;
-    overflow: hidden;
-}
-
-.preload {
-    width: 0;
-    height: 0;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
 
 /* About Section */
 
@@ -338,6 +324,7 @@ body {
 
 /* CONTACT FORM */
 
+
 .contact-form {
     width: 600px;
     margin: 150px auto 200px auto;
@@ -411,14 +398,25 @@ body {
 
 @media (max-width: 900px) {
     .hero-title {
-        font-size: 3rem;
+        font-size: 2rem;
+        margin: 0px;
     } 
+    .hero-subheading{
+        font-size: 1.2rem;
+        margin: 0px;
+    }
     .hero-section {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         height: 100vh; 
+    }
+    .brand-logo h3{
+        display: none;
+    }
+    .hero-headings {
+      top: 80%;
     }
 }
 
@@ -520,3 +518,6 @@ body {
         margin: 0 auto;
     }
 }
+
+
+

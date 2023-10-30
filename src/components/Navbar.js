@@ -10,7 +10,7 @@ export default function CustomNavbar() {
   return (
     <Navbar expand="lg" variant="dark" bg="dark" fixed="top" className = "custom-navbar">
       <Container>
-      <Link to="/" className="navbar-brand mr-4">Toowoomba Sign Co</Link>
+      <Link to="/" className="navbar-brand mr-4">Toowoomba <b className = "bold-word">Sign</b> Co</Link>
         <Navbar.Toggle aria-controls="navbarText" />
         <Navbar.Collapse id="navbarText">
           <Nav className="mr-auto">
