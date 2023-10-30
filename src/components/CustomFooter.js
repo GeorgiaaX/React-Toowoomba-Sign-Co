@@ -85,6 +85,8 @@ function CustomFooter() {
             </Nav>
           </Col>
         </Row>
+        
+        <div style  = {{height: '20px'}}></div>
       </Container>
     </footer>
   );
