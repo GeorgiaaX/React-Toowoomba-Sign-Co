@@ -13,12 +13,45 @@ import FixedQuoteBtn from '../components/FixedQuoteBtn';
 function StructuralSignage() {
     //gallerySlide Urls
     const imageUrls = [
-       
+       "../images/StructuralSignage/SSImg5.jpg",
+       "../images/StructuralSignage/SSImg6.jpg",
+       "../images/StructuralSignage/SSImg3.jpg",
+       "../images/StructuralSignage/SSImg13.jpg",
+       "../images/StructuralSignage/SSImg15.jpg",
+       "../images/StructuralSignage/SSImg22.jpg",
+       "../images/StructuralSignage/SSImg23.jpg",
+       "../images/StructuralSignage/SSImg25.jpg",
+       "../images/StructuralSignage/SSImg9.jpg",
     ]
 
     //gallery stills urls
     const galleryUrls = [
-      
+        "../images/StructuralSignage/SSImg1.jpg",
+        "../images/StructuralSignage/SSImg4.jpg",
+        "../images/StructuralSignage/SSImg5.jpg",
+        "../images/StructuralSignage/SSImg8.jpg",
+        "../images/StructuralSignage/SSImg9.jpg",
+        "../images/StructuralSignage/SSImg10.jpg",
+        "../images/StructuralSignage/SSImg11.jpg",
+        "../images/StructuralSignage/SSImg6.jpg",
+        "../images/StructuralSignage/SSImg7.jpg",
+        "../images/StructuralSignage/SSImg12.jpg",
+        "../images/StructuralSignage/SSImg13.jpg",
+        "../images/StructuralSignage/SSImg14.jpg",
+        "../images/StructuralSignage/SSImg2.jpg",
+        "../images/StructuralSignage/SSImg18.jpg",
+        "../images/StructuralSignage/SSImg19.jpg",
+        "../images/StructuralSignage/SSImg20.jpg",
+        "../images/StructuralSignage/SSImg3.jpg",
+        "../images/StructuralSignage/SSImg21.jpg",
+        "../images/StructuralSignage/SSImg22.jpg",
+        "../images/StructuralSignage/SSImg23.jpg",
+        "../images/StructuralSignage/SSImg15.jpg",
+        "../images/StructuralSignage/SSImg16.jpg",
+        "../images/StructuralSignage/SSImg17.jpg",
+        "../images/StructuralSignage/SSImg24.jpg",
+        "../images/StructuralSignage/SSImg25.jpg",
+     
     ]
 
       
@@ -69,12 +102,9 @@ function StructuralSignage() {
                 <CustomFooter />
             </section>
 
-          
-
+    
         </div>
       
-
-
     )
 }
 

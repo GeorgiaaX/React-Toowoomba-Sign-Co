@@ -29,7 +29,7 @@ const products = {
     'directional-wayfinding': {
         name: 'Directional and Wayfinding',
         services: "Directional Pylons / Wayfinding Signage",
-        description: "Navigate with confidence using our Directional & Wayfinding Signage. Designed to simplify the complex and make every journey effortless, our signs offer clear and concise guidance. Whether in a sprawling campus, a bustling hospital, or a busy public venue, our directional signs ensure individuals find their way quickly and efficiently. For a more comprehensive understanding of your surroundings, our wayfinding signs map out routes and highlight key landmarks.",
+        description: "Navigate with confidence using our Directional & Wayfinding Signage. Designed to simplify the complex and make every journey effortless. Our signs offer clear and concise guidance. Whether in a sprawling campus, a bustling hospital, or a busy public venue, our directional signs ensure individuals find their way quickly and efficiently. For a more comprehensive understanding of your surroundings, our wayfinding signs map out routes and highlight key landmarks.",
         images: ['../images/kfc.jpg', '../images/dominoes.jpg'],
 
     }, 

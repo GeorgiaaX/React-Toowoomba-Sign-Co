@@ -6,6 +6,8 @@ import BuildingShopface from './pages/BuildingShopface';
 import IlluminatedDesigns from './pages/IlluminatedDesigns';
 import ReceptionInterior from './pages/ReceptionInterior';
 import StructuralSignage from './pages/StructuralSignage';
+import DirectionalWayfinding from './pages/DirectionalWayfinding';
+
 
 function App() {
   useEffect(() => {
@@ -30,6 +32,7 @@ function App() {
         <Route path="/illuminated-designs" element={<IlluminatedDesigns />} />
         <Route path="/reception-interior" element={<ReceptionInterior />} />
         <Route path="/structural-signage" element={<StructuralSignage />} />
+        <Route path="/directional-wayfinding" element={<DirectionalWayfinding />} />
 
       </Routes>
     </BrowserRouter>

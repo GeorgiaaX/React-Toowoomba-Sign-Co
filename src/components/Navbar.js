@@ -20,8 +20,8 @@ export default function CustomNavbar() {
                             <NavDropdown.Item as={Link} to="/building-shopface">Building and Shopface</NavDropdown.Item>
                             <NavDropdown.Item as={Link} to="/illuminated-designs">3D Illuminated Letters and Displays</NavDropdown.Item>
                             <NavDropdown.Item as={Link} to="/reception-interior">Reception and Interior</NavDropdown.Item>
-                            <NavDropdown.Item as={Link} to="structural-signage">Structural Signage</NavDropdown.Item>
-                            <NavDropdown.Item as={Link} to="/product/directional-wayfinding">Directional and Wayfinding</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="/structural-signage">Structural Signage</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="/directional-wayfinding">Directional and Wayfinding</NavDropdown.Item>
                             <NavDropdown.Item as={Link} to="/product/window-graphics-display">Window Graphics and Display</NavDropdown.Item>
                             <NavDropdown.Item as={Link} to="/product/vehicle-fleet-branding">Vehicle Fleet Branding</NavDropdown.Item>
                             <NavDropdown.Item as={Link} to="/product/retail-pos">Retail POS</NavDropdown.Item>
