@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar';
 import Header from '../components/Header'; 
 import CustomFooter from '../components/CustomFooter';
 import ProductDetail from '../components/ProductDetail'; 
+import GallerySlide from '../components/GallerySlide';
 import Gallery from '../components/Gallery';
 
 
@@ -19,6 +20,28 @@ function BuildingShopface() {
       "../images/BuildingShopface/BSImg8.jpg",
       "../images/BuildingShopface/BSImg9.jpg",
       "../images/BuildingShopface/BSImg10.jpg",
+    ]
+
+    const galleryUrls = [
+      "../images/BuildingShopface/BSImg11.jpg",
+      "../images/BuildingShopface/BSImg12.jpg",
+      "../images/BuildingShopface/BSImg13.jpg",
+      "../images/BuildingShopface/BSImg14.jpg",
+      "../images/BuildingShopface/BSImg15.jpg",
+      "../images/BuildingShopface/BSImg16.jpg",
+      "../images/BuildingShopface/BSImg17.jpg",
+      "../images/BuildingShopface/BSImg18.jpg",
+      "../images/BuildingShopface/BSImg19.jpg",
+      "../images/BuildingShopface/BSImg20.jpg",
+      "../images/BuildingShopface/BSImg3.jpg",
+      "../images/BuildingShopface/BSImg4.jpg",
+      "../images/BuildingShopface/BSImg5.jpg",
+      "../images/BuildingShopface/BSImg6.jpg",
+      "../images/BuildingShopface/BSImg7.jpg",
+      "../images/BuildingShopface/BSImg8.jpg",
+      "../images/BuildingShopface/BSImg9.jpg",
+      "../images/BuildingShopface/BSImg10.jpg",
+    
     ]
 
       
@@ -45,7 +68,7 @@ function BuildingShopface() {
 
 
             <section>
-                  <Gallery images = {imageUrls}/>
+                  <GallerySlide images = {imageUrls}/>
             </section>
                
 
@@ -58,6 +81,9 @@ function BuildingShopface() {
               </ProductDetail>
             </section>
 
+            <section>
+              <Gallery images = {galleryUrls}/>
+              </section>
              
 
             <section>

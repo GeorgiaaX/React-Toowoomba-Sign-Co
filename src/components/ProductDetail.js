@@ -23,7 +23,7 @@ function ProductDetail({ firstPhrase, secondPhrase, descriptionFirst, descriptio
   };
 
   return (
-    <Container className="my-4 d-flex align-items-center justify-content-center" style={{ minHeight: '45vh' }}>
+    <Container className="my-4 d-flex align-items-center justify-content-center product-detail-container" style={{ minHeight: '45vh' }}>
       <Row className="justify-content-center">
         <Col md={8} className="text-center">
           <div className="phrase-container mb-3">
