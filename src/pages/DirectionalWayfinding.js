@@ -47,7 +47,6 @@ function DirectionalWayfinding() {
         "../images/DirectionalWayfinding/DWImg19.jpg",
         "../images/DirectionalWayfinding/DWImg20.jpg",
         "../images/DirectionalWayfinding/DWImg15.jpg",
-    
         "../images/DirectionalWayfinding/DWImg23.jpg",
     
     ]
@@ -68,7 +67,6 @@ function DirectionalWayfinding() {
                 <Header
                     isGenericPage={true} 
                     isContactPage={false} 
-                    // backgroundImg = "../images/BuildingShopface/BSHeroImg.jpg"
                     heading={{ 
                         title: "Directional and",
                         lastWord: "Wayfinding",
