@@ -27,20 +27,22 @@ function ProductDetail({ firstPhrase, secondPhrase, descriptionFirst, descriptio
       <Row className="justify-content-center">
         <Col md={8} className="text-center">
           <div className="phrase-container mb-3">
-            <h2 className={`phrase ${showFirstPhrase ? 'show' : 'hide'}`}>
-            {boldFirstWord(firstPhrase)}
-            </h2>
-            <h2 className={`phrase ${!showFirstPhrase ? 'show' : 'hide'}`}>
-            {boldFirstWord(secondPhrase)}
-            </h2>
+              <h2 className={`phrase ${showFirstPhrase ? 'show' :      'hide'}`}>
+              {boldFirstWord(firstPhrase)}
+              </h2>
+              <h2 className={`phrase ${!showFirstPhrase ? 'show' : 'hide'}`}>
+              {boldFirstWord(secondPhrase)}
+              </h2>
           </div>
-          <div className = "detailed-description">
-            <p className = "description-text text-muted">
-                {descriptionFirst}
-                <br></br>
-                <br></br>
-                {descriptionSecond}
-            </p>
+          <div className="detailed-description">
+              <div className="col d-flex align-items-center">
+                  <i className="fa-solid fa-signs-post fa-2x mr-5 product-icons"></i>
+                  <p className="description-text text-muted mb-3">{descriptionFirst}</p>
+              </div>
+              <div className="col d-flex align-items-center mb-5">
+                  <i className="fas fa-check-circle fa-2x mr-5 product-icons"></i>
+                  <p className="description-text text-muted mb-3">{descriptionSecond}</p>
+              </div>
           </div>
         </Col>
       </Row>

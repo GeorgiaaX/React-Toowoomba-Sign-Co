@@ -376,7 +376,7 @@ body {
     left: 0;
     width: 100%;
     opacity: 0;
-    transition: opacity 2s;
+    transition: opacity 1s;
     font-size: 2.5rem;
     color: #ffffff;
   }
@@ -396,8 +396,9 @@ body {
 
 .detailed-description p {
     font-size: 1.4em;
+    text-align: left;
     line-height: 1.5;
-    margin-top: 70px;
+    margin-top: 20px;
     margin-bottom: 100px;
 }
 
