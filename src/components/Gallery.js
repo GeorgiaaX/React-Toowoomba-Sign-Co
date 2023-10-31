@@ -10,33 +10,31 @@ export default function Gallery({ images }) {
     const currentImages = images.slice(firstImageIndex, lastImageIndex);
     const totalPages = Math.ceil(images.length / imagesPerPage);
 
-    // Create a ref for the gallery title
-    const galleryTitleRef = useRef(null);
+   // Create a ref for the gallery title
+const galleryTitleRef = useRef(null);
 
-    let items = [];
-    for (let number = 1; number <= totalPages; number++) {
-        const isActive = number === currentPage;
-        const item = (
-            <Pagination.Item key={number} active={isActive} onClick={() => handlePageChange(number)}>
-                {number}
-            </Pagination.Item>
-        );
-
-        // This step removes the activeLabel prop
-        if (isActive) {
-            items.push(React.cloneElement(item, { activeLabel: '' }));
-        } else {
-            items.push(item);
-        }
+// Function to handle page change and scroll to the gallery title
+const handlePageChange = (pageNumber) => {
+    setCurrentPage(pageNumber);
+    if (galleryTitleRef.current) {
+        galleryTitleRef.current.scrollIntoView({ behavior: 'smooth' });
     }
+};
 
-    // Function to handle page change and scroll to the gallery title
-    const handlePageChange = (pageNumber) => {
-        setCurrentPage(pageNumber);
-        if (galleryTitleRef.current) {
-            galleryTitleRef.current.scrollIntoView({ behavior: 'smooth' });
-        }
-    };
+let items = [];
+for (let number = 1; number <= totalPages; number++) {
+    const isActive = number === currentPage;
+    items.push(
+        <Pagination.Item 
+            key={number} 
+            active={isActive} 
+            onClick={() => handlePageChange(number)}
+            activeLabel={isActive ? '' : undefined}
+        >
+            {number}
+        </Pagination.Item>
+    );
+}
 
     return (
         <Container>

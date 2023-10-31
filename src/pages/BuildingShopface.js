@@ -25,7 +25,6 @@ function BuildingShopface() {
     ]
 
     const galleryUrls = [
-      "../images/BuildingShopface/BSImg11.jpg",
       "../images/BuildingShopface/BSImg12.jpg",
       "../images/BuildingShopface/BSImg13.jpg",
       "../images/BuildingShopface/BSImg14.jpg",
@@ -43,6 +42,7 @@ function BuildingShopface() {
       "../images/BuildingShopface/BSImg8.jpg",
       "../images/BuildingShopface/BSImg9.jpg",
       "../images/BuildingShopface/BSImg10.jpg",
+      "../images/BuildingShopface/BSImg11.jpg",
       "../images/BuildingShopface/BSImg21.jpg",
       "../images/BuildingShopface/BSImg22.jpg",
       "../images/BuildingShopface/BSImg23.jpg",

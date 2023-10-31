@@ -27,7 +27,7 @@ function ProductDetail({ firstPhrase, secondPhrase, descriptionFirst, descriptio
       <Row className="justify-content-center">
         <Col md={8} className="text-center">
           <div className="phrase-container mb-3">
-              <h2 className={`phrase ${showFirstPhrase ? 'show' :      'hide'}`}>
+              <h2 className={`phrase ${showFirstPhrase ? 'show' : 'hide'}`}>
               {boldFirstWord(firstPhrase)}
               </h2>
               <h2 className={`phrase ${!showFirstPhrase ? 'show' : 'hide'}`}>
