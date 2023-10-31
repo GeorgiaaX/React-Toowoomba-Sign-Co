@@ -207,7 +207,7 @@ body {
 
 .products-slide {
     display: inline-block;
-    animation: 400s slide infinite linear;
+    animation: 1000s slide infinite linear;
 }
 
 .products-slide span {
@@ -423,7 +423,7 @@ body {
 
 .gallery-slide {
     display: flex;
-    animation: 100s slide linear infinite; 
+    animation: 400s slide linear infinite; 
 }
 
 .gallery-slide img {
@@ -586,7 +586,7 @@ body {
     
     .gallery-slide {
         display: flex;
-        animation: slide 50s linear infinite; 
+        animation: slide 100s linear infinite; 
         animation-timing-function: linear;
     }
     
@@ -605,11 +605,8 @@ body {
     .gallery-title {
         font-size: 1.8rem;
     }
-    
+
 }
-
-
-
 
 
 /* Fixed Quote Button */

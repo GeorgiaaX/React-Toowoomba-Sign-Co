@@ -17,7 +17,6 @@ function BuildingShopface() {
       "../images/BuildingShopface/BSImg3.jpg",
       "../images/BuildingShopface/BSImg4.jpg",
       "../images/BuildingShopface/BSImg5.jpg",
-      "../images/BuildingShopface/BSImg6.jpg",
       "../images/BuildingShopface/BSImg7.jpg",
       "../images/BuildingShopface/BSImg8.jpg",
       "../images/BuildingShopface/BSImg9.jpg",
@@ -31,13 +30,11 @@ function BuildingShopface() {
       "../images/BuildingShopface/BSImg15.jpg",
       "../images/BuildingShopface/BSImg16.jpg",
       "../images/BuildingShopface/BSImg17.jpg",
-      "../images/BuildingShopface/BSImg18.jpg",
       "../images/BuildingShopface/BSImg19.jpg",
       "../images/BuildingShopface/BSImg20.jpg",
       "../images/BuildingShopface/BSImg3.jpg",
       "../images/BuildingShopface/BSImg4.jpg",
       "../images/BuildingShopface/BSImg5.jpg",
-      "../images/BuildingShopface/BSImg6.jpg",
       "../images/BuildingShopface/BSImg7.jpg",
       "../images/BuildingShopface/BSImg8.jpg",
       "../images/BuildingShopface/BSImg9.jpg",
@@ -56,7 +53,6 @@ function BuildingShopface() {
       "../images/BuildingShopface/BSImg31.jpg",
       "../images/BuildingShopface/BSImg32.jpg",
       "../images/BuildingShopface/BSImg33.jpg",
-      "../images/BuildingShopface/BSImg34.jpg",
     
     ]
 

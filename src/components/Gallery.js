@@ -38,7 +38,6 @@ for (let number = 1; number <= totalPages; number++) {
 
     return (
         <Container>
-            {/* Add the ref to the h2 element */}
             <h2 className="mb-5 text-center gallery-title" ref={galleryTitleRef}>Gallery</h2>
             <Row>
                 {currentImages.map((image, index) => (

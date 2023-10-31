@@ -78,9 +78,9 @@ function CustomFooter() {
                     <FontAwesomeIcon icon={faEnvelope} className="mr-3" />
                     Email
                 </Nav.Link>
-                <Nav.Link href="tel:1300300300" className="text-white footer-link">
+                <Nav.Link href="tel:0413733947" className="text-white footer-link">
                     <FontAwesomeIcon icon={faPhone} className="mr-3" />
-                    1300 300 300
+                    0413733947
                 </Nav.Link>
             </Nav>
           </Col>

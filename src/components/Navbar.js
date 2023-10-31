@@ -18,14 +18,15 @@ export default function CustomNavbar() {
 
                         <NavDropdown title="Products" id="product-dropdown" className="mr-4">
                             <NavDropdown.Item as={Link} to="/building-shopface">Building and Shopface</NavDropdown.Item>
-                            <NavDropdown.Item as={Link} to="/product/3d-illuminated">3D Illuminated Letters and Displays</NavDropdown.Item>
-                            <NavDropdown.Item as={Link} to="/product/reception-interior">Reception and Interior</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="/illuminated-designs">3D Illuminated Letters and Displays</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="/reception-interior">Reception and Interior</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="structural-signage">Structural Signage</NavDropdown.Item>
                             <NavDropdown.Item as={Link} to="/product/directional-wayfinding">Directional and Wayfinding</NavDropdown.Item>
                             <NavDropdown.Item as={Link} to="/product/window-graphics-display">Window Graphics and Display</NavDropdown.Item>
                             <NavDropdown.Item as={Link} to="/product/vehicle-fleet-branding">Vehicle Fleet Branding</NavDropdown.Item>
                             <NavDropdown.Item as={Link} to="/product/retail-pos">Retail POS</NavDropdown.Item>
                             <NavDropdown.Item as={Link} to="/product/truck-lining-scrolling">Truck Lining and Scrolling</NavDropdown.Item>
-                            <NavDropdown.Item as={Link} to="/product/structural-signage">Structural Signage</NavDropdown.Item>
+                           
                         </NavDropdown>
 
                         <Nav.Link href="/contact" className="mr-4">Contact Us</Nav.Link>

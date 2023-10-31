@@ -13,7 +13,7 @@ export default function ContactDetails() {
             <Col md = "auto" className="contactUs-section text-center">
                 <p>
                     <i className="fas fa-phone mr-3 fa-lg"></i>
-                    <a href="tel:1300300300" className="text-white">1300 300 300</a>
+                    <a href="tel:0413733947" className="text-white">0413733947</a>
                 </p>
             </Col>
         </Row>
