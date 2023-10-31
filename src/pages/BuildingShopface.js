@@ -5,6 +5,8 @@ import CustomFooter from '../components/CustomFooter';
 import ProductDetail from '../components/ProductDetail'; 
 import GallerySlide from '../components/GallerySlide';
 import Gallery from '../components/Gallery';
+import FixedQuoteBtn from '../components/FixedQuoteBtn'; 
+
 
 
 
@@ -41,6 +43,20 @@ function BuildingShopface() {
       "../images/BuildingShopface/BSImg8.jpg",
       "../images/BuildingShopface/BSImg9.jpg",
       "../images/BuildingShopface/BSImg10.jpg",
+      "../images/BuildingShopface/BSImg21.jpg",
+      "../images/BuildingShopface/BSImg22.jpg",
+      "../images/BuildingShopface/BSImg23.jpg",
+      "../images/BuildingShopface/BSImg24.jpg",
+      "../images/BuildingShopface/BSImg25.jpg",
+      "../images/BuildingShopface/BSImg26.jpg",
+      "../images/BuildingShopface/BSImg27.jpg",
+      "../images/BuildingShopface/BSImg28.jpg",
+      "../images/BuildingShopface/BSImg29.jpg",
+      "../images/BuildingShopface/BSImg30.jpg",
+      "../images/BuildingShopface/BSImg31.jpg",
+      "../images/BuildingShopface/BSImg32.jpg",
+      "../images/BuildingShopface/BSImg33.jpg",
+      "../images/BuildingShopface/BSImg34.jpg",
     
     ]
 
@@ -52,6 +68,9 @@ function BuildingShopface() {
             <Navbar />
         </section>
 
+        <section>
+               <FixedQuoteBtn />
+            </section>
 
           <section>
                 <Header
