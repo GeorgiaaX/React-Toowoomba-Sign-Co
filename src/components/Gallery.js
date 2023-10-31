@@ -4,7 +4,7 @@ import { Container, Row, Col, Pagination } from 'react-bootstrap';
 export default function Gallery({ images }) {
 
     const [currentPage, setCurrentPage] = useState(1);
-    const imagesPerPage = 12; 
+    const imagesPerPage = 16; 
     const lastImageIndex = currentPage * imagesPerPage;
     const firstImageIndex = lastImageIndex - imagesPerPage;
     const currentImages = images.slice(firstImageIndex, lastImageIndex);
