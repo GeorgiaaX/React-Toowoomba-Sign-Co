@@ -22,7 +22,7 @@ export default function CustomNavbar() {
                             <NavDropdown.Item as={Link} to="/reception-interior">Reception and Interior</NavDropdown.Item>
                             <NavDropdown.Item as={Link} to="/structural-signage">Structural Signage</NavDropdown.Item>
                             <NavDropdown.Item as={Link} to="/directional-wayfinding">Directional and Wayfinding</NavDropdown.Item>
-                            <NavDropdown.Item as={Link} to="/product/window-graphics-display">Window Graphics and Display</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="/window-graphics">Window Graphics and Display</NavDropdown.Item>
                             <NavDropdown.Item as={Link} to="/product/vehicle-fleet-branding">Vehicle Fleet Branding</NavDropdown.Item>
                             <NavDropdown.Item as={Link} to="/product/retail-pos">Retail POS</NavDropdown.Item>
                             <NavDropdown.Item as={Link} to="/product/truck-lining-scrolling">Truck Lining and Scrolling</NavDropdown.Item>

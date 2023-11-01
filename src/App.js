@@ -7,6 +7,7 @@ import IlluminatedDesigns from './pages/IlluminatedDesigns';
 import ReceptionInterior from './pages/ReceptionInterior';
 import StructuralSignage from './pages/StructuralSignage';
 import DirectionalWayfinding from './pages/DirectionalWayfinding';
+import WindowGraphics from './pages/WindowGraphics';
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
         <Route path="/reception-interior" element={<ReceptionInterior />} />
         <Route path="/structural-signage" element={<StructuralSignage />} />
         <Route path="/directional-wayfinding" element={<DirectionalWayfinding />} />
+        <Route path="/window-graphics" element={<WindowGraphics />} />
 
       </Routes>
     </BrowserRouter>
