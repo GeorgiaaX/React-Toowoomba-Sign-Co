@@ -27,6 +27,41 @@ function AboutCarousel() {
             alt="Third slide"
           />
         </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src='./images/lickinggood.jpg'
+            alt="Third slide"
+          />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src='./images/harvey.jpg'
+            alt="Third slide"
+          />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src='./images/jim.jpg'
+            alt="Third slide"
+          />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src='./images/NeilTruck.jpg'
+            alt="Third slide"
+          />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src='./images/coles.jpg'
+            alt="Third slide"
+          />
+        </Carousel.Item>
       </Carousel>
     </div>
   );
