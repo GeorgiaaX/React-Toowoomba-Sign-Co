@@ -8,6 +8,9 @@ import ReceptionInterior from './pages/ReceptionInterior';
 import StructuralSignage from './pages/StructuralSignage';
 import DirectionalWayfinding from './pages/DirectionalWayfinding';
 import WindowGraphics from './pages/WindowGraphics';
+import VehicleBranding from './pages/VehicleBranding';
+import RetailPOS from './pages/RetailPOS';
+import TruckLining from './pages/TruckLining';
 
 
 function App() {
@@ -35,6 +38,9 @@ function App() {
         <Route path="/structural-signage" element={<StructuralSignage />} />
         <Route path="/directional-wayfinding" element={<DirectionalWayfinding />} />
         <Route path="/window-graphics" element={<WindowGraphics />} />
+        <Route path="/vehicle-branding" element={<VehicleBranding />} />
+        <Route path="/retail-pos" element={<RetailPOS />} />
+        <Route path="/truck-lining" element={<TruckLining />} />
 
       </Routes>
     </BrowserRouter>
