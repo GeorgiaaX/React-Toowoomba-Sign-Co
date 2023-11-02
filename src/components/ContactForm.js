@@ -12,6 +12,9 @@ const ContactForm = React.forwardRef((props, ref) => {
                 {/* Disable captcha */}
                 <input type = "hidden" name = "_captcha" value = "false"/>
 
+                {/* Success Pafe */}
+                <input type = "hidden" name = "_next" value = "https://papaya-puffpuff-9ff99c.netlify.app/success"></input>
+
                 <Form.Group className="mb-3">
                     <Form.Label className="contact-label" style={{ textAlign: 'left' }}>Name</Form.Label>
                     <Form.Control type="text" placeholder="Name" name = "name" required/>
@@ -19,12 +22,12 @@ const ContactForm = React.forwardRef((props, ref) => {
 
                 <Form.Group className="mb-3">
                     <Form.Label className="contact-form-label">Phone Number</Form.Label>
-                    <Form.Control type="tel" placeholder="Phone Number" name = "phone number" required/>
+                    <Form.Control type="tel" placeholder="Phone&nbsp;Number" name = "phone number" required/>
                 </Form.Group>
 
                 <Form.Group className="mb-3">
-                    <Form.Label className="contact-form-label">Email</Form.Label>
-                    <Form.Control type="email" placeholder="Email" name = "email" required/>
+                    <Form.Label className="contact-form-label">Email Address</Form.Label>
+                    <Form.Control type="email" placeholder="Email Address" name = "email" required/>
                 </Form.Group>
 
                 <Form.Group className="mb-3">

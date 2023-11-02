@@ -11,6 +11,7 @@ import WindowGraphics from './pages/WindowGraphics';
 import VehicleBranding from './pages/VehicleBranding';
 import RetailPOS from './pages/RetailPOS';
 import TruckLining from './pages/TruckLining';
+import Success from './pages/Success';
 
 
 function App() {
@@ -41,6 +42,8 @@ function App() {
         <Route path="/vehicle-branding" element={<VehicleBranding />} />
         <Route path="/retail-pos" element={<RetailPOS />} />
         <Route path="/truck-lining" element={<TruckLining />} />
+        <Route path="/success" element={<Success />} />
+
 
       </Routes>
     </BrowserRouter>

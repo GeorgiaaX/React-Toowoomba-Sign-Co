@@ -489,6 +489,16 @@ body {
     left: 0;
 }
 
+
+/* Success card */
+.success-card {
+    padding: 40px;
+    font-size: 0.9rem !important;
+    background-color: rgba(47, 49, 52);
+    border-radius: 8px;
+}
+
+
 /* FOOTER */
 
 .footer-link:hover {
