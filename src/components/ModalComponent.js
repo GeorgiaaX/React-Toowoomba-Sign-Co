@@ -18,6 +18,10 @@ export default function ModalComponent({ show, onHide }) {
                         <Form.Control type="text" placeholder="Name" autoFocus className="border-primary"/>
                     </Form.Group>
                     <Form.Group className="mb-3">
+                        <Form.Label className="contact-form-label">Phone Number</Form.Label>
+                        <Form.Control type="tel" placeholder="Phone Number" name = "phone number"/>
+                    </Form.Group>
+                    <Form.Group className="mb-3">
                         <Form.Label>Email address</Form.Label>
                         <Form.Control type="email" placeholder="Enter email" className="border-info"/>
                     </Form.Group>

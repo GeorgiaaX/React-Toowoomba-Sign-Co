@@ -76,7 +76,7 @@ function WindowGraphics() {
                     isGenericPage={true} 
                     isContactPage={false} 
                     heading={{ 
-                        title: "Window Grpahics and",
+                        title: "Window Graphics and",
                         lastWord: "Display",
                         subheading: "Wall graphics / 3D lettering & Signs / Illuminated Signs & Lettering",
                     }}

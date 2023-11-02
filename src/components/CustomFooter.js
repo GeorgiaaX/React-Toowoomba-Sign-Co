@@ -52,17 +52,22 @@ function CustomFooter() {
             <h6 className="text-uppercase fw-bold">Quick Links</h6>
             <hr className="mb-4 mt-0 d-inline-block mx-auto" style={{ width: '60px', backgroundColor: '#0C8CE9', height: '2px' }} />
             <Nav className="flex-column">
-              {["Building and Shopface", "3D illuminated letters and displays", "Reception and interior", "Direction and Wayfinding"].map(link => (
-                <Nav.Link key={link} href="#" className="text-white footer-link">{link}</Nav.Link>
-              ))}
+              <Nav.Link href="building-shopface" className = "text-white footer-link"> Building and Shopface</Nav.Link>
+              <Nav.Link href="illuminated-designs" className = "text-white footer-link">3D Illuminated Letters and Displays</Nav.Link>
+              <Nav.Link href="reception-interior" className = "text-white footer-link">Reception and Interior</Nav.Link>
+              <Nav.Link href="structural-signage" className = "text-white footer-link">Structural Signage</Nav.Link>  
+              
             </Nav>
           </Col>
 
           <Col md={3} lg={2} xl={2} className="mx-auto mb-4">
             <Nav className="flex-column">
-              {["Window graphics and display", "Vehicle graphics and display", "Vehicle fleet branding", "Retail POS", "Truck Lining and Scrolling"].map(link => (
-                <Nav.Link key={link} href="#" className="text-white footer-link">{link}</Nav.Link>
-              ))}
+
+              <Nav.Link href="directional-wayfinding" className = "text-white footer-link">Directional and Wayfinding</Nav.Link>  
+              <Nav.Link href="window-graphics" className = "text-white footer-link">Window Graphics and Display</Nav.Link>
+              <Nav.Link href="vehicle-branding" className = "text-white footer-link">Vehicle Fleet Branding</Nav.Link>
+              <Nav.Link href="retail-pos" className = "text-white footer-link">Retail POS</Nav.Link>  
+              <Nav.Link href="truck-lining" className = "text-white footer-link">Truck Lining nad Scrolling</Nav.Link>  
             </Nav>
           </Col>
 
