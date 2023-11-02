@@ -67,7 +67,7 @@ function CustomFooter() {
               <Nav.Link href="window-graphics" className = "text-white footer-link">Window Graphics and Display</Nav.Link>
               <Nav.Link href="vehicle-branding" className = "text-white footer-link">Vehicle Fleet Branding</Nav.Link>
               <Nav.Link href="retail-pos" className = "text-white footer-link">Retail POS</Nav.Link>  
-              <Nav.Link href="truck-lining" className = "text-white footer-link">Truck Lining nad Scrolling</Nav.Link>  
+              <Nav.Link href="truck-lining" className = "text-white footer-link">Truck Lining and Scrolling</Nav.Link>  
             </Nav>
           </Col>
 
