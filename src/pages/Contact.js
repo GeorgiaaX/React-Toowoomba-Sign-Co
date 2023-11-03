@@ -3,7 +3,7 @@ import NavBar from '../components/Navbar';
 import Header from '../components/Header';
 import CustomFooter from '../components/CustomFooter';
 import ContactDetails from '../components/ContactDetails';
-import ContactForm from '../components/ContactForm';
+import Form from '../components/Form';
 
 export default function Contact() {
 
@@ -39,7 +39,7 @@ export default function Contact() {
             </section>
 
             <section>
-                <ContactForm ref={contactFormRef} />
+                <Form ref={contactFormRef} />
             </section>
 
             <section>
