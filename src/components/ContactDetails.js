@@ -7,7 +7,7 @@ export default function ContactDetails() {
             <Col md = "auto" className="contactUs-section text-center">
                 <p>
                     <i className="fas fa-envelope mr-3 fa-2x product-icons"></i>
-                    <a href="mailto:toowoomba.signs.co.com" className="text-white  text-center">Email</a>
+                    <a href="mailto:Jake@toowoombasignco.com.au" className="text-white  text-center">Email</a>
                 </p>
             </Col>
             <Col md = "auto" className="contactUs-section">
