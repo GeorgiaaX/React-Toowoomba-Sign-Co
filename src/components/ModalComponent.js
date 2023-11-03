@@ -12,7 +12,15 @@ export default function ModalComponent({ show, onHide }) {
                 </Button>
             </Modal.Header>
             <Modal.Body className='modal-background'>
-                <Form>
+                <Form name = "contact" action="https://formsubmit.co/9f7151693a5664d596342942bd7b3ba8" method="POST">
+                    {/* honeyPOt */}
+                <input type = "text" name = "_honey" style = {{ display: "none"}}/>
+                {/* Disable captcha */}
+                <input type = "hidden" name = "_captcha" value = "false"/>
+
+                {/* Success Page */}
+                <input type = "hidden" name = "_next" value = "https://papaya-puffpuff-9ff99c.netlify.app/success"></input>
+                
                     <Form.Group className="mb-3">
                         <Form.Label>Name</Form.Label>
                         <Form.Control type="text" placeholder="Name" autoFocus className="border-primary"/>
