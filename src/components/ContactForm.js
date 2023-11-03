@@ -2,7 +2,7 @@ import React from 'react';
 import { Form, Button } from 'react-bootstrap';
 
 
-const ContactForm = React.forwardRef((ref) => {
+const ContactForm = React.forwardRef((props, ref) => {
     return (
         <div ref={ref}>
 
