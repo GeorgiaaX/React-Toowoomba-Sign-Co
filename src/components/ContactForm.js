@@ -14,7 +14,7 @@ const ContactForm = React.forwardRef((props, ref) => {
                 <input type = "hidden" name = "_captcha" value = "false"/>
 
                 {/* Success Page */}
-                <input type = "hidden" name = "_next" value = "https://papaya-puffpuff-9ff99c.netlify.app/success"></input>
+                <input type = "hidden" name = "_next" value = "https://toowoombasignco.com.au/success"></input>
 
                 <Form.Group className="mb-3">
                     <Form.Label className="contact-label" style={{ textAlign: 'left' }}>Name</Form.Label>
