@@ -19,6 +19,10 @@ function TruckLining() {
        "../images/TruckLining/TLImg2.jpg",
        "../images/TruckLining/TLImg10.jpg",
        "../images/TruckLining/TLImg6.jpg",
+       "../images/TruckLining/TLImg3.jpg",
+       "../images/TruckLining/TLImg9.jpg",
+       "../images/TruckLining/TLImg8.jpg",
+       "../images/TruckLining/TLImg5.jpg",
     ]
 
     //gallery stills urls

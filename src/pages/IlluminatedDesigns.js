@@ -19,7 +19,10 @@ function IlluminatedDesigns() {
         "../images/IlluminatedDesigns/IDImg19.jpg",
         "../images/IlluminatedDesigns/IDImg16.jpg",
         "../images/IlluminatedDesigns/IDImg3.jpg",
-        "../images/IlluminatedDesigns/IDImg12.jpg",
+        "../images/IlluminatedDesigns/IDImg18.jpg",
+        "../images/IlluminatedDesigns/IDImg10.jpg",
+        "../images/IlluminatedDesigns/IDImg6.jpg",
+        "../images/IlluminatedDesigns/IDImg15.jpg",
 
     ]
 

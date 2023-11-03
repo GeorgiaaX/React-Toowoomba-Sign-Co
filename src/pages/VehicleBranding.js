@@ -20,6 +20,10 @@ function VehicleBranding() {
       "../images/VehicleBranding/VFImg16.jpg",
       "../images/VehicleBranding/VFImg18.jpg",
       "../images/VehicleBranding/VFImg8.jpg",
+      "../images/VehicleBranding/VFImg13.jpg",
+      "../images/VehicleBranding/VFImg1.jpg",
+      "../images/VehicleBranding/VFImg11.jpg",
+
     ]
 
     //gallery stills urls

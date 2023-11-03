@@ -22,6 +22,7 @@ function StructuralSignage() {
        "../images/StructuralSignage/SSImg23.jpg",
        "../images/StructuralSignage/SSImg25.jpg",
        "../images/StructuralSignage/SSImg9.jpg",
+       "../images/StructuralSignage/SSImg4.jpg",
     ]
 
     //gallery stills urls

@@ -20,6 +20,9 @@ function RetailPOS() {
         "../images/RetailPOS/POSImg14.jpg",
         "../images/RetailPOS/POSImg13.jpg",
         "../images/RetailPOS/POSImg10.jpg",
+        "../images/RetailPOS/POSImg2.jpg",
+        "../images/RetailPOS/POSImg5.jpg",
+        "../images/RetailPOS/POSImg16.jpg",
     ]
 
     //gallery stills urls

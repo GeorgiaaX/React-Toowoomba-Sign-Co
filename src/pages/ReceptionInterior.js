@@ -19,6 +19,10 @@ function ReceptionInterior() {
         "../images/ReceptionInterior/RIImg13.jpg",
         "../images/ReceptionInterior/RIImg1.jpg",
         "../images/ReceptionInterior/RIImg7.jpg",
+        "../images/ReceptionInterior/RIImg4.jpg",
+        "../images/ReceptionInterior/RIImg11.jpg",
+        "../images/ReceptionInterior/RIImg2.jpg",
+        "../images/ReceptionInterior/RIImg8.jpg",
     ]
 
     //gallery stills urls
