@@ -81,7 +81,7 @@ function CustomFooter() {
                 </Nav.Link>
                 <Nav.Link href="mailto:jake@toowoombasignco.com.au" className="text-white footer-link">
                     <FontAwesomeIcon icon={faEnvelope} className="mr-3" />
-                    Email
+                    jake@toowoombasignco.com.au
                 </Nav.Link>
                 <Nav.Link href="tel:0413733947" className="text-white footer-link">
                     <FontAwesomeIcon icon={faPhone} className="mr-3" />

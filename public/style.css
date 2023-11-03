@@ -23,6 +23,10 @@ body {
     color: #0C8CE9 !important;
 }  
 
+.btn-primary {
+    background-color: #0C8CE9;
+}
+
 /* Header Section */
 .header-section {
     height: 75vh;
@@ -353,6 +357,10 @@ body {
     margin-top: 20px;
     padding: 20px 80px;
 }
+
+.contactUs-section a:hover {
+    text-decoration: none;
+    color: #0C8CE9 !important}
 
 .contact-info {
     padding-top: 10px;
