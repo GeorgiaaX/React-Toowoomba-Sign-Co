@@ -6,7 +6,7 @@ const ContactForm = React.forwardRef((props, ref) => {
     return (
         <div ref={ref}>
 
-            <Form name = "contact" className="contact-form" action="https://formsubmit.co/Jake@toowoombasignco.com.au" method="POST">
+            <Form name = "contact" className="contact-form" action="https://formsubmit.co/jake@toowoombasignco.com.au" method="POST">
                 <h3 className="text-center">Send us a message</h3>
                 {/* honeyPOt */}
                 <input type = "text" name = "_honey" style = {{ display: "none"}}/>

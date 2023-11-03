@@ -79,7 +79,7 @@ function CustomFooter() {
                     <FontAwesomeIcon icon={faQuoteLeft} className="mr-3" />
                     Get a Quote
                 </Nav.Link>
-                <Nav.Link href="mailto:Jake@toowoombasignco.com.au" className="text-white footer-link">
+                <Nav.Link href="mailto:jake@toowoombasignco.com.au" className="text-white footer-link">
                     <FontAwesomeIcon icon={faEnvelope} className="mr-3" />
                     Email
                 </Nav.Link>
