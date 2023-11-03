@@ -1,6 +1,7 @@
 import React from 'react';
 import { Form, Button } from 'react-bootstrap';
 
+
 const ContactForm = React.forwardRef((props, ref) => {
     return (
         <div ref={ref}>
@@ -12,7 +13,7 @@ const ContactForm = React.forwardRef((props, ref) => {
                 {/* Disable captcha */}
                 <input type = "hidden" name = "_captcha" value = "false"/>
 
-                {/* Success Pafe */}
+                {/* Success Page */}
                 <input type = "hidden" name = "_next" value = "https://papaya-puffpuff-9ff99c.netlify.app/success"></input>
 
                 <Form.Group className="mb-3">
