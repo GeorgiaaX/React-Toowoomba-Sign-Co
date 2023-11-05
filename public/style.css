@@ -662,10 +662,14 @@ body {
         width: 100%;
         font-size: 0.9rem;
     }
+  
     .contactUs-section {
         font-size: 0.9rem;
         padding-top: 5px;
+        margin-top: 0;
+        padding: 10px 80px;
     }
+    
     .contact-info {
         width: 100%;
         padding-top: 20px;
@@ -673,20 +677,43 @@ body {
         text-align: center;
         display: flex;
         align-items: center;
+        justify-content: center;
     }
 
-    .contactUs-section {
-        margin-top: 0px;
-        padding: 10px 80px;
-    }
+    
 }
+
+
 
 @media (max-width: 450px) {
     .contact-form {
-        max-width: 300px;
+        max-width: 350px;
+        border: none;
     }
     .contact-form:hover {
         box-shadow: none;
+    }
+
+    .contact-info {
+        flex-direction: column; 
+    }
+
+    .contactUs-section {
+        padding: 10px; 
+        text-align: center;
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center; 
+        width: 100%; 
+        margin-left: 15px;
+    }
+
+    .contactUs-section i,
+    .contactUs-section a {
+        margin: 0 0 10px; 
+        width: 100%; 
+        justify-content: center; 
     }
 }
 
