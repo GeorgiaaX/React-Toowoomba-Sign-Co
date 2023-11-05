@@ -12,7 +12,7 @@ export default function ModalComponent({ show, onHide }) {
                     </Button>
                 </Modal.Header>
                 <Modal.Body className='modal-background'>
-                    <Form name="contact" action="https://formsubmit.co/jake@toowoombasignco.com" method="POST">
+                    <Form name="contact" action="https://formsubmit.co/217e919b9eac0f6a02699027574c0fd3" method="POST">
                         {/* honeyPot */}
                         <input type="text" name="_honey" style={{ display: "none" }} />
                         {/* Disable captcha */}
