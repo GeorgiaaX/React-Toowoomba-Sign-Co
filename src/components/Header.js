@@ -8,10 +8,10 @@ export default function Hero({ backgroundImg, heading, isGenericPage, isContactP
 
    const headerStyle = {
     backgroundImage: `
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    radial-gradient(ellipse at left top, rgba(12, 19, 31, 0.5) 0%, transparent 50%),
-    radial-gradient(ellipse at right bottom, rgba(12, 140, 233, 1) 0%, transparent 50%),
-    url(${backgroundImg})
+    linear-gradient(rgba(12, 19, 31, 0.5), rgba(12, 19, 31, 0.6)),
+            radial-gradient(ellipse at left top, rgba(12, 19, 31, 0.6) 0%, transparent 50%),
+            radial-gradient(ellipse at right bottom, rgba(12, 140, 233, 1) 0%, transparent 50%),
+            url(${backgroundImg});
 `,
     backgroundSize: 'cover, 100% 100%, 100% 100%',
     backgroundPosition: 'center',
@@ -27,15 +27,16 @@ export default function Hero({ backgroundImg, heading, isGenericPage, isContactP
 
         <div className="header-card">
             <div className="header-logo d-flex justify-content-center align-items-center">
-                <img src="../images/logo.png" className="header-brand-image" alt="logo"/>
+                <img src="./images/logo.png" className="header-brand-image" alt="logo"/>
+                <h1 className="brand-name">Toowoomba <b className="bold-word">Sign</b> Co</h1>
             </div>
 
             <div className="hero-headings">
                 <Row className="justify-content-start">
                     <Col xs={12} className="text-white">
-                        <h1 className="mb-3 hero-title">
+                        <h2 className="mb-3 hero-title">
                             {title} <b className="bold-word">{lastWord}</b>
-                        </h1>
+                        </h2>
                         <h4 className="mb-3 hero-subheading">{subheading}</h4>
                         {isGenericPage && <ModalButton />}
                         {isContactPage && <ScrollDownButton targetRef={contactFormRef} />} 

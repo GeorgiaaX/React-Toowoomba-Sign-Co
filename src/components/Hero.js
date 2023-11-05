@@ -40,10 +40,10 @@ export default function Hero(props) {
                     className={`background-image ${activeImageIndex === index ? 'active' : ''}`}
                     style={{
                         backgroundImage: `
-                            linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
-                            radial-gradient(ellipse at left top, rgba(12, 19, 31, 0.6) 0%, transparent 50%),
-                            radial-gradient(ellipse at right bottom, rgba(12, 140, 233, 1) 0%, transparent 50%),
-                            url(${img})
+                        linear-gradient(rgba(12, 19, 31, 0.5), rgba(12, 19, 31, 0.6)),
+                        radial-gradient(ellipse at left top, rgba(12, 19, 31, 0.6) 0%, transparent 50%),
+                        radial-gradient(ellipse at right bottom, rgba(12, 140, 233, 1) 0%, transparent 50%),
+                        url(${img})
                         `
                     }}>
                     </div>
@@ -53,13 +53,14 @@ export default function Hero(props) {
 <div className="hero-card d-flex flex-column justify-content-center align-items-center">
     <div className="header-logo d-flex justify-content-center align-items-center">
         <img src="./images/logo.png" className="brand-image" alt="logo"/>
+        <h1 className="brand-name">Toowoomba <b className="bold-word">Sign</b> Co</h1>
     </div>
     <div className="hero-headings">
         <Row className="justify-content-start">
             <Col xs={12} className="text-white text-center"> 
-                <h1 className="mb-3 hero-title">
+                <h2 className="mb-3 hero-title">
                     {title} <b className="hero-text">{lastWord}</b>
-                </h1>
+                </h2>
                 <h4 className="mb-3 hero-subheading">{subheading}</h4>
                 {props.isHomePage && 
                     <ModalButton />

@@ -36,12 +36,22 @@ body {
     position: relative;
 }
 
+
+
 .header-logo {
-    z-index: 2; 
-    margin-bottom: 50px;
+    z-index: 2;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
 }
 
-.header h1 {
+.brand-name {
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.header h2 {
     text-shadow: 2px 5px 10px rgba(0, 0, 0, 0.7);
 }
 
