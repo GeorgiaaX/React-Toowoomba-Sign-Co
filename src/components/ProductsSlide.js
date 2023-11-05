@@ -4,7 +4,7 @@ import React from 'react'
 function ProductsSlide() {
     const products = [
       "Building and Shopface",
-      "3D illuminated letters and Displays",
+      "3D Illuminated Letters and Displays",
       "Reception and Interior",
       "Directional and Wayfinding",
       "Window Graphics and Display",

@@ -56,7 +56,7 @@ export default function Hero(props) {
     </div>
     <div className="hero-headings">
         <Row className="justify-content-start">
-            <Col xs={12} className="text-white text-center"> {/* Added 'text-center' for horizontal centering of text */}
+            <Col xs={12} className="text-white text-center"> 
                 <h1 className="mb-3 hero-title">
                     {title} <b className="hero-text">{lastWord}</b>
                 </h1>
@@ -64,7 +64,7 @@ export default function Hero(props) {
                 {props.isHomePage && 
                     <ModalButton />
                 }
-                <div style={{ textAlign: 'center' }}> {/* Changed 'left' to 'center' for child content */}
+                <div style={{ textAlign: 'center' }}> 
                     {props.children}
                 </div>
             </Col>

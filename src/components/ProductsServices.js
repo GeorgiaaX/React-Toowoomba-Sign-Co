@@ -27,7 +27,7 @@ function ProductsServices() {
                     {renderProductColumn({
                         iconClass: "fas fa-store",
                         title: "Reception and Interior",
-                        description: "Wall graphics / 3D lettering & Signs / Illuminated Signs & Lettering",
+                        description: "Wall Graphics / 3D Lettering & Signs / Illuminated Signs & Lettering",
                         link: "reception-interior",
                         bordered: false,
                     })}

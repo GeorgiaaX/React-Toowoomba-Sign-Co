@@ -44,7 +44,7 @@ function CustomFooter() {
             <h6 className="text-uppercase fw-bold">Toowoomba Sign Co</h6>
             <hr className="mb-4 mt-0 d-inline-block mx-auto" style={{ width: '60px', backgroundColor: '#0C8CE9', height: '2px' }} />
             <p>
-              Proudly servicing the darling downs region for all their signage needs!
+              Proudly servicing the Darling Downs region for all your signage needs!
             </p>
           </Col>
 
