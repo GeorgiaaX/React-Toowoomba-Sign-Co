@@ -6,7 +6,7 @@ const ContactForm = React.forwardRef((props, ref) => {
     return (
         <div ref={ref}>
 
-            <Form name = "contact" className="contact-form" action="https://formsubmit.co/217e919b9eac0f6a02699027574c0fd3" method="POST">
+            <Form name = "contact" className="contact-form" action="https://formspree.io/f/mvojyqvp" method="POST">
                 <h3 className="text-center">Send us a message</h3>
                 {/* honeyPOt */}
                 <input type = "text" name = "_honey" style = {{ display: "none"}}/>
