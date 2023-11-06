@@ -6,15 +6,15 @@ const ContactForm = React.forwardRef((props, ref) => {
     return (
         <div ref={ref}>
 
-            <Form name = "contact" className="contact-form" action="https://formsubmit.co/217e919b9eac0f6a02699027574c0fd3" method="POST">
+            <Form name = "contact" className="contact-form" action="https://formsubmit.io/send/gsim17@hotmail.com" method="POST">
                 <h3 className="text-center">Send us a message</h3>
                 {/* honeyPOt */}
-                <input type = "text" name = "_honey" style = {{ display: "none"}}/>
+                <input name="_formsubmit_id" type="text" style={{display: "none"}} />
                 {/* Disable captcha */}
                 <input type = "hidden" name = "_captcha" value = "false"/>
 
                 {/* Success Page */}
-                <input type = "hidden" name = "_next" value = "https://toowoombasignco.com.au/success"></input>
+                <input name="_redirect" type="hidden" id="name" value="https://www.toowoombasignco.com.au/success" />
 
                 <Form.Group className="mb-3">
                     <Form.Label className="contact-label" style={{ textAlign: 'left' }}>Name</Form.Label>
