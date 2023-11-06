@@ -12,13 +12,12 @@ export default function ModalComponent({ show, onHide }) {
                     </Button>
                 </Modal.Header>
                 <Modal.Body className='modal-background'>
-                    <Form name="contact" action="https://formsubmit.co/217e919b9eac0f6a02699027574c0fd3" method="POST">
+                    <Form name="contact" action="https://formsubmit.io/send/gsim17@hotmail.com" method="POST">
                         {/* honeyPot */}
-                        <input type="text" name="_honey" style={{ display: "none" }} />
-                        {/* Disable captcha */}
-                        <input type="hidden" name="_captcha" value="false" />
+                        <input name="_formsubmit_id" type="text" style={{display: "none"}} />
+
                         {/* Success Page */}
-                        <input type="hidden" name="_next" value="https://toowoombasignco.com.au/success" />
+                        <input name="_redirect" type="hidden" id="name" value="https://www.toowoombasignco.com.au/success" />
 
                         <Form.Group className="mb-3">
                             <Form.Label>Name</Form.Label>

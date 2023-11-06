@@ -10,8 +10,6 @@ const ContactForm = React.forwardRef((props, ref) => {
                 <h3 className="text-center">Send us a message</h3>
                 {/* honeyPOt */}
                 <input name="_formsubmit_id" type="text" style={{display: "none"}} />
-                {/* Disable captcha */}
-                <input type = "hidden" name = "_captcha" value = "false"/>
 
                 {/* Success Page */}
                 <input name="_redirect" type="hidden" id="name" value="https://www.toowoombasignco.com.au/success" />
