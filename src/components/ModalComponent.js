@@ -14,12 +14,13 @@ export default function ModalComponent({ show, onHide }) {
                 <Modal.Body className='modal-background'>
                     <Form name="contact" action="https://formsubmit.co/jake@toowoombasignco.com.au" method="POST">
                 
+                          {/* HoneyPot captcha */}
                         <input type = "text" name = "_honey" style = {{ display: "none"}}/>
-                    {/* Disable captcha */}
-                    <input type = "hidden" name = "_captcha" value = "false"/>
+                        {/* Disable captcha */}
+                        <input type = "hidden" name = "_captcha" value = "false"/>
 
-                    {/* Success Page */}
-                    <input type = "hidden" name = "_next" value = "https://toowoombasignco.com.au/success"></input>
+                        {/* Success Page */}
+                        <input type = "hidden" name = "_next" value = "https://toowoombasignco.com.au/success"></input>
 
                         <Form.Group className="mb-3">
                             <Form.Label>Name</Form.Label>
