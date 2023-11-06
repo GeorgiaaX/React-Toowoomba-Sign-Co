@@ -12,7 +12,7 @@ export default function ModalComponent({ show, onHide }) {
                     </Button>
                 </Modal.Header>
                 <Modal.Body className='modal-background'>
-                    <Form name="contact" action="https://formsubmit.co/gsim17@hotmail.com" method="POST">
+                    <Form name="contact" action="https://formsubmit.co/jake@toowoombasignco.com.au" method="POST">
                 
                         <input type = "text" name = "_honey" style = {{ display: "none"}}/>
                     {/* Disable captcha */}
