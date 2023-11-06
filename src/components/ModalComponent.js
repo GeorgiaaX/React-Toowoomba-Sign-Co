@@ -23,19 +23,19 @@ export default function ModalComponent({ show, onHide }) {
 
                         <Form.Group className="mb-3">
                             <Form.Label>Name</Form.Label>
-                            <Form.Control type="text" placeholder="Name" autoFocus className="border-primary" name = "name"/>
+                            <Form.Control type="text" placeholder="Name" autoFocus className="border-primary" name = "name" required/>
                         </Form.Group>
                         <Form.Group className="mb-3">
                             <Form.Label className="contact-form-label">Phone Number</Form.Label>
-                            <Form.Control type="tel" placeholder="Phone Number" name="phone number" />
+                            <Form.Control type="tel" placeholder="Phone Number" name="phone number" required/>
                         </Form.Group>
                         <Form.Group className="mb-3">
                             <Form.Label>Email address</Form.Label>
-                            <Form.Control type="email" placeholder="Enter email" className="border-info" name = "email"/>
+                            <Form.Control type="email" placeholder="Enter email" className="border-info" name = "email" required/>
                         </Form.Group>
                         <Form.Group className="mb-3">
                             <Form.Label>Message</Form.Label>
-                            <Form.Control as="textarea" rows="3" placeholder="Tell us what you need!" className="border-success" name = "message"/>
+                            <Form.Control as="textarea" rows="3" placeholder="Tell us what you need!" className="border-success" name = "message" required/>
                         </Form.Group>
                         <Modal.Footer className='modal-footer'>
                             <Button variant="outline-secondary" onClick={onHide}>
