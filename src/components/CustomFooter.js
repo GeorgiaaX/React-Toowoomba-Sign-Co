@@ -8,7 +8,6 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { 
   faFacebookF, 
-  faTwitter, 
   faInstagram, 
   faLinkedin 
 } from '@fortawesome/free-brands-svg-icons';
