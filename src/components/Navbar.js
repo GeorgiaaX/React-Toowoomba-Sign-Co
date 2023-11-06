@@ -16,7 +16,7 @@ export default function CustomNavbar() {
                     <Nav className="mr-auto">
                         <Link className="nav-link mr-4" to="/">Home</Link>
 
-                        <NavDropdown title="Products" id="product-dropdown" className="mr-4">
+                        <NavDropdown title="Products and Services" id="product-dropdown" className="mr-4">
                             <NavDropdown.Item as={Link} to="/building-shopface">Building and Shopface</NavDropdown.Item>
                             <NavDropdown.Item as={Link} to="/illuminated-designs">3D Illuminated Letters and Displays</NavDropdown.Item>
                             <NavDropdown.Item as={Link} to="/reception-interior">Reception and Interior</NavDropdown.Item>

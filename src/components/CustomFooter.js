@@ -26,9 +26,6 @@ function CustomFooter() {
               <FontAwesomeIcon icon={faFacebookF} size="2x" />
             </Nav.Link>
             <Nav.Link href="#" className="text-white me-4">
-              <FontAwesomeIcon icon={faTwitter} size="2x" />
-            </Nav.Link>
-            <Nav.Link href="#" className="text-white me-4">
               <FontAwesomeIcon icon={faInstagram} size="2x" />
             </Nav.Link>
             <Nav.Link href="#" className="text-white me-4">
