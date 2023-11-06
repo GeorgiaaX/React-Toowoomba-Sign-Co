@@ -72,7 +72,6 @@ function BuildingShopface() {
                 <Header
                     isGenericPage={true} 
                     isContactPage={false} 
-                    // backgroundImg = "../images/BuildingShopface/BSHeroImg.jpg"
                     heading={{ 
                         title: "Building and",
                         lastWord: "Shopface",

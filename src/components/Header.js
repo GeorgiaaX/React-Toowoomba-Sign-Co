@@ -3,15 +3,14 @@ import { Container, Row, Col } from 'react-bootstrap';
 import ModalButton from './ModalButton';
 import ScrollDownButton from './ScrollDownButton';
 
-export default function Hero({ backgroundImg, heading, isGenericPage, isContactPage, contactFormRef, children }) {
+export default function Header({heading, isGenericPage, isContactPage, contactFormRef, children }) {
     const { title, subheading, lastWord } = heading;
 
    const headerStyle = {
     backgroundImage: `
     linear-gradient(rgba(12, 19, 31, 0.5), rgba(12, 19, 31, 0.6)),
             radial-gradient(ellipse at left top, rgba(12, 19, 31, 0.6) 0%, transparent 50%),
-            radial-gradient(ellipse at right bottom, rgba(12, 140, 233, 1) 0%, transparent 50%),
-            url(${backgroundImg});
+            radial-gradient(ellipse at right bottom, rgba(12, 140, 233, 1) 0%, transparent 50%)
 `,
     backgroundSize: 'cover, 100% 100%, 100% 100%',
     backgroundPosition: 'center',
