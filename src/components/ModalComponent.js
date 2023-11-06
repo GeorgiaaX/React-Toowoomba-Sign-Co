@@ -13,9 +13,7 @@ export default function ModalComponent({ show, onHide }) {
                 </Modal.Header>
                 <Modal.Body className='modal-background'>
                     <Form name="contact" action="https://formsubmit.io/send/gsim17@hotmail.com" method="POST">
-                        {/* honeyPot */}
-                        <input name="_formsubmit_id" type="text" style={{display: "none"}} />
-
+                
                         {/* Success Page */}
                         <input name="_redirect" type="hidden" id="name" value="https://www.toowoombasignco.com.au/success" />
 
