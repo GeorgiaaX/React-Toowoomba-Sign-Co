@@ -10,7 +10,15 @@ function ProductsSlide() {
       "Window Graphics and Display",
       "Vehicle Fleet Branding",
       "Retail POS",
-      "Truck Lining and Scrolling"
+      "Truck Lining and Scrolling",
+      "Building and Shopface",
+      "3D Illuminated Letters and Displays",
+      "Reception and Interior",
+      "Directional and Wayfinding",
+      "Window Graphics and Display",
+      "Vehicle Fleet Branding",
+      "Retail POS",
+      "Truck Lining and Scrolling",
     ];
   
     return (

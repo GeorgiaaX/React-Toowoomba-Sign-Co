@@ -6,8 +6,10 @@ import CustomLink from '../components/CustomLink'
 
 function ProductsServices() {
     return (
+        <>
+        <h2 className = "services-title">Our Products and <b className = "bold-word">Services</b></h2>
         <Container className="products-services-section">
-            <h2>Our Products and <b className = "bold-word">Services</b></h2>
+           
             <Container className="product-container">
                 <Row className="mt-4">
                     {renderProductColumn({
@@ -76,6 +78,7 @@ function ProductsServices() {
                 </Row>
             </Container>
         </Container>
+        </>
     );
 }
 
