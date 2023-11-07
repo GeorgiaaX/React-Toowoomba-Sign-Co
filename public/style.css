@@ -29,7 +29,7 @@ body {
 
 /* Header Section */
 .header-section {
-    height: 75vh;
+    height: 90vh;
     max-width: 100%;
     color: #ffffff;
     overflow: hidden;
@@ -65,7 +65,7 @@ body {
 
 .hero-section {
     position: relative;
-    height: 80vh;
+    height: 90vh;
     max-width: 100%;
     color: #ffffff;
     background-repeat: no-repeat;
@@ -244,9 +244,9 @@ body {
 .products-services-section {
     width: 100%;
     margin: 100px auto;
+    padding-left: 75px;
     text-align: center;
 }
-
 
 .product-container {
     display: flex;
@@ -541,6 +541,16 @@ body {
         padding: 10px;
         border-right: none !important;
         margin: auto;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .products-services-section {
+        width: 100%;
+        margin: 100px auto;
+        padding-left: 0px;
+        text-align: center;
     }
 }
 
