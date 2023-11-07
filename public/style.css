@@ -29,7 +29,7 @@ body {
 
 /* Header Section */
 .header-section {
-    height: 90vh;
+    height: 87vh;
     max-width: 100%;
     color: #ffffff;
     overflow: hidden;
@@ -65,7 +65,7 @@ body {
 
 .hero-section {
     position: relative;
-    height: 90vh;
+    height: 87vh;
     max-width: 100%;
     color: #ffffff;
     background-repeat: no-repeat;
