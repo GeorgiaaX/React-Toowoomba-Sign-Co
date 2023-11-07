@@ -43,6 +43,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
     margin-bottom: 25px;
 }
 
@@ -57,7 +58,7 @@ body {
 
 .header-brand-image {
     height: 120px;
-    margin-top: 50px;
+    margin-top: 1000px;
     margin-bottom: 5px;
 }
 
@@ -94,10 +95,8 @@ body {
 
 .hero-card {
     display: flex;
-    flex-direction: column;
-    height: 100vh;
-    justify-content: center !important;
-    align-items: center !important; 
+    margin-top: 50px;
+    margin-bottom: 70px;
 }
 
 
