@@ -36,8 +36,6 @@ body {
     position: relative;
 }
 
-
-
 .header-logo {
     z-index: 2;
     flex-direction: column;
@@ -57,8 +55,7 @@ body {
 }
 
 .header-brand-image {
-    height: 120px;
-    margin-top: 1000px;
+    height: 100px;
     margin-bottom: 5px;
 }
 
