@@ -36,7 +36,7 @@ function ProductsServices() {
                     {renderProductColumn({
                         iconClass: "fas fa-sign-hanging",
                         title: "Structural Signage",
-                        description: "New Structures & Framework / Signs for Existing Structures / Freestanding Signage  / Architectural Signage",
+                        description: "New Structures & Framework / Existing Structures / Freestanding & Architectural Signage",
                         link: "structural-signage",
                         bordered: true,
                     })}
