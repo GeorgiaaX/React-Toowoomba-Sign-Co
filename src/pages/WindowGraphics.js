@@ -78,7 +78,7 @@ function WindowGraphics() {
                     heading={{ 
                         title: "Window Graphics and",
                         lastWord: "Display",
-                        subheading: "Wall graphics / 3D lettering & Signs / Illuminated Signs & Lettering",
+                        subheading: "Window Frosting / One Way Vision / Privacy Film / Printed Vinyl Graphics / Cut Vinyl Lettering",
                     }}
                 />
             </section>
