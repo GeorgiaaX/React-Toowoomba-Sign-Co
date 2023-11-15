@@ -594,6 +594,7 @@ body {
 }
 
 
+
 /* Header media queries */
 
 
@@ -785,4 +786,67 @@ body {
 }
 
 
+/* very small screens */
 
+@media screen and (max-width: 325px) {
+
+    .navbar-brand {
+        display: none !important;
+    }
+
+    .header-section, .hero-section {
+        height: auto;
+    }
+
+    .header-logo, .hero-card, .about-carousel-container, .product-container, .contact-form {
+        width: 100%; 
+        margin: 0; 
+        padding: 0 10px; 
+    }
+
+    .hero-card {
+        margin-top: 50px;
+    }
+
+    .hero-title, .about-title, .services-title, .gallery-title {
+        font-size: 2rem; 
+    }
+
+    
+    .hero-subheading, .about-subheading, .quote-subheading, .about-text, .detailed-description p, .success-card {
+        font-size: 0.8rem; 
+    }
+
+    .flip-card, .flip-card-inner {
+        width: 100%;
+    }
+
+    .contact-info, .social-media-text {
+        flex-direction: column; /* Stack elements vertically */
+        text-align: center; /* Center align text */
+    }
+
+    .gallery-image-col img, .gallery-slide img {
+        height: auto; /* Adjust image height */
+        width: 100%; /* Full width images */
+    }
+
+    .navbar .dropdown-menu, .custom-navbar, .btn-primary, .modal-container, .modalButton, .modalHeader, .modal-background, .modal-footer, .contact-btn, .footer-link {
+        font-size: 0.7rem; /* Smaller font size for navigation and buttons */
+    }
+
+    .contact-form {
+        margin-bottom: 10px;
+    }
+
+    .fixed-quote-button {
+        display: block;
+        height: 50px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100vw;
+        z-index: 999;
+        border-radius: 0;
+    }
+}
