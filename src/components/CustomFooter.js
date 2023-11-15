@@ -21,13 +21,13 @@ function CustomFooter() {
         </div>
         <div>
           <Nav className="align-items-center brand-icons">
-            <Nav.Link href="#" className="text-white me-4">
+            <Nav.Link href="https://www.facebook.com/profile.php?id=61552948455040" className="text-white me-4" target = "_blank">
               <FontAwesomeIcon icon={faFacebookF} size="2x" />
             </Nav.Link>
-            <Nav.Link href="#" className="text-white me-4">
+            <Nav.Link href="https://www.instagram.com/toowoombasignco/" className="text-white me-4" target = "_blank">
               <FontAwesomeIcon icon={faInstagram} size="2x" />
             </Nav.Link>
-            <Nav.Link href="#" className="text-white me-4">
+            <Nav.Link href="https://www.linkedin.com/company/toowoomba-sign-co/" className="text-white me-4" target = "_blank">
               <FontAwesomeIcon icon={faLinkedin} size="2x" />
             </Nav.Link>
           </Nav>
