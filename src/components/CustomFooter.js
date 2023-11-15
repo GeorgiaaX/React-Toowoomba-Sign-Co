@@ -17,7 +17,7 @@ function CustomFooter() {
     <footer className="text-center text-lg-start text-white" style={{ backgroundColor: '#0c131f' }}>
       <section className="d-flex justify-content-center p-4" style={{ backgroundColor: '#0C8CE9' }}>
         <div className="me-5 social-media-text align-items-center">
-          <span ClassName = "text-center">Find us on social media</span>
+          <span className = "text-center">Find us on social media</span>
         </div>
         <div>
           <Nav className="align-items-center brand-icons">
