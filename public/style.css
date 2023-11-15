@@ -666,7 +666,7 @@ body {
 
 /* Fixed Quote Button */
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1025px) {
     .fixed-quote-button {
         display: block;
         height: 50px;
