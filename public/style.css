@@ -565,7 +565,7 @@ body {
 
 /* Hero media queries */
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1025px) {
     .hero-title {
         font-size: 2rem;
         margin: 0px;
