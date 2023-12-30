@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Button } from 'react-bootstrap';
 
-function ProductDetail({ firstPhrase, secondPhrase, descriptionFirst, descriptionSecond }) {
+function ProductDetail({ firstPhrase, secondPhrase, descriptionFirst, descriptionSecond, buttonLink, buttonTitle }) {
   const [showFirstPhrase, setShowFirstPhrase] = useState(true);
 
   useEffect(() => {
@@ -25,7 +25,7 @@ function ProductDetail({ firstPhrase, secondPhrase, descriptionFirst, descriptio
   return (
     <Container className="my-4 d-flex align-items-center justify-content-center product-detail-container" style={{ minHeight: '45vh' }}>
       <Row className="justify-content-center">
-        <Col md={8} className="text-center">
+        <Col md={8} className="text-center mb-3">
           <div className="phrase-container mb-3">
               <h2 className={`phrase ${showFirstPhrase ? 'show' : 'hide'}`}>
               {boldFirstWord(firstPhrase)}
@@ -34,7 +34,7 @@ function ProductDetail({ firstPhrase, secondPhrase, descriptionFirst, descriptio
               {boldFirstWord(secondPhrase)}
               </h2>
           </div>
-          <div className="detailed-description">
+          <div className="detailed-description mt-3">
               <div className="col d-flex align-items-center">
                   <i className="fa-solid fa-signs-post fa-2x mr-5 product-icons"></i>
                   <p className="description-text text-muted mb-3">{descriptionFirst}</p>
@@ -44,6 +44,10 @@ function ProductDetail({ firstPhrase, secondPhrase, descriptionFirst, descriptio
                   <p className="description-text text-muted mb-3">{descriptionSecond}</p>
               </div>
           </div>
+          <div className = "d-flex align-items-center">
+            <p className = "about-text">We also have a range of other signage solutions to help you improve the visibility of your business.</p>
+          </div>
+          <Button href={buttonLink} variant="primary" className = 'modalButton mb-3'>{buttonTitle}</Button>
         </Col>
       </Row>
     </Container>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Navbar from '../components/Navbar'; 
 import Header from '../components/Header'; 
 import CustomFooter from '../components/CustomFooter';
@@ -11,6 +11,13 @@ import FixedQuoteBtn from '../components/FixedQuoteBtn';
 
 
 function RetailPOS() {
+
+    useEffect(() => {
+        document.title = "Retail Point of Sale Signage Toowoomba | A frame signs, banners, flags, counter signs";
+        document.querySelector('meta[name="description"]').setAttribute("content", "Looking to capture the attention of your customers when they visit your shop, office or business premises? We create, a frame signs, pull up banners, stickers, counter signs and much more");
+    }, []);
+
+
     //gallerySlide Urls
     const imageUrls = [
         "../images/RetailPOS/POSImg1.jpg",
@@ -63,8 +70,8 @@ function RetailPOS() {
                     isGenericPage={true} 
                     isContactPage={false} 
                     heading={{ 
-                        title: "Retail",
-                        lastWord: "POS",
+                        title: "Retail Point of Sale Signage",
+                        lastWord: "Toowoomba",
                         subheading: "A Frames / Pull Up Banners / Stickers / Shop Hoardings / Banners / Flags / Counter Signs",
                     }}
                 />
@@ -80,13 +87,16 @@ function RetailPOS() {
               <ProductDetail 
               firstPhrase = "Elevate your retail space"
               secondPhrase = "Boost your sales"
-              descriptionFirst= "These eye-catching displays are strategically positioned to captivate shoppers' attention and influence their purchasing decisions. From enticing product promotions to essential information, our custom-designed signs enhance the overall shopping experience."
-              descriptionSecond =  "With a focus on clarity and aesthetics, our POS signage adds a professional touch to your retail environment, helping you maximize sales and customer engagement.">
+              descriptionFirst= "These eye-catching displays are strategically positioned to captivate shoppers' attention and influence their purchasing decisions. From enticing product promotions to showcasing your products or services, our custom-designed signs enhance the overall shopping experience for your customers."
+              descriptionSecond =  "With a focus on clarity and aesthetics, our POS signage adds a professional touch to your retail store, office or workshop, helping you to maximise sales and keep your customers engaged."
+              buttonLink = "/truck-lining"
+              buttonTitle = "View our truck lining & scrolling signage">
               </ProductDetail>
             </section>
 
             <section>
-              <Gallery images = {galleryUrls}/>
+              <Gallery images = {galleryUrls}
+              title = "Retail POS Gallery"/>
               </section>
              
 

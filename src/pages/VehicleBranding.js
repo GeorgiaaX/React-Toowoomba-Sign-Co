@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Navbar from '../components/Navbar'; 
 import Header from '../components/Header'; 
 import CustomFooter from '../components/CustomFooter';
@@ -11,6 +11,13 @@ import FixedQuoteBtn from '../components/FixedQuoteBtn';
 
 
 function VehicleBranding() {
+
+  useEffect(() => {
+    document.title = "Vehicle Branding | Car Wrapping Toowoomba | Toowoomba Sign Co";
+    document.querySelector('meta[name="description"]').setAttribute("content", "Help your business stand out when driving around Toowoomba and the Darling Downs with car wrapping and or vehicle signage. Call Toowoomba Sign Co for a quote - 0413 733 947.");
+}, []);
+
+
     //gallerySlide Urls
     const imageUrls = [
       "../images/VehicleBranding/VFImg6.jpg",
@@ -69,8 +76,8 @@ function VehicleBranding() {
                     isGenericPage={true} 
                     isContactPage={false} 
                     heading={{ 
-                        title: "Vehicle Fleet",
-                        lastWord: "Branding",
+                        title: "Vehicle Branding Signage",
+                        lastWord: "Toowoomba",
                         subheading: "Vehicle Wraps / Magnetic Vehicle Signs / Vehicle Branding",
                     }}
                 />
@@ -84,15 +91,19 @@ function VehicleBranding() {
 
             <section>
               <ProductDetail 
-              firstPhrase = "Drive your brand forward"
-              secondPhrase = "Create mobile billboards"
-              descriptionFirst= " With attention-grabbing graphics, logos, and contact information, your brand message is on the move, reaching a broader audience with every journey. "
-              descriptionSecond =  "Not only do these graphics enhance brand recognition, but they also add a professional touch to your vehicles, leaving a lasting impression on potential customers everywhere you go.">
+              firstPhrase = "Drive your brand forward with a mobile billboard"
+              secondPhrase = "Car wrapping Toowoomba"
+              descriptionFirst= "With attention-grabbing graphics logos, and contact information, your brand message is on the move, reaching a broader audience every time you jump in your car"
+              descriptionSecond =  "Not only do these graphics enhance brand recognition, but they also add a professional touch to your vehicles, leaving a lasting impression on potential customers everywhere you go. Help your business stand out when driving around Toowoomba and the Darling Downs with car wrapping and vehicle signage."
+              buttonLink = "/retail-pos"
+              buttonTitle = "View our retail point of sale signage"
+              >
               </ProductDetail>
             </section>
 
             <section>
-              <Gallery images = {galleryUrls}/>
+              <Gallery images = {galleryUrls}
+              title = " Vehicle Branding Signage Gallery"/>
               </section>
              
 

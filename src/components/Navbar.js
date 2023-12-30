@@ -17,15 +17,15 @@ export default function CustomNavbar() {
                         <Link className="nav-link mr-4" to="/">Home</Link>
 
                         <NavDropdown title="Products and Services" id="product-dropdown" className="mr-4">
-                            <NavDropdown.Item as={Link} to="/building-shopface">Building and Shopface</NavDropdown.Item>
-                            <NavDropdown.Item as={Link} to="/illuminated-designs">3D Illuminated Letters and Displays</NavDropdown.Item>
-                            <NavDropdown.Item as={Link} to="/reception-interior">Reception and Interior</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="/building-shopface">Building & Shopface Signage</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="/illuminated-designs">3D Illuminated Letters & Displays</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="/reception-interior">Reception & Interior Signage</NavDropdown.Item>
                             <NavDropdown.Item as={Link} to="/structural-signage">Structural Signage</NavDropdown.Item>
-                            <NavDropdown.Item as={Link} to="/directional-wayfinding">Directional and Wayfinding</NavDropdown.Item>
-                            <NavDropdown.Item as={Link} to="/window-graphics">Window Graphics and Display</NavDropdown.Item>
-                            <NavDropdown.Item as={Link} to="/vehicle-branding">Vehicle Fleet Branding</NavDropdown.Item>
-                            <NavDropdown.Item as={Link} to="/retail-pos">Retail POS</NavDropdown.Item>
-                            <NavDropdown.Item as={Link} to="/truck-lining">Truck Lining and Scrolling</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="/directional-wayfinding">Directional & Wayfinding Signage</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="/window-graphics">Window Graphics & Display Signage</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="/vehicle-branding">Vehicle Branding & Car Wrapping</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="/retail-pos">Retail POS Signage</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="/truck-lining">Truck Lining & Scrolling</NavDropdown.Item>
                            
                         </NavDropdown>
 

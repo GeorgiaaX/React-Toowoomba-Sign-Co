@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Navbar from '../components/Navbar'; 
 import Header from '../components/Header'; 
 import CustomFooter from '../components/CustomFooter';
@@ -11,6 +11,13 @@ import FixedQuoteBtn from '../components/FixedQuoteBtn';
 
 
 function DirectionalWayfinding() {
+
+    useEffect(() => {
+        document.title = "3Directional & Wayfinding Signage Toowoomba | Toowoomba Sign Co";
+        document.querySelector('meta[name="description"]').setAttribute("content", "Help your customers, clients or visitors find your business or organisation with directional signage, or navigate your location with wayfinding signs. Call Toowoomba Sign Co 0413 733 947 for a quote.");
+    }, []);
+
+
     const imageUrls = [
         "../images/DirectionalWayfinding/DWImg9.jpg",
         "../images/DirectionalWayfinding/DWImg21.jpg",
@@ -68,8 +75,8 @@ function DirectionalWayfinding() {
                     isGenericPage={true} 
                     isContactPage={false} 
                     heading={{ 
-                        title: "Directional and",
-                        lastWord: "Wayfinding",
+                        title: "Directional and Wayfinding Signage",
+                        lastWord: "Toowoomba",
                         subheading: "Directional Pylons / Wayfinding Signage",
                     }}
                 />
@@ -83,15 +90,18 @@ function DirectionalWayfinding() {
 
             <section>
               <ProductDetail 
-              firstPhrase = "Navigate with confidence"
-              secondPhrase = "Simplify the complex"
-              descriptionFirst= "Our signs offer clear and concise guidance. Whether in a sprawling campus, a bustling hospital, or a busy public venue, our directional signs ensure individuals find their way quickly and efficiently."
-              descriptionSecond = "For a more comprehensive understanding of your surroundings, our wayfinding signs map out routes and highlight key landmarks.">
+              firstPhrase = "Help your customers find you"
+              secondPhrase = "Easy to follow directional signage for your business or organisaion"
+              descriptionFirst= "Our directional and wayfinding signs offer clear and concise guidance. Whether on a sprawling university or school campus, a busy hospital or public venue, our directional signs ensure customers or visitors can find their way quickly and easily."
+              descriptionSecond = "For a more comprehensive understanding of your surroundings, our wayfinding signs map out routes and highlight key landmarks."
+              buttonLink = "/window-graphics"
+              buttonTitle = "View our window graphics & display signage">
               </ProductDetail>
             </section>
 
             <section>
-              <Gallery images = {galleryUrls}/>
+              <Gallery images = {galleryUrls}
+              title = "Directional & Wayfinding Signage Gallery"/>
               </section>
              
 

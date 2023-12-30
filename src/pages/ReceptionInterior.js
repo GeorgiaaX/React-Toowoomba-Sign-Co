@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Navbar from '../components/Navbar'; 
 import Header from '../components/Header'; 
 import CustomFooter from '../components/CustomFooter';
@@ -11,6 +11,12 @@ import FixedQuoteBtn from '../components/FixedQuoteBtn';
 
 
 function ReceptionInterior() {
+
+    useEffect(() => {
+        document.title = "Reception & Interior Signage Toowoomba & Darling Downs";
+        document.querySelector('meta[name="description"]').setAttribute("content", "Transform your office or building in Toowoomba and the Darling Downs with reception and interior signage that can be tailored to your branding and colours. Call for a quote 0413 733 947.");
+    }, []);
+
     //gallerySlide Urls
     const imageUrls = [
         "../images/ReceptionInterior/RIImg6.jpg",
@@ -59,8 +65,8 @@ function ReceptionInterior() {
                     isGenericPage={true} 
                     isContactPage={false} 
                     heading={{ 
-                        title: "Reception and",
-                        lastWord: "Interior",
+                        title: "Reception & Interior",
+                        lastWord: "Signage",
                         subheading: "Wall graphics / 3D lettering & Signs / Illuminated Signs & Lettering",
                     }}
                 />
@@ -74,15 +80,18 @@ function ReceptionInterior() {
 
             <section>
               <ProductDetail 
-              firstPhrase = "Blend form and function"
-              secondPhrase = "Guide and impress visitors"
-              descriptionFirst= "From elegant reception desk signs that convey professionalism to interior signs that guide visitors seamlessly through your facility, we offer a range of customizable solutions."
-              descriptionSecond =  "Our attention to detail ensures your brand identity is consistently reinforced throughout your space, leaving a lasting and positive impression on all who enter.">
+              firstPhrase = "Reception signage that makes a lasting impression"
+                secondPhrase = "Impress customers with elegant signage"
+              descriptionFirst= "From elegant reception desk signs that convey professionalism to interior signs that guide visitors seamlessly through your office, shop or warehouse, we offer a range of customisable solutions."
+              descriptionSecond =  "Our attention to detail ensures your brand identity is consistently reinforced throughout your space, leaving a lasting and positive impression on all customers and visitors." 
+              buttonLink = "/structural-signage"
+                buttonTitle = "View our structural signage">
               </ProductDetail>
             </section>
 
             <section>
-              <Gallery images = {galleryUrls}/>
+              <Gallery images = {galleryUrls}
+              title = "Reception & Interior Signage"/>
               </section>
              
 

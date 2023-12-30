@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect} from 'react';
 import Navbar from '../components/Navbar'; 
 import Header from '../components/Header'; 
 import CustomFooter from '../components/CustomFooter';
@@ -11,6 +11,12 @@ import FixedQuoteBtn from '../components/FixedQuoteBtn';
 
 
 function StructuralSignage() {
+    
+    useEffect(() => {
+        document.title = "Structural Signage Toowoomba | Freestanding Signs Toowoomba & Darling Downs";
+        document.querySelector('meta[name="description"]').setAttribute("content", "Looking for a freestanding sign to showcase your business, attract new customers and leave a lasting impression? Toowoomba Sign Co can help. Call 0413 733 947.");
+    }, []);
+
     //gallerySlide Urls
     const imageUrls = [
        "../images/StructuralSignage/SSImg5.jpg",
@@ -72,8 +78,8 @@ function StructuralSignage() {
                     isGenericPage={true} 
                     isContactPage={false} 
                     heading={{ 
-                        title: "Structural",
-                        lastWord: "Signage",
+                        title: "Structural Signage",
+                        lastWord: "Toowoomba",
                         subheading: "New Structures & Framework / Signs for Existing Structures / Freestanding Signage  / Architectural Signage",
                     }}
                 />
@@ -88,14 +94,17 @@ function StructuralSignage() {
             <section>
               <ProductDetail 
               firstPhrase = "Make a bold statement"
-              secondPhrase = "Architectural Elegance"
-              descriptionFirst= " Crafted with precision and durability in mind, our structural signage seamlessly integrates with your space, conveying essential information in a visually striking way."
-              descriptionSecond =  "Whether it's identifying key locations in a corporate building, enhancing the aesthetics of a public space, or providing crucial safety information, our structural signage serves a dual purpose – form and function.">
+              secondPhrase = "Freestanding signs for your business"
+              descriptionFirst= "Crafted with precision and durability in mind, our structural signage seamlessly integrates with your space, conveying essential information in a visually striking way"
+              descriptionSecond =  "Whether it's identifying key locations in a corporate building, enhancing the  aesthetics of a public space, or providing crucial safety information, our structural signage serves a dual purpose – form and function."
+              buttonLink = "/directional-wayfinding"
+              buttonTitle = "View our directional and wayfinding signage">
               </ProductDetail>
             </section>
 
             <section>
-              <Gallery images = {galleryUrls}/>
+              <Gallery images = {galleryUrls}
+              title = "Structural Signage Gallery"/>
               </section>
              
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Navbar from '../components/Navbar'; 
 import Header from '../components/Header'; 
 import CustomFooter from '../components/CustomFooter';
@@ -11,6 +11,13 @@ import FixedQuoteBtn from '../components/FixedQuoteBtn';
 
 
 function BuildingShopface() {
+
+  useEffect(() => {
+    document.title = "Building Signage Toowoomba | Store front & Shop face signage";
+    document.querySelector('meta[name="description"]').setAttribute("content", "Elevate the visibility of your business in Toowoomba with our expertly crafted building signage. From storefront signage to pylons, we can customise signage uniquely to your business.");
+}, []);
+
+
     const imageUrls = [
       "../images/BuildingShopface/BSImg1.jpg",
       "../images/BuildingShopface/BSImg2.jpg",
@@ -59,7 +66,6 @@ function BuildingShopface() {
       
     return (
         <div>
-
               <section>
             <Navbar />
         </section>
@@ -73,9 +79,9 @@ function BuildingShopface() {
                     isGenericPage={true} 
                     isContactPage={false} 
                     heading={{ 
-                        title: "Building and",
-                        lastWord: "Shopface",
-                        subheading: "Fascia Signs / 3D Lettering / Lightboxes / Pylons",
+                        title: "Building & Shopface",
+                        lastWord: "Signage",
+                        subheading: "Building signage for your Toowoomba business",
                     }}
                 />
             </section>
@@ -88,15 +94,18 @@ function BuildingShopface() {
 
             <section>
               <ProductDetail 
-              firstPhrase = "Elevate your business's curb appeal"
-              secondPhrase = "Make a lasting first impression"
-              descriptionFirst= "We specialize in creating eye-catching and professional signage solutions that reflect your brand's identity and capture the attention of passersby."
-              descriptionSecond = "Whether you're looking to enhance your storefront's visibility, promote your business, or create a unique aesthetic, our customized signs are designed to meet your specific needs.">
+              firstPhrase = "Elevate the curb appeal of your business"
+              secondPhrase = "Make a lasting impression"
+              descriptionFirst= "We specialise in creating eye-catching and professional signage solutions that reflect your brand's identity and capture the attention of passersby and potential customers."
+              descriptionSecond = "Whether you're looking to enhance your storefront's visibility, promote your business, or create a unique aesthetic, our customised signs are designed to meet your specific needs."
+              buttonLink = "/illuminated-designs"
+                buttonTitle = "View our 3D Illuminated Signs">
               </ProductDetail>
             </section>
 
             <section>
-              <Gallery images = {galleryUrls}/>
+              <Gallery images = {galleryUrls}
+              title = "Building Signage Gallery"/>
               </section>
              
 

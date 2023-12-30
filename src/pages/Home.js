@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef, useEffect } from 'react';
 import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
 import CustomFooter from '../components/CustomFooter'
@@ -11,10 +11,18 @@ import About from '../components/About'
 
 
 
+
 export default function Home() {
+
+    useEffect(() => {
+        document.title = "Toowoomba signs by Toowoomba Sign Co";
+        document.querySelector('meta[name="description"]').setAttribute("content", "Toowoomba Sign Co offers building signage, vehicle signage, 3D illuminated signs, reception signage and much more. Get a quote for signage for your business in the Toowoomba & Darling Downs");
+    }, []);
+
+
+    const productsServicesRef = useRef(null)
     return (
         <div> 
-
             <header>
                 <Navbar />
             </header>
@@ -35,10 +43,10 @@ export default function Home() {
             </section>
 
             <section>
-                <About />
+                <About isAboutSection = {true} targetRef={productsServicesRef} /> 
             </section>
 
-            <section>
+            <section ref={productsServicesRef}>
                 <ProductsServices />
             </section>
 

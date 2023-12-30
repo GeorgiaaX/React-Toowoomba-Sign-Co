@@ -1,6 +1,6 @@
 import React from 'react';
 
-function ScrollDownButton({ targetRef }) {
+function ScrollDownButton({ targetRef, title }) {
     const OFFSET_VALUE = 100;
 
     const scrollToRef = () => {
@@ -15,7 +15,7 @@ function ScrollDownButton({ targetRef }) {
 
     return (
         <button className = "btn btn-primary modalButton" onClick={scrollToRef}>
-            Get a Quote
+            {title}
         </button>
     );
 }

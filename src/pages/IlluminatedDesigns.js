@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Navbar from '../components/Navbar'; 
 import Header from '../components/Header'; 
 import CustomFooter from '../components/CustomFooter';
@@ -11,6 +11,13 @@ import FixedQuoteBtn from '../components/FixedQuoteBtn';
 
 
 function IlluminatedDesigns() {
+
+    useEffect(() => {
+        document.title = "3D Illuminated Letters & Display Signage Toowoomba";
+        document.querySelector('meta[name="description"]').setAttribute("content", "Light up your Toowoomba business with 3D illuminated letters and signs. Available in a range of sizes and colours, we can design signage to grab the attention of your customers.");
+    }, []);
+
+
     //gallerySlide Urls
     const imageUrls = [
         "../images/IlluminatedDesigns/IDImg1.jpg",
@@ -73,8 +80,8 @@ function IlluminatedDesigns() {
                     isGenericPage={true} 
                     isContactPage={false} 
                     heading={{ 
-                        title: "3D Illuminated Letters and",
-                        lastWord: "Displays",
+                        title: "3D Illuminated Letters & Display",
+                        lastWord: "Signage",
                         subheading: "Fabricated Letters / Lightboxes / 3D Signage",
                     }}
                 />
@@ -88,15 +95,18 @@ function IlluminatedDesigns() {
 
             <section>
               <ProductDetail 
-              firstPhrase = "Illuminate your brand"
-              secondPhrase = "Captivate your audience"
-              descriptionFirst= "These striking visual elements take your business to the next level, day or night. Our customizable 3D letters are designed to radiate your brand's personality."
-              descriptionSecond = "From sleek sophistication to eye-catching vibrancy, our 3D Illuminated Letters and Displays add a touch of brilliance and professionalism to your business, leaving a lasting impression on all who encounter them.">
+              firstPhrase = "Illuminate your brand in the Toowoomba region"
+              secondPhrase = "Put your business up in lights"
+              descriptionFirst= "These striking illuminated signs light up your business and brand, day or night. Our customisable 3D letters are designed to showcase your brand's personality, with a variety of colours, styles and sizes available to suit your business and location."
+              descriptionSecond = "From sleek sophistication to eye-catching vibrancy, our 3D illuminated letters and display signage add a touch of elegance and professionalism to your business, leaving a lasting impression on customers."
+              buttonLink = "/reception-interior"
+                buttonTitle = "View our reception and interior signage">
               </ProductDetail>
             </section>
 
             <section>
-              <Gallery images = {galleryUrls}/>
+              <Gallery images = {galleryUrls}
+              title = "3D Illuminated Signage Gallery"/>
               </section>
              
 

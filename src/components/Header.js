@@ -27,18 +27,18 @@ export default function Header({heading, isGenericPage, isContactPage, contactFo
         <div className="header-card">
             <div className="header-logo d-flex justify-content-center align-items-center">
                 <img src="./images/logo.png" className="header-brand-image" alt="logo"/>
-                <h1 className="brand-name">Toowoomba <b className="bold-word">Sign</b> Co</h1>
             </div>
 
             <div className="hero-headings">
                 <Row className="justify-content-start">
                     <Col xs={12} className="text-white">
-                        <h2 className="mb-3 hero-title">
+                        <h1 className="mb-3 hero-title">
                             {title} <b className="bold-word">{lastWord}</b>
-                        </h2>
-                        <h4 className="mb-3 hero-subheading">{subheading}</h4>
+                        </h1>
+                        <h2 className="mb-3 header-subheading">{subheading}</h2>
                         {isGenericPage && <ModalButton />}
-                        {isContactPage && <ScrollDownButton targetRef={contactFormRef} />} 
+                        {isContactPage && <ScrollDownButton targetRef={contactFormRef} 
+                        title= "Get A Quote"/>} 
                         <div style={{ textAlign: 'left' }}>
                             {children}
                         </div>

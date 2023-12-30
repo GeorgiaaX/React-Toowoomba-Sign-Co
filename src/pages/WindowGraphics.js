@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Navbar from '../components/Navbar'; 
 import Header from '../components/Header'; 
 import CustomFooter from '../components/CustomFooter';
@@ -11,6 +11,13 @@ import FixedQuoteBtn from '../components/FixedQuoteBtn';
 
 
 function WindowGraphics() {
+
+    useEffect(() => {
+        document.title = "Window Graphics & Display Signage Toowoomba & Darling Downs";
+        document.querySelector('meta[name="description"]').setAttribute("content", "Looking to add some graphics or signage to your office windows or retail shop? Toowoomba Sign Co offer a range of window graphics and display signage in Toowoomba & Darling Downs.");
+    }, []);
+
+
     const imageUrls = [
         "../images/WindowGraphics/WGImg20.jpg",
         "../images/WindowGraphics/WGImg26.jpg",
@@ -76,8 +83,8 @@ function WindowGraphics() {
                     isGenericPage={true} 
                     isContactPage={false} 
                     heading={{ 
-                        title: "Window Graphics and",
-                        lastWord: "Display",
+                        title: "Window Graphics & Display Signage",
+                        lastWord: "Toowoomba",
                         subheading: "Window Frosting / One Way Vision / Privacy Film / Printed Vinyl Graphics / Cut Vinyl Lettering",
                     }}
                 />
@@ -93,13 +100,16 @@ function WindowGraphics() {
               <ProductDetail 
               firstPhrase = "Transform your windows"
               secondPhrase = "Enhance your storefront"
-              descriptionFirst= " Our custom-designed window graphics add a touch of vibrancy and intrigue to your business. From eye-catching displays that promote your products or services to elegant window decals that convey your brand message, we offer a variety of creative solutions."
-              descriptionSecond = "These graphics and displays not only grab the attention of passersby but also create an inviting atmosphere within your establishment.">
+              descriptionFirst= "Our custom-designed window graphics add a touch of vibrancy and intrigue to your business. From eye-catching displays that promote your products or services to elegant window decals that convey your brand message, we offer a variety of creative solutions."
+              descriptionSecond = "These graphics and displays on your office windows or storefront not only grab the attention of potential customers driving by, but also help to showcase the services and products that your business offers."
+              buttonLink = "/vehicle-branding"
+              buttonTitle = "View our vehicle branding signage">
               </ProductDetail>
             </section>
 
             <section>
-              <Gallery images = {galleryUrls}/>
+              <Gallery images = {galleryUrls}
+              title = "Window Graphics & Display Signage Gallery"/>
               </section>
              
 

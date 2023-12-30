@@ -41,8 +41,8 @@ export default function Hero(props) {
                     style={{
                         backgroundImage: `
                         linear-gradient(rgba(12, 19, 31, 0.5), rgba(12, 19, 31, 0.6)),
-                        radial-gradient(ellipse at left top, rgba(12, 19, 31, 0.6) 0%, transparent 50%),
-                        radial-gradient(ellipse at right bottom, rgba(12, 140, 233, 1) 0%, transparent 50%),
+                        radial-gradient(ellipse at left top, rgba(12, 19, 31, 0.6) 0%, transparent 80%),
+                        radial-gradient(ellipse at right bottom, rgba(12, 140, 233, 1) 0%, transparent 80%),
                         url(${img})
                         `
                     }}>

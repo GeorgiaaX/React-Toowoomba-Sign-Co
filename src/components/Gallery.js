@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { Container, Row, Col, Pagination } from 'react-bootstrap';
 
-export default function Gallery({ images }) {
+export default function Gallery({ images, title }) {
 
     const [currentPage, setCurrentPage] = useState(1);
     const imagesPerPage = 16; 
@@ -38,7 +38,7 @@ for (let number = 1; number <= totalPages; number++) {
 
     return (
         <Container>
-            <h2 className="mb-5 text-center gallery-title" ref={galleryTitleRef}>Gallery</h2>
+            <h2 className="mb-5 text-center gallery-title" ref={galleryTitleRef}>{title || 'Gallery'}</h2>
             <Row>
                 {currentImages.map((image, index) => (
                     <Col xs={12} sm={6} md={4} lg={3} className="mb-4" key={index}>

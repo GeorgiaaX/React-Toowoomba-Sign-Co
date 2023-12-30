@@ -1,12 +1,12 @@
 import React from 'react';
 import AboutCarousel from './AboutCarousel'
+import ScrollDownButton from './ScrollDownButton';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 
-function About() {
+function About({ targetRef }) {
     return (
         <Container className="mt-5 about-section">
             <Row className="justify-content-center align-items-center">
-                {/* Column for Text */}
                 <Col md={6}>
                     <Card className="mb-4 shadow-sm about-section">
                         <Card.Body>
@@ -16,9 +16,13 @@ function About() {
                             </Card.Text>
                         </Card.Body>
                     </Card>
+                    <div className="text-center">
+                        <ScrollDownButton targetRef={targetRef} 
+                        title = "View our range of signage solutions"
+                        className="mb-3 modalButton" />
+                    </div>
                 </Col>
-
-                <Col md={6} className="d-flex align-items-center justify-content-center">
+                <Col md={6} className="d-flex align-items-center justify-content-center mt-5">
                     <AboutCarousel />
                 </Col>
 
