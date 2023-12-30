@@ -12,7 +12,7 @@ function About({ targetRef }) {
                         <Card.Body>
                             <Card.Title><h2 className="text-center about-title">About Toowoomba <b className ="bold-word">Sign </b>Co</h2></Card.Title>
                             <Card.Subtitle className="mb-3 text-muted text-center "><h3 className = "about-subheading">Your trusted Toowoomba signwriter</h3></Card.Subtitle>
-                            <Card.Text className="about-text"><p>At Toowoomba Sign Co, we take pride in transforming your ideas into eye-catching, impactful signage solutions. With a focus on quality craftsmanship and attention to detail, we are your go-to choice for all things signage in Toowoomba and the surrounding areas.</p>
+                            <Card.Text className="about-text text-center"><p>At Toowoomba Sign Co, we take pride in transforming your ideas into eye-catching, impactful signage solutions. With a focus on quality craftsmanship and attention to detail, we are your go-to choice for all things signage in Toowoomba and the surrounding areas.</p>
                             </Card.Text>
                         </Card.Body>
                     </Card>
