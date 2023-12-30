@@ -29,7 +29,7 @@ export default function Hero(props) {
         return () => clearInterval(interval);
     }, []);
 
-    const { title, subheading, lastWord } = props.heading;
+    const { title, body, lastWord } = props.heading;
 
 
     return (
@@ -61,7 +61,7 @@ export default function Hero(props) {
                 <h2 className="mb-3 hero-title">
                     {title} <b className="hero-text">{lastWord}</b>
                 </h2>
-                <h4 className="mb-3 hero-subheading">{subheading}</h4>
+                <p className="mb-3 hero-subheading">{body}</p>
                 {props.isHomePage && 
                     <ModalButton />
                 }

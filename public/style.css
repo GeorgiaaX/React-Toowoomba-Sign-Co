@@ -56,7 +56,7 @@ body {
 
 .header-brand-image {
     margin-top: 50px;
-    height: 100px;
+    height: 50px;
     margin-bottom: 5px;
 }
 
@@ -106,12 +106,13 @@ body {
 }
 
 .hero-title {
-    font-size: 4rem;
+    font-size: 2rem;
     padding-bottom: 30px;
     text-shadow: 2px 5px 10px rgba(0, 0, 0, 0.7);
 }
 
 .hero-subheading {
+    font-size: 1.2rem;
     padding-bottom: 25px;
     text-shadow: 2px 5px 6px rgba(0, 0, 0, 0.7);
 
@@ -143,6 +144,7 @@ body {
 }
 
 .about-subheading {
+    font-size:1.4rem;
     margin-bottom: 40px;
 }
 
@@ -565,7 +567,39 @@ body {
 
 /* Hero media queries */
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 767px) {
+    .hero-title {
+        font-size: 1.2rem;
+        margin: 0px;
+    } 
+    .hero-section {
+        display: flex;
+        height: 83vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero-subheading{
+        font-size: 0.8rem;
+        margin: 0px;
+    }
+    .brand-logo h3{
+        display: none;
+    }
+    .brand-image {
+        height: 50px;
+        margin-bottom: 5px;
+    }
+    .hero-headings {
+        top: 80%;
+      }
+  
+      .hero-card {
+          margin-bottom: 10px;
+      }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
     .hero-title {
         font-size: 2rem;
         margin: 0px;
@@ -592,6 +626,9 @@ body {
         margin-bottom: 10px;
     }
 }
+
+
+
 
 
 
@@ -769,6 +806,9 @@ body {
 /* About */
 
 @media screen and (max-width: 900px) {
+    .about-subheading {
+        font-size: 1.2rem;
+    }
     .about-section {
        padding-top: 0px;
        padding-bottom: 20px; 
@@ -809,7 +849,7 @@ body {
     }
 
     .hero-title, .about-title, .services-title, .gallery-title {
-        font-size: 2rem; 
+        font-size: 1.5rem; 
     }
 
     

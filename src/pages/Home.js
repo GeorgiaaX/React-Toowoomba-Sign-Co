@@ -24,9 +24,9 @@ export default function Home() {
             </section>
             <section>
                 <Hero  isHomePage= {true} heading= {{ 
-                    title: 'Elevate your', 
-                    lastWord: "Brand",
-                    subheading: "Local Expertise, Global Standards: Toowoomba's Premier Sign Makers"
+                    title: 'Elevate your brand in the Toowoomba & Darling Downs', 
+                    // lastWord: "Brand",
+                    body: "Want your business to stand out with eye-catching, bold signage? Toowoomba Sign Co offer the perfect blend of local expertise and global standards to deliver you with a range of high-quality signs to increase your visibility within the Toowoomba and Darling Downs region."
                     }} />  
             </section>
 

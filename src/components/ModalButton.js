@@ -8,7 +8,7 @@ export default function ModalButton() {
     return (
         <>
             <Button variant="primary" className = "modalButton" onClick={() => setShowModal(true)}>
-                Get a Quote
+                Get A Quote
             </Button>
             <ModalComponent show={showModal} onHide={() => setShowModal(false)} />
         </>
