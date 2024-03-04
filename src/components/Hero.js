@@ -3,10 +3,10 @@ import { Container, Row, Col } from 'react-bootstrap';
 import ModalButton from './ModalButton';
 
     const images = [
-        "./images/hero-parklake.jpg",
-        "./images/hero-hot-property.jpg",
+        "./images/hero-greatsouthern.jpg",
         "./images/hero-ez-kandy.jpg",
-        "./images/hero-bradnams.jpg",
+        "./images/hero-kfc.jpg",
+        "./images/hero-gsmp.jpg",
         "./images/hero-byd.jpg"
     ];
 

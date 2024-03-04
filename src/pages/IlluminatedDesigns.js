@@ -20,12 +20,12 @@ function IlluminatedDesigns() {
 
     //gallerySlide Urls
     const imageUrls = [
-        "../images/IlluminatedDesigns/IDImg1.jpg",
+        "../images/IlluminatedDesigns/IDImg12.jpg",
         "../images/IlluminatedDesigns/IDImg21.jpg",
         "../images/IlluminatedDesigns/IDImg9.jpg",
         "../images/IlluminatedDesigns/IDImg19.jpg",
         "../images/IlluminatedDesigns/IDImg16.jpg",
-        "../images/IlluminatedDesigns/IDImg3.jpg",
+        "../images/IlluminatedDesigns/IDImg11.jpg",
         "../images/IlluminatedDesigns/IDImg18.jpg",
         "../images/IlluminatedDesigns/IDImg10.jpg",
         "../images/IlluminatedDesigns/IDImg6.jpg",
@@ -36,22 +36,16 @@ function IlluminatedDesigns() {
     //gallery stills urls
     const galleryUrls = [
 
-        "../images/IlluminatedDesigns/IDImg1.jpg",
         "../images/IlluminatedDesigns/IDImg12.jpg",
-        "../images/IlluminatedDesigns/IDImg2.jpg",
         "../images/IlluminatedDesigns/IDImg15.jpg",
-        "../images/IlluminatedDesigns/IDImg3.jpg",
-        "../images/IlluminatedDesigns/IDImg24.jpg", 
         "../images/IlluminatedDesigns/IDImg7.jpg",
         "../images/IlluminatedDesigns/IDImg21.jpg",
         "../images/IlluminatedDesigns/IDImg8.jpg",
         "../images/IlluminatedDesigns/IDImg9.jpg",
-        "../images/IlluminatedDesigns/IDImg5.jpg",
         "../images/IlluminatedDesigns/IDImg18.jpg",
         "../images/IlluminatedDesigns/IDImg11.jpg",
         "../images/IlluminatedDesigns/IDImg23.jpg",
         "../images/IlluminatedDesigns/IDImg13.jpg",
-        "../images/IlluminatedDesigns/IDImg4.jpg",
         "../images/IlluminatedDesigns/IDImg10.jpg",
         "../images/IlluminatedDesigns/IDImg16.jpg",
         "../images/IlluminatedDesigns/IDImg17.jpg",

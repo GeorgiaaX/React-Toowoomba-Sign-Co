@@ -19,33 +19,30 @@ function ReceptionInterior() {
 
     //gallerySlide Urls
     const imageUrls = [
-        "../images/ReceptionInterior/RIImg6.jpg",
+        "../images/ReceptionInterior/RIImg12.jpg",
         "../images/ReceptionInterior/RIImg9.jpg",
         "../images/ReceptionInterior/RIImg3.jpg",
         "../images/ReceptionInterior/RIImg13.jpg",
         "../images/ReceptionInterior/RIImg1.jpg",
-        "../images/ReceptionInterior/RIImg7.jpg",
+        "../images/ReceptionInterior/RIImg10.jpg",
         "../images/ReceptionInterior/RIImg4.jpg",
         "../images/ReceptionInterior/RIImg11.jpg",
-        "../images/ReceptionInterior/RIImg2.jpg",
         "../images/ReceptionInterior/RIImg8.jpg",
+        "../images/ReceptionInterior/RIImg6.jpg"
     ]
 
     //gallery stills urls
     const galleryUrls = [
         "../images/ReceptionInterior/RIImg1.jpg",
-        "../images/ReceptionInterior/RIImg2.jpg",
         "../images/ReceptionInterior/RIImg3.jpg",
-        "../images/ReceptionInterior/RIImg5.jpg",
+        "../images/ReceptionInterior/RIImg4.jpg",
         "../images/ReceptionInterior/RIImg6.jpg",
         "../images/ReceptionInterior/RIImg8.jpg",
-        "../images/ReceptionInterior/RIImg4.jpg",
         "../images/ReceptionInterior/RIImg9.jpg",
         "../images/ReceptionInterior/RIImg10.jpg",
-        "../images/ReceptionInterior/RIImg7.jpg",
         "../images/ReceptionInterior/RIImg11.jpg",
         "../images/ReceptionInterior/RIImg12.jpg",
-        "../images/ReceptionInterior/RIImg13.jpg",
+        "../images/ReceptionInterior/RIImg13.jpg"
     ]
 
       
