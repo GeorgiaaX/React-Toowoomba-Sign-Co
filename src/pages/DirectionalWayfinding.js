@@ -13,7 +13,7 @@ import FixedQuoteBtn from '../components/FixedQuoteBtn';
 function DirectionalWayfinding() {
 
     useEffect(() => {
-        document.title = "3Directional & Wayfinding Signage Toowoomba | Toowoomba Sign Co";
+        document.title = "Directional & Wayfinding Signage Toowoomba | Toowoomba Sign Co";
         document.querySelector('meta[name="description"]').setAttribute("content", "Help your customers, clients or visitors find your business or organisation with directional signage, or navigate your location with wayfinding signs. Call Toowoomba Sign Co 0413 733 947 for a quote.");
     }, []);
 
