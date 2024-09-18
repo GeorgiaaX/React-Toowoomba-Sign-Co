@@ -13,7 +13,7 @@ import FixedQuoteBtn from '../components/FixedQuoteBtn';
 function DirectionalWayfinding() {
 
     useEffect(() => {
-        document.title = "Directional & Wayfinding Signage Toowoomba | Toowoomba Sign Co";
+        document.title = "Directional & Wayfinding Signs Toowoomba | Toowoomba Sign Co";
         document.querySelector('meta[name="description"]').setAttribute("content", "Help your customers, clients or visitors find your business or organisation with directional signage, or navigate your location with wayfinding signs. Call Toowoomba Sign Co 0413 733 947 for a quote.");
     }, []);
 
@@ -29,16 +29,16 @@ function DirectionalWayfinding() {
         "../images/DirectionalWayfinding/DWImg19.jpg",
         "../images/DirectionalWayfinding/DWImg2.jpg",
         "../images/DirectionalWayfinding/DWImg5.jpg",
-    ]
-
-    const galleryUrls = [
+      ];
+    
+      const galleryUrls = [
         "../images/DirectionalWayfinding/DWImg2.jpg",
         "../images/DirectionalWayfinding/DWImg5.jpg",
         "../images/DirectionalWayfinding/DWImg8.jpg",
         "../images/DirectionalWayfinding/DWImg21.jpg",
         "../images/DirectionalWayfinding/DWImg22.jpg",
         "../images/DirectionalWayfinding/DWImg9.jpg",
-        "../images/DirectionalWayfinding/DWImg10.jpg", 
+        "../images/DirectionalWayfinding/DWImg10.jpg",
         "../images/DirectionalWayfinding/DWImg11.jpg",
         "../images/DirectionalWayfinding/DWImg3.jpg",
         "../images/DirectionalWayfinding/DWImg4.jpg",
@@ -53,8 +53,13 @@ function DirectionalWayfinding() {
         "../images/DirectionalWayfinding/DWImg15.jpg",
         "../images/DirectionalWayfinding/DWImg23.jpg",
         "../images/DirectionalWayfinding/DWImg99.jpg",
-    
-    ]
+        "../images/DirectionalWayfinding/DWImg40.jpg",
+        "../images/DirectionalWayfinding/DWImg41.jpg",
+        "../images/DirectionalWayfinding/DWImg42.jpg",
+        "../images/DirectionalWayfinding/DWImg43.jpg",
+        "../images/DirectionalWayfinding/DWImg44.jpg",
+        "../images/DirectionalWayfinding/DWImg45.jpg",
+      ];
 
       
     return (
@@ -73,7 +78,7 @@ function DirectionalWayfinding() {
                     isGenericPage={true} 
                     isContactPage={false} 
                     heading={{ 
-                        title: "Directional and Wayfinding Signage",
+                        title: "Directional and Wayfinding Signs",
                         lastWord: "Toowoomba",
                         subheading: "Directional Pylons / Wayfinding Signage",
                     }}
@@ -93,7 +98,7 @@ function DirectionalWayfinding() {
               descriptionFirst= "Our directional and wayfinding signs offer clear and concise guidance. Whether on a sprawling university or school campus, a busy hospital or public venue, our directional signs ensure customers or visitors can find their way quickly and easily."
               descriptionSecond = "For a more comprehensive understanding of your surroundings, our wayfinding signs map out routes and highlight key landmarks."
               buttonLink = "/window-graphics"
-              buttonTitle = "View our window graphics & display signage">
+              buttonTitle = "View our window signage & window frosting">
               </ProductDetail>
             </section>
 

@@ -18,36 +18,43 @@ function TruckLining() {
     }, []);
 
 
+  //gallerySlide Urls
+  const imageUrls = [
+    "../images/TruckLining/TLImg1.jpg",
+    "../images/TruckLining/TLImg4.jpg",
+    "../images/TruckLining/TLImg6.jpg",
+    "../images/TruckLining/TLImg11.jpg",
+    "../images/TruckLining/TLImg40.jpg",
+    "../images/TruckLining/TLImg47.jpg",
+    "../images/TruckLining/TLImg3.jpg",
+    "../images/TruckLining/TLImg51.jpg",
+    "../images/TruckLining/TLImg48.jpg",
+    "../images/TruckLining/TLImg54.jpg",
+  ];
 
-    //gallerySlide Urls
-    const imageUrls = [
-       "../images/TruckLining/TLImg1.jpg",
-       "../images/TruckLining/TLImg4.jpg",
-       "../images/TruckLining/TLImg7.jpg",
-       "../images/TruckLining/TLImg2.jpg",
-       "../images/TruckLining/TLImg10.jpg",
-       "../images/TruckLining/TLImg6.jpg",
-       "../images/TruckLining/TLImg3.jpg",
-       "../images/TruckLining/TLImg9.jpg",
-       "../images/TruckLining/TLImg8.jpg",
-       "../images/TruckLining/TLImg5.jpg",
-    ]
-
-    //gallery stills urls
-    const galleryUrls = [
-        "../images/TruckLining/TLImg1.jpg",
-       "../images/TruckLining/TLImg2.jpg",
-       "../images/TruckLining/TLImg3.jpg",
-       "../images/TruckLining/TLImg4.jpg",
-       "../images/TruckLining/TLImg5.jpg",
-       "../images/TruckLining/TLImg6.jpg",
-       "../images/TruckLining/TLImg7.jpg",
-       "../images/TruckLining/TLImg8.jpg",
-       "../images/TruckLining/TLImg9.jpg",
-       "../images/TruckLining/TLImg10.jpg",
-       "../images/TruckLining/TLImg11.jpg",
-
-    ]
+  //gallery stills urls
+  const galleryUrls = [
+    "../images/TruckLining/TLImg1.jpg",
+    "../images/TruckLining/TLImg3.jpg",
+    "../images/TruckLining/TLImg4.jpg",
+    "../images/TruckLining/TLImg6.jpg",
+    "../images/TruckLining/TLImg8.jpg",
+    "../images/TruckLining/TLImg11.jpg",
+    "../images/TruckLining/TLImg40.jpg",
+    "../images/TruckLining/TLImg41.jpg",
+    "../images/TruckLining/TLImg42.jpg",
+    "../images/TruckLining/TLImg43.jpg",
+    "../images/TruckLining/TLImg44.jpg",
+    "../images/TruckLining/TLImg45.jpg",
+    "../images/TruckLining/TLImg46.jpg",
+    "../images/TruckLining/TLImg47.jpg",
+    "../images/TruckLining/TLImg48.jpg",
+    "../images/TruckLining/TLImg50.jpg",
+    "../images/TruckLining/TLImg51.jpg",
+    "../images/TruckLining/TLImg52.jpg",
+    "../images/TruckLining/TLImg53.jpg",
+    "../images/TruckLining/TLImg54.jpg",
+  ];
 
       
     return (

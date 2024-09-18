@@ -15,8 +15,8 @@ import About from '../components/About'
 export default function Home() {
 
     useEffect(() => {
-        document.title = "Toowoomba signs by Toowoomba Sign Co";
-        document.querySelector('meta[name="description"]').setAttribute("content", "Toowoomba Sign Co offers building signage, vehicle signage, 3D illuminated signs, reception signage and much more. Get a quote for signage for your business in the Toowoomba & Darling Downs");
+        document.title = "Toowoomba Sign Co | Signs Toowoomba | Signage Toowoomba";
+        document.querySelector('meta[name="description"]').setAttribute("content", "Toowoomba Sign Co offers building signs, vehicle signs, 3D illuminated signs, reception signage and much more. Get a quote for signage for your business in the Toowoomba & Darling Downs");
     }, []);
 
 

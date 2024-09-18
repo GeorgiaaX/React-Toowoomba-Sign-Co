@@ -13,43 +13,45 @@ import FixedQuoteBtn from '../components/FixedQuoteBtn';
 function VehicleBranding() {
 
   useEffect(() => {
-    document.title = "Vehicle Branding | Car Wrapping Toowoomba | Toowoomba Sign Co";
+    document.title = "Vehicle Branding | Car Wrap Toowoomba | Toowoomba Sign Co";
     document.querySelector('meta[name="description"]').setAttribute("content", "Help your business stand out when driving around Toowoomba and the Darling Downs with car wrapping and or vehicle signage. Call Toowoomba Sign Co for a quote - 0413 733 947.");
 }, []);
 
 
-    //gallerySlide Urls
-    const imageUrls = [
-      "../images/VehicleBranding/VFImg12.jpg",
-      "../images/VehicleBranding/VFImg4.jpg",
-      "../images/VehicleBranding/VFImg3.jpg",
-      "../images/VehicleBranding/VFImg9.jpg",
-      "../images/VehicleBranding/VFImg16.jpg",
-      "../images/VehicleBranding/VFImg2.jpg",
-      "../images/VehicleBranding/VFImg5.jpg",
-      "../images/VehicleBranding/VFImg13.jpg",
-      "../images/VehicleBranding/VFImg14.jpg",
-      "../images/VehicleBranding/VFImg11.jpg",
+  //gallerySlide Urls
+  const imageUrls = [
+    "../images/VehicleBranding/VFImg12.jpg",
+    "../images/VehicleBranding/VFImg44.jpg",
+    "../images/VehicleBranding/VFImg3.jpg",
+    "../images/VehicleBranding/VFImg9.jpg",
+    "../images/VehicleBranding/VFImg46.jpg",
+    "../images/VehicleBranding/VFImg2.jpg",
+    "../images/VehicleBranding/VFImg45.jpg",
+    "../images/VehicleBranding/VFImg13.jpg",
+    "../images/VehicleBranding/VFImg14.jpg",
+    "../images/VehicleBranding/VFImg11.jpg",
+  ];
 
-    ]
-
-    //gallery stills urls
-    const galleryUrls = [
-
-      "../images/VehicleBranding/VFImg2.jpg",
-      "../images/VehicleBranding/VFImg12.jpg",
-      "../images/VehicleBranding/VFImg5.jpg",
-      "../images/VehicleBranding/VFImg15.jpg",
-      "../images/VehicleBranding/VFImg16.jpg",
-      "../images/VehicleBranding/VFImg10.jpg",
-      "../images/VehicleBranding/VFImg11.jpg",
-      "../images/VehicleBranding/VFImg4.jpg",
-      "../images/VehicleBranding/VFImg13.jpg",
-      "../images/VehicleBranding/VFImg14.jpg",
-      "../images/VehicleBranding/VFImg3.jpg",
-      "../images/VehicleBranding/VFImg9.jpg",
-     
-    ]
+  //gallery stills urls
+  const galleryUrls = [
+    "../images/VehicleBranding/VFImg2.jpg",
+    "../images/VehicleBranding/VFImg12.jpg",
+    "../images/VehicleBranding/VFImg10.jpg",
+    "../images/VehicleBranding/VFImg11.jpg",
+    "../images/VehicleBranding/VFImg13.jpg",
+    "../images/VehicleBranding/VFImg14.jpg",
+    "../images/VehicleBranding/VFImg3.jpg",
+    "../images/VehicleBranding/VFImg9.jpg",
+    "../images/VehicleBranding/VFImg40.jpg",
+    "../images/VehicleBranding/VFImg41.jpg",
+    "../images/VehicleBranding/VFImg42.jpg",
+    "../images/VehicleBranding/VFImg43.jpg",
+    "../images/VehicleBranding/VFImg44.jpg",
+    "../images/VehicleBranding/VFImg45.jpg",
+    "../images/VehicleBranding/VFImg46.jpg",
+    "../images/VehicleBranding/VFImg47.jpg",
+    "../images/VehicleBranding/VFImg48.jpg",
+  ];
 
       
     return (

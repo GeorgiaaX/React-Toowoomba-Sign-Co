@@ -13,42 +13,41 @@ import FixedQuoteBtn from '../components/FixedQuoteBtn';
 function BuildingShopface() {
 
   useEffect(() => {
-    document.title = "Building Signage Toowoomba | Store front & Shop face signage";
-    document.querySelector('meta[name="description"]').setAttribute("content", "Elevate the visibility of your business in Toowoomba with our expertly crafted building signage. From storefront signage to pylons, we can customise signage uniquely to your business.");
+    document.title = "Building Signs Toowoomba | Store front & Shop face signage";
+    document.querySelector('meta[name="description"]').setAttribute("content", "Elevate the visibility of your business in Toowoomba with our expertly crafted building signs. From storefront signage to pylons, we can customise signage uniquely to your business.");
 }, []);
 
+const imageUrls = [
+  "../images/BuildingShopface/BSImg45.jpg",
+  "../images/BuildingShopface/BSImg98.jpg",
+  "../images/BuildingShopface/BSImg46.jpg",
+  "../images/BuildingShopface/BSImg21.jpg",
+  "../images/BuildingShopface/BSImg22.jpg",
+  "../images/BuildingShopface/BSImg7.jpg",
+  "../images/BuildingShopface/BSImg23.jpg",
+  "../images/BuildingShopface/BSImg9.jpg",
+  "../images/BuildingShopface/BSImg10.jpg",
+];
 
-    const imageUrls = [
-      "../images/BuildingShopface/BSImg1.jpg",
-      "../images/BuildingShopface/BSImg98.jpg",
-      "../images/BuildingShopface/BSImg15.jpg",
-      "../images/BuildingShopface/BSImg21.jpg",
-      "../images/BuildingShopface/BSImg22.jpg",
-      "../images/BuildingShopface/BSImg7.jpg",
-      "../images/BuildingShopface/BSImg23.jpg",
-      "../images/BuildingShopface/BSImg9.jpg",
-      "../images/BuildingShopface/BSImg10.jpg",
-    ]
-
-    const galleryUrls = [
-      "../images/BuildingShopface/BSImg1.jpg",
-      "../images/BuildingShopface/BSImg13.jpg",
-      "../images/BuildingShopface/BSImg15.jpg",
-      "../images/BuildingShopface/BSImg7.jpg",
-      "../images/BuildingShopface/BSImg9.jpg",
-      "../images/BuildingShopface/BSImg10.jpg",
-      "../images/BuildingShopface/BSImg21.jpg",
-      "../images/BuildingShopface/BSImg22.jpg",
-      "../images/BuildingShopface/BSImg23.jpg",
-      "../images/BuildingShopface/BSImg24.jpg",
-      "../images/BuildingShopface/BSImg26.jpg",
-      "../images/BuildingShopface/BSImg28.jpg",
-      "../images/BuildingShopface/BSImg30.jpg",
-      "../images/BuildingShopface/BSImg99.jpg",
-      "../images/BuildingShopface/BSImg98.jpg",
-      "../images/BuildingShopface/BSImg97.jpg",
-    
-    ]
+const galleryUrls = [
+  "../images/BuildingShopface/BSImg7.jpg",
+  "../images/BuildingShopface/BSImg9.jpg",
+  "../images/BuildingShopface/BSImg10.jpg",
+  "../images/BuildingShopface/BSImg21.jpg",
+  "../images/BuildingShopface/BSImg22.jpg",
+  "../images/BuildingShopface/BSImg23.jpg",
+  "../images/BuildingShopface/BSImg30.jpg",
+  "../images/BuildingShopface/BSImg99.jpg",
+  "../images/BuildingShopface/BSImg98.jpg",
+  "../images/BuildingShopface/BSImg97.jpg",
+  "../images/BuildingShopface/BSImg40.jpg",
+  "../images/BuildingShopface/BSImg41.jpg",
+  "../images/BuildingShopface/BSImg42.jpg",
+  "../images/BuildingShopface/BSImg43.jpg",
+  "../images/BuildingShopface/BSImg44.jpg",
+  "../images/BuildingShopface/BSImg45.jpg",
+  "../images/BuildingShopface/BSImg46.jpg",
+];
 
       
     return (
@@ -66,7 +65,7 @@ function BuildingShopface() {
                     isGenericPage={true} 
                     isContactPage={false} 
                     heading={{ 
-                        title: "Building & Shopface",
+                        title: "Building & Shopface Signs",
                         lastWord: "Signage",
                         subheading: "Building signage for your Toowoomba business",
                     }}

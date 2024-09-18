@@ -18,45 +18,41 @@ function IlluminatedDesigns() {
     }, []);
 
 
-    //gallerySlide Urls
-    const imageUrls = [
-        "../images/IlluminatedDesigns/IDImg12.jpg",
-        "../images/IlluminatedDesigns/IDImg21.jpg",
-        "../images/IlluminatedDesigns/IDImg9.jpg",
-        "../images/IlluminatedDesigns/IDImg19.jpg",
-        "../images/IlluminatedDesigns/IDImg16.jpg",
-        "../images/IlluminatedDesigns/IDImg11.jpg",
-        "../images/IlluminatedDesigns/IDImg18.jpg",
-        "../images/IlluminatedDesigns/IDImg10.jpg",
-        "../images/IlluminatedDesigns/IDImg6.jpg",
-        "../images/IlluminatedDesigns/IDImg15.jpg",
+  //gallerySlide Urls
+  const imageUrls = [
+    "../images/IlluminatedDesigns/IDImg12.jpg",
+    "../images/IlluminatedDesigns/IDImg21.jpg",
+    "../images/IlluminatedDesigns/IDImg31.jpg",
+    "../images/IlluminatedDesigns/IDImg19.jpg",
+    "../images/IlluminatedDesigns/IDImg16.jpg",
+    "../images/IlluminatedDesigns/IDImg11.jpg",
+    "../images/IlluminatedDesigns/IDImg18.jpg",
+    "../images/IlluminatedDesigns/IDImg10.jpg",
+    "../images/IlluminatedDesigns/IDImg6.jpg",
+    "../images/IlluminatedDesigns/IDImg33.jpg",
+  ];
 
-    ]
-
-    //gallery stills urls
-    const galleryUrls = [
-
-        "../images/IlluminatedDesigns/IDImg12.jpg",
-        "../images/IlluminatedDesigns/IDImg15.jpg",
-        "../images/IlluminatedDesigns/IDImg7.jpg",
-        "../images/IlluminatedDesigns/IDImg21.jpg",
-        "../images/IlluminatedDesigns/IDImg8.jpg",
-        "../images/IlluminatedDesigns/IDImg9.jpg",
-        "../images/IlluminatedDesigns/IDImg18.jpg",
-        "../images/IlluminatedDesigns/IDImg11.jpg",
-        "../images/IlluminatedDesigns/IDImg23.jpg",
-        "../images/IlluminatedDesigns/IDImg13.jpg",
-        "../images/IlluminatedDesigns/IDImg10.jpg",
-        "../images/IlluminatedDesigns/IDImg16.jpg",
-        "../images/IlluminatedDesigns/IDImg17.jpg",
-        "../images/IlluminatedDesigns/IDImg19.jpg",
-        "../images/IlluminatedDesigns/IDImg20.jpg",
-        "../images/IlluminatedDesigns/IDImg6.jpg",
-        "../images/IlluminatedDesigns/IDImg22.jpg",
-        "../images/IlluminatedDesigns/IDImg14.jpg",
-           
-    ]
-
+  //gallery stills urls
+  const galleryUrls = [
+    "../images/IlluminatedDesigns/IDImg12.jpg",
+    "../images/IlluminatedDesigns/IDImg21.jpg",
+    "../images/IlluminatedDesigns/IDImg8.jpg",
+    "../images/IlluminatedDesigns/IDImg18.jpg",
+    "../images/IlluminatedDesigns/IDImg11.jpg",
+    "../images/IlluminatedDesigns/IDImg23.jpg",
+    "../images/IlluminatedDesigns/IDImg10.jpg",
+    "../images/IlluminatedDesigns/IDImg16.jpg",
+    "../images/IlluminatedDesigns/IDImg17.jpg",
+    "../images/IlluminatedDesigns/IDImg19.jpg",
+    "../images/IlluminatedDesigns/IDImg20.jpg",
+    "../images/IlluminatedDesigns/IDImg6.jpg",
+    "../images/IlluminatedDesigns/IDImg22.jpg",
+    "../images/IlluminatedDesigns/IDImg14.jpg",
+    "../images/IlluminatedDesigns/IDImg31.jpg",
+    "../images/IlluminatedDesigns/IDImg32.jpg",
+    "../images/IlluminatedDesigns/IDImg33.jpg",
+    "../images/IlluminatedDesigns/IDImg34.jpg",
+  ];
       
     return (
         <div>
