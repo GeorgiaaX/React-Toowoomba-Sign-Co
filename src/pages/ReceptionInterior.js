@@ -16,41 +16,40 @@ function ReceptionInterior() {
         document.title = "Reception & Interior Signage Toowoomba & Darling Downs";
         document.querySelector('meta[name="description"]').setAttribute("content", "Transform your office or building in Toowoomba and the Darling Downs with reception and interior signage that can be tailored to your branding and colours. Call for a quote 0413 733 947.");
     }, []);
+    
+ //gallerySlide Urls
+ const imageUrls = [
+  "../images/ReceptionInterior/RIImg12.jpg",
+  "../images/ReceptionInterior/RIImg9.jpg",
+  "../images/ReceptionInterior/RIImg3.jpg",
+  "../images/ReceptionInterior/RIImg13.jpg",
+  "../images/ReceptionInterior/RIImg1.jpg",
+  "../images/ReceptionInterior/RIImg10.jpg",
+  "../images/ReceptionInterior/RIImg4.jpg",
+  "../images/ReceptionInterior/RIImg11.jpg",
+  "../images/ReceptionInterior/RIImg8.jpg",
+  "../images/ReceptionInterior/RIImg6.jpg",
+];
 
- 
-  //gallerySlide Urls
-  const imageUrls = [
-    "../images/RetailPOS/POSImg1.jpg",
-    "../images/RetailPOS/POSImg12.jpg",
-    "../images/RetailPOS/POSImg3.jpg",
-    "../images/RetailPOS/POSImg9.jpg",
-    "../images/RetailPOS/POSImg14.jpg",
-    "../images/RetailPOS/POSImg13.jpg",
-    "../images/RetailPOS/POSImg10.jpg",
-    "../images/RetailPOS/POSImg2.jpg",
-    "../images/RetailPOS/POSImg5.jpg",
-    "../images/RetailPOS/POSImg16.jpg",
-  ];
-
-  //gallery stills urls
-  const galleryUrls = [
-    "../images/RetailPOS/POSImg1.jpg",
-    "../images/RetailPOS/POSImg2.jpg",
-    "../images/RetailPOS/POSImg7.jpg",
-    "../images/RetailPOS/POSImg4.jpg",
-    "../images/RetailPOS/POSImg5.jpg",
-    "../images/RetailPOS/POSImg10.jpg",
-    "../images/RetailPOS/POSImg11.jpg",
-    "../images/RetailPOS/POSImg8.jpg",
-    "../images/RetailPOS/POSImg9.jpg",
-    "../images/RetailPOS/POSImg3.jpg",
-    "../images/RetailPOS/POSImg13.jpg",
-    "../images/RetailPOS/POSImg12.jpg",
-    "../images/RetailPOS/POSImg16.jpg",
-    "../images/RetailPOS/POSImg6.jpg",
-    "../images/RetailPOS/POSImg14.jpg",
-    "../images/RetailPOS/POSImg15.jpg",
-  ];
+//gallery stills urls
+const galleryUrls = [
+  "../images/ReceptionInterior/RIImg1.jpg",
+  "../images/ReceptionInterior/RIImg3.jpg",
+  "../images/ReceptionInterior/RIImg4.jpg",
+  "../images/ReceptionInterior/RIImg6.jpg",
+  "../images/ReceptionInterior/RIImg8.jpg",
+  "../images/ReceptionInterior/RIImg9.jpg",
+  "../images/ReceptionInterior/RIImg10.jpg",
+  "../images/ReceptionInterior/RIImg11.jpg",
+  "../images/ReceptionInterior/RIImg12.jpg",
+  "../images/ReceptionInterior/RIImg13.jpg",
+  "../images/ReceptionInterior/RIImg40.jpg",
+  "../images/ReceptionInterior/RIImg41.jpg",
+  "../images/ReceptionInterior/RIImg42.jpg",
+  "../images/ReceptionInterior/RIImg43.jpg",
+  "../images/ReceptionInterior/RIImg44.jpg",
+];
+      
     return (
         <div>
 
