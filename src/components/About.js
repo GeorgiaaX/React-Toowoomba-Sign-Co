@@ -169,7 +169,7 @@ function About() {
                 <p>Email us at: jake@toowoombasignco.com.au</p>
               </div>
               <div className="d-flex flex-column align-items-center mt-4">
-                <p>Or use our quote form below to get stated!</p>
+                <p>Or use our quote form below to get started!</p>
                 <ModalButton />
               </div>
             </Card.Text>
