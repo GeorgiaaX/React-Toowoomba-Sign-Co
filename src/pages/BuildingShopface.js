@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Header from "../components/Header";
 import CustomFooter from "../components/CustomFooter";
-import ProductDetail from "../components/ProductDetail";
+// import ProductDetail from "../components/ProductDetail";
 import GallerySlide from "../components/GallerySlide";
 import Gallery from "../components/Gallery";
 import FixedQuoteBtn from "../components/FixedQuoteBtn";
