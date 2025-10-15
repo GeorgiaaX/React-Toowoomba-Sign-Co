@@ -50,7 +50,7 @@ function About() {
       </Row>
 
       <div>
-        <Card className="mb-2 shadow-sm about-section">
+        <Card className="mb-2 shadow-sm about-section mt-8">
           <Card.Body>
             <Card.Title>
               <h2 className="text-center text-heading">Why Choose us?</h2>

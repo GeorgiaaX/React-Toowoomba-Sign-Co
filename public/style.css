@@ -877,7 +877,7 @@ body {
 
 /* very small screens */
 
-@media screen and (max-width: 325px) {
+@media screen and (max-width: 526px) {
   .navbar-brand {
     display: none !important;
   }
@@ -1085,5 +1085,189 @@ body {
 @media (max-width: 420px) {
   .step-card {
     padding: 24px 18px;
+  }
+}
+
+/* PRODUCT SECTION */
+
+.product-detail-section {
+  margin: 0 auto;
+  padding: 24px 16px;
+  max-width: 980px;
+}
+
+.section-title {
+  margin: 0 0 12px 0;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.description-text {
+  line-height: 1.7;
+  margin: 0;
+}
+
+.detailed-description {
+  margin-top: 12px;
+}
+
+.signage-list {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-auto-rows: minmax(0, auto);
+  row-gap: 12px;
+}
+
+.signage-item {
+  display: grid;
+  grid-template-columns: 28px 1fr;
+  column-gap: 12px;
+  align-items: start;
+}
+
+.signage-item .product-icons {
+  font-size: 20px;
+  line-height: 1;
+  margin-top: 2px;
+}
+
+/* --------- Larger screens --------- */
+@media (min-width: 576px) {
+  .product-detail-section {
+    padding: 32px 24px;
+  }
+
+  .product-description {
+    margin-top: 8px;
+    font-size: 1.5rem;
+  }
+
+  .signage-list {
+    row-gap: 14px;
+  }
+  .signage-item .product-icons {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 992px) {
+  .product-detail-section {
+    padding: 40px 32px; /* comfortable desktop padding */
+    max-width: 1120px; /* a touch wider on large screens */
+  }
+  .section-title {
+    margin-bottom: 16px;
+  }
+  .product-description {
+    margin-top: 4px;
+    font-size: 1.3rem;
+  }
+  .signage-list {
+    row-gap: 16px; /* a little more breathing room */
+  }
+  .signage-item {
+    grid-template-columns: 32px 1fr;
+    column-gap: 16px;
+  }
+  .signage-item .product-icons {
+    font-size: 26px; /* desktop icon size */
+  }
+}
+
+/* FAQS  */
+
+.faq-section {
+  margin: 0 auto;
+  padding: 16px;
+  max-width: 920px;
+}
+
+.faq-card {
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: .5rem;
+  overflow: hidden;
+  margin-bottom: 12px;
+  background-color: transparent;
+  border: 2px solid var(--fs-blue);
+}
+
+.faq-header {
+  background: transparent;
+  border-bottom: 1px solid rgba(0,0,0,.05);
+  padding: 0;
+}
+
+.faq-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none !important;
+  white-space: normal;
+  line-height: 1.35;
+  font-weight: 600;
+  min-height: 52px;
+  background-color: transparent;
+}
+
+.faq-question {
+  flex: 1 1 auto;
+  min-width: 0;
+  padding-right: 12px;
+  overflow-wrap: anywhere;
+  font-size: 1.3rem;
+}
+
+
+.faq-chevron {
+  flex: 0 0 22px;
+  text-align: right;
+  transition: transform .2s ease;
+  font-size: 0.9rem;
+}
+.faq-btn[aria-expanded="true"] .faq-chevron {
+  transform: rotate(180deg);
+}
+
+.faq-body {
+  line-height: 1.7;
+  padding: 14px 16px;
+  font-size: 1.1rem;
+
+}
+
+/* --------- Small tablets (≥576px) --------- */
+@media (min-width: 576px) {
+  .faq-section {
+    padding: 20px;
+  }
+  .faq-btn {
+    padding: 16px 18px;
+    font-size: 1rem;
+  }
+  .faq-body {
+    padding: 16px 18px;
+  }
+}
+
+@media (min-width: 992px) {
+  .faq-section {
+    padding: 24px;
+    max-width: 1040px;
+  }
+  .faq-card {
+    margin-bottom: 14px;
+  }
+  .faq-btn {
+    padding: 18px 20px;
+    font-size: 1.05rem;
+  }
+  .faq-body {
+    padding: 18px 20px;
+    font-size: 1rem;
   }
 }

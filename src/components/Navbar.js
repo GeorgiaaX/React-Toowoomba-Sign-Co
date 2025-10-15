@@ -31,11 +31,11 @@ export default function CustomNavbar() {
               id="product-dropdown"
               className="mr-4"
             >
-               <NavDropdown.Item as={Link} to="/building-shopface">
-                Building & Shopface Signs
+              <NavDropdown.Item as={Link} to="/building-shopface">
+                Shopfront & Building Signage
               </NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/illuminated-designs">
-                3D Illuminated Letters & Displays
+                3D & Illuminated Signs
               </NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/reception-interior">
                 Reception & Interior Signage

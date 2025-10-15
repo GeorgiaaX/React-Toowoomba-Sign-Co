@@ -48,8 +48,8 @@ function CustomFooter() {
             <h6 className="text-uppercase fw-bold">Quick Links</h6>
             <hr className="mb-4 mt-0 d-inline-block mx-auto" style={{ width: '60px', backgroundColor: '#0C8CE9', height: '2px' }} />
             <Nav className="flex-column">
-              <Nav.Link href="building-shopface" className = "text-white footer-link"> Building and Shopface</Nav.Link>
-              <Nav.Link href="illuminated-designs" className = "text-white footer-link">3D Illuminated Letters and Displays</Nav.Link>
+              <Nav.Link href="building-shopface" className = "text-white footer-link">Shopfront & Building Signage</Nav.Link>
+              <Nav.Link href="illuminated-designs" className = "text-white footer-link">3D & Illuminated Signs</Nav.Link>
               <Nav.Link href="reception-interior" className = "text-white footer-link">Reception and Interior</Nav.Link>
               <Nav.Link href="structural-signage" className = "text-white footer-link">Structural Signage</Nav.Link>  
               
