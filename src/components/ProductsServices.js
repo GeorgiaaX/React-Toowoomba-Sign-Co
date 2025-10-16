@@ -313,35 +313,33 @@ function RenderProductColumn({
       sm={12}
       className="d-flex justify-content-center mb-4"
     >
-      <div>
-        <div
-          className="flip-card"
-          onClick={handleToggle}
-          role="button"
-          tabIndex={0}
-        >
-          <div className={`flip-card-inner ${isFlipped ? "is-flipped" : ""}`}>
-            <div className="flip-card-front">
-              <i className={`product-icons ${iconClass} fa-3x mb-4`} />
-              <h6
-                style={{
-                  fontSize: "24px",
-                  color: "rgba(12, 140, 233, 0.8)",
-                  fontWeight: "600",
-                }}
-              >
-                {title}
-              </h6>
-              <p>{service}</p>
-            </div>
+      <div
+        className="flip-card"
+        onClick={handleToggle}
+        role="button"
+        tabIndex={0}
+      >
+        <div className={`flip-card-inner ${isFlipped ? "is-flipped" : ""}`}>
+          <div className="flip-card-front">
+            <i className={`product-icons ${iconClass} fa-3x mb-4`} />
+            <h6
+              style={{
+                fontSize: "24px",
+                color: "rgba(12, 140, 233, 0.8)",
+                fontWeight: "600",
+              }}
+            >
+              {title}
+            </h6>
+            <p>{service}</p>
+          </div>
 
-            <div className="flip-card-back">
-              <i className={`${iconClass} fa-3x flip-back-icons`} />
-              <p>{description}</p>
-              <CustomLink to={link}>
-                <Button variant="outline-light">Learn More</Button>
-              </CustomLink>
-            </div>
+          <div className="flip-card-back">
+            <i className={`${iconClass} fa-3x flip-back-icons`} />
+            <p>{description}</p>
+            <CustomLink to={link}>
+              <Button variant="outline-light">Learn More</Button>
+            </CustomLink>
           </div>
         </div>
       </div>
