@@ -85,7 +85,7 @@ function ReceptionInterior() {
           isGenericPage={true}
           isContactPage={false}
           heading={{
-            title: "Reception & Interior Signag",
+            title: "Reception & Interior Signage",
             lastWord: "Toowoomba",
             subheading:
               "First impressions don’t stop at the front door. Interior signage plays a vital role in creating a welcoming, professional, and branded environment. At Toowoomba Sign Co, we design and install reception and interior signs that enhance your workplace and impress clients from the moment they arrive.",
