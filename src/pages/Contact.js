@@ -8,8 +8,8 @@ import Form from '../components/Form';
 export default function Contact() {
 
     useEffect(() => {
-        document.title = "Contact Toowoomba Sign Co | Your local sign experts in Toowoomba & Darling Downs";
-        document.querySelector('meta[name="description"]').setAttribute("content", "Get in touch with our expert sign writers who can help your business stand out with quality signage for your building, office, retail store or vehicle. Contact us today - 0413 733 947.");
+        document.title = "Contact Toowoomba Sign Co | Signs Toowoomba";
+        document.querySelector('meta[name="description"]').setAttribute("content", "Get in touch with Toowoomba Sign Co today. Expert signage solutions in Toowoomba – call us or request a free signage quote online.");
     }, []);
 
 
@@ -34,7 +34,7 @@ export default function Contact() {
                     heading={{ 
                         title: "Contact Toowoomba Sign",
                         lastWord: "Co",
-                        subheading: "Get in touch for expert signage advice for your business in Toowoomba & Darling Downs",
+                        subheading: "Looking for custom signs in Toowoomba? Our expert signwriters are here to help. Get in touch for a free quote or to discuss your signage project.",
                     }}
                     contactFormRef={contactFormRef}
                 />
