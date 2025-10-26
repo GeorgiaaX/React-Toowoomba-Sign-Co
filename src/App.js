@@ -10,7 +10,8 @@ import DirectionalWayfinding from './pages/DirectionalWayfinding';
 import WindowGraphics from './pages/WindowGraphics';
 import VehicleBranding from './pages/VehicleBranding';
 import RetailPOS from './pages/RetailPOS';
-import TruckLining from './pages/TruckLining';
+// import TruckLining from './pages/TruckLining';
+import CommercialSignage from './pages/CommercialSignage';
 import Success from './pages/Success';
 
 
@@ -41,7 +42,8 @@ function App() {
         <Route path="/window-graphics" element={<WindowGraphics />} />
         <Route path="/vehicle-branding" element={<VehicleBranding />} />
         <Route path="/retail-pos" element={<RetailPOS />} />
-        <Route path="/truck-lining" element={<TruckLining />} />
+        {/* <Route path="/truck-lining" element={<TruckLining />} /> */}
+        <Route path="/commercial-signage" element={<CommercialSignage />} />
         <Route path="/success" element={<Success />} />
 
 

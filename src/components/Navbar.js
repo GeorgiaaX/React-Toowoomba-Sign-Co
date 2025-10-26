@@ -51,8 +51,11 @@ export default function CustomNavbar() {
               <NavDropdown.Item as={Link} to="/retail-pos">
                 Retail & Short Term Signage
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/truck-lining">
+              {/* <NavDropdown.Item as={Link} to="/truck-lining">
                 Truck Lining & Scrolling
+              </NavDropdown.Item> */}
+              <NavDropdown.Item as={Link} to="/commercial-signage">
+                Commercial Signage
               </NavDropdown.Item>
             </NavDropdown>
 

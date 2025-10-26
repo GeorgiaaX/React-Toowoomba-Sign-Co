@@ -7,9 +7,6 @@ import GallerySlide from '../components/GallerySlide';
 import Gallery from '../components/Gallery';
 import FixedQuoteBtn from '../components/FixedQuoteBtn'; 
 
-
-
-
 function TruckLining() {
 
     useEffect(() => {
