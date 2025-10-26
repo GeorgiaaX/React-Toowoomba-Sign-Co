@@ -26,10 +26,7 @@ export default function CustomNavbar() {
               Home
             </Link>
 
-            <NavDropdown
-              title="Products and Services"
-              className="mr-4"
-            >
+            <NavDropdown title="Products and Services" className="mr-4">
               <NavDropdown.Item as={Link} to="/building-shopface">
                 Shopfront & Building Signage
               </NavDropdown.Item>
@@ -46,13 +43,13 @@ export default function CustomNavbar() {
                 Directional & Wayfinding Signs
               </NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/window-graphics">
-                Window Signage & Window Frosting
+                Window Films & Graphics
               </NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/vehicle-branding">
-                Vehicle Branding & Car Wrapping
+                Car Wraps & Signage
               </NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/retail-pos">
-                Retail POS Signs
+                Retail & Short Term Signage
               </NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/truck-lining">
                 Truck Lining & Scrolling
