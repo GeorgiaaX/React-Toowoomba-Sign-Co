@@ -28,7 +28,6 @@ export default function CustomNavbar() {
 
             <NavDropdown
               title="Products and Services"
-              id="product-dropdown"
               className="mr-4"
             >
               <NavDropdown.Item as={Link} to="/building-shopface">
