@@ -60,10 +60,12 @@ function CustomFooter() {
             <Nav className="flex-column">
 
               <Nav.Link href="directional-wayfinding" className = "text-white footer-link">Directional and Wayfinding</Nav.Link>  
-              <Nav.Link href="window-graphics" className = "text-white footer-link">Window Graphics and Display</Nav.Link>
-              <Nav.Link href="vehicle-branding" className = "text-white footer-link">Vehicle Fleet Branding</Nav.Link>
-              <Nav.Link href="retail-pos" className = "text-white footer-link">Retail POS</Nav.Link>  
-              <Nav.Link href="truck-lining" className = "text-white footer-link">Truck Lining and Scrolling</Nav.Link>  
+              <Nav.Link href="window-graphics" className = "text-white footer-link">Window Films & Signage</Nav.Link>
+              <Nav.Link href="vehicle-branding" className = "text-white footer-link">Car Wraps & Signage</Nav.Link>
+              <Nav.Link href="retail-pos" className = "text-white footer-link">Retail & Short-Term Signage</Nav.Link>  
+              {/* <Nav.Link href="truck-lining" className = "text-white footer-link">Truck Lining and Scrolling</Nav.Link>   */}
+              <Nav.Link href="commercial-signage" className = "text-white footer-link">Commercial Signage</Nav.Link>  
+
             </Nav>
           </Col>
 
