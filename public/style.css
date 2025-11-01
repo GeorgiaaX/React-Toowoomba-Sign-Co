@@ -1184,8 +1184,8 @@ body {
 }
 
 .faq-card {
-  border: 1px solid rgba(0,0,0,.08);
-  border-radius: .5rem;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 0.5rem;
   overflow: hidden;
   margin-bottom: 12px;
   background-color: transparent;
@@ -1194,7 +1194,7 @@ body {
 
 .faq-header {
   background: transparent;
-  border-bottom: 1px solid rgba(0,0,0,.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   padding: 0;
 }
 
@@ -1222,11 +1222,10 @@ body {
   font-size: 1.3rem;
 }
 
-
 .faq-chevron {
   flex: 0 0 22px;
   text-align: right;
-  transition: transform .2s ease;
+  transition: transform 0.2s ease;
   font-size: 0.9rem;
 }
 .faq-btn[aria-expanded="true"] .faq-chevron {
@@ -1237,7 +1236,6 @@ body {
   line-height: 1.7;
   padding: 14px 16px;
   font-size: 1.1rem;
-
 }
 
 /* --------- Small tablets (≥576px) --------- */
@@ -1269,5 +1267,135 @@ body {
   .faq-body {
     padding: 18px 20px;
     font-size: 1rem;
+  }
+}
+
+/* PROCESS SECTION */
+
+.tsc-process {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.tsc-process-heading {
+  color: #0c8ce9;
+  font-weight: 700;
+  font-size: clamp(2rem, 3vw, 2.5rem);
+}
+
+.tsc-process-sub {
+  max-width: 650px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+}
+
+/* card */
+.tsc-process-card {
+  position: relative;
+  background: #0f172a;
+  border-radius: 18px;
+  padding: 30px 26px 30px 26px;
+  overflow: hidden;
+  border: 2px solid #0c8ce9;
+  box-shadow: 0 14px 42px rgb(12, 140, 233, 0.1);
+  min-height: 220px;
+  isolation: isolate;
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.tsc-process-card::after {
+  content: "";
+  position: absolute;
+  right: -65px;
+  top: -65px;
+  width: 210px;
+  height: 210px;
+  border-radius: 999px;
+  background: radial-gradient(
+    circle,
+    rgba(12, 140, 233, 0.35),
+    rgba(15, 23, 42, 0) 70%
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+
+.tsc-process-card:hover,
+.tsc-process-card:focus-within {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.14);
+}
+
+/* big number */
+.tsc-process-num {
+  position: absolute;
+  left: 10px;
+  top: -5px;
+  font-size: clamp(80px, 15vw, 130px);
+  font-weight: 800;
+  line-height: 1;
+  color: rgb(12, 140, 233, 0.1);
+  user-select: none;
+  z-index: 0;
+}
+
+/* content */
+.tsc-process-content {
+  position: relative;
+  z-index: 1;
+}
+
+.tsc-process-label {
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-weight: 700;
+  font-size: 0.8rem;
+  background: rgba(207, 216, 255, 0.15);
+  border: 1px solid rgba(207, 216, 255, 0.25);
+  color: #e2e8f0;
+  padding: 5px 10px;
+  border-radius: 9999px;
+  margin-bottom: 12px;
+}
+
+.tsc-process-title {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.tsc-process-desc {
+  color: rgba(226, 232, 240, 0.78);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* responsive tweaks */
+@media (max-width: 576px) {
+  .tsc-process-card {
+    min-height: 190px;
+    padding: 38px 22px 28px;
+  }
+
+  .tsc-process-num {
+    font-size: clamp(150px, 52vw, 220px);
+    top: -15px;
+  }
+
+  .tsc-process-title {
+    font-size: 1.05rem;
+  }
+
+  .tsc-process-sub {
+    font-size: 0.95rem;
+  }
+
+  .tsc-process-desc {
+    font-size: 0.95rem;
   }
 }

@@ -12,6 +12,7 @@ import VehicleBranding from './pages/VehicleBranding';
 import RetailPOS from './pages/RetailPOS';
 // import TruckLining from './pages/TruckLining';
 import CommercialSignage from './pages/CommercialSignage';
+import OurProcess from './pages/OurProcess';
 import Success from './pages/Success';
 
 
@@ -44,6 +45,7 @@ function App() {
         <Route path="/retail-pos" element={<RetailPOS />} />
         {/* <Route path="/truck-lining" element={<TruckLining />} /> */}
         <Route path="/commercial-signage" element={<CommercialSignage />} />
+        <Route path="/our-process" element={<OurProcess />} />
         <Route path="/success" element={<Success />} />
 
 

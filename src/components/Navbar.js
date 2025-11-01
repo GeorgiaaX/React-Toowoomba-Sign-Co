@@ -59,6 +59,9 @@ export default function CustomNavbar() {
               </NavDropdown.Item>
             </NavDropdown>
 
+            <Nav.Link href="/our-process" className="mr-4">
+              Our Process
+            </Nav.Link>
             <Nav.Link href="/contact" className="mr-4">
               Contact Us
             </Nav.Link>
