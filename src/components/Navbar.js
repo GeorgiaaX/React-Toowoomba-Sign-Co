@@ -62,6 +62,9 @@ export default function CustomNavbar() {
             <Nav.Link href="/our-process" className="mr-4">
               Our Process
             </Nav.Link>
+            <Nav.Link href="/about-us" className="mr-4">
+              About Us
+            </Nav.Link>
             <Nav.Link href="/contact" className="mr-4">
               Contact Us
             </Nav.Link>

@@ -14,7 +14,7 @@ const products = {
     }, 
     'reception-interior': {
         name: 'Reception and Interior',
-        services:"Wall graphics / 3D lettering & Signs / Illuminated Signs & Lettering"
+        services:"Wall graphics / 3D lettering & Signs / Illuminated Signs & Lettering",
         description: "Welcome guests to your space with our Reception and Interior Signage. These signs blend form and function to create a welcoming and organized environment. From elegant reception desk signs that convey professionalism to interior signs that guide visitors seamlessly through your facility, we offer a range of customizable solutions. Our attention to detail ensures your brand identity is consistently reinforced throughout your space, leaving a lasting and positive impression on all who enter.",
         images: ['../images/kfc.jpg', '../images/dominoes.jpg'],
 
