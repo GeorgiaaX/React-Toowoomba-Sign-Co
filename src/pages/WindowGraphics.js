@@ -3,9 +3,9 @@ import Navbar from "../components/Navbar";
 import Header from "../components/Header";
 import CustomFooter from "../components/CustomFooter";
 import GallerySlide from "../components/GallerySlide";
-import Gallery from "../components/Gallery";
 import FixedQuoteBtn from "../components/FixedQuoteBtn";
 import FaqAccordion from "../components/Faqs";
+import { Button } from "react-bootstrap";
 
 function WindowGraphics() {
   useEffect(() => {
@@ -36,38 +36,46 @@ function WindowGraphics() {
   ];
 
   const imageUrls = [
-    "../images/WindowGraphics/WGImg23.jpg",
-    "../images/WindowGraphics/WGImg16.jpg",
-    "../images/WindowGraphics/WGImg30.jpg",
-    "../images/WindowGraphics/WGImg99.jpg",
-    "../images/WindowGraphics/WGImg45.jpg",
-    "../images/WindowGraphics/WGImg17.jpg",
-    "../images/WindowGraphics/WGImg21.jpg",
-    "../images/WindowGraphics/WGImg46.jpg",
-    "../images/WindowGraphics/WGImg18.jpg",
-    "../images/WindowGraphics/WGImg43.jpg",
-  ];
-
-  const galleryUrls = [
-    "../images/WindowGraphics/WGImg21.jpg",
-    "../images/WindowGraphics/WGImg22.jpg",
-    "../images/WindowGraphics/WGImg17.jpg",
-    "../images/WindowGraphics/WGImg18.jpg",
-    "../images/WindowGraphics/WGImg23.jpg",
-    "../images/WindowGraphics/WGImg19.jpg",
-    "../images/WindowGraphics/WGImg12.jpg",
-    "../images/WindowGraphics/WGImg28.jpg",
-    "../images/WindowGraphics/WGImg24.jpg",
-    "../images/WindowGraphics/WGImg16.jpg",
-    "../images/WindowGraphics/WGImg29.jpg",
-    "../images/WindowGraphics/WGImg30.jpg",
-    "../images/WindowGraphics/WGImg99.jpg",
-    "../images/WindowGraphics/WGImg40.jpg",
-    "../images/WindowGraphics/WGImg41.jpg",
-    "../images/WindowGraphics/WGImg42.jpg",
-    "../images/WindowGraphics/WGImg43.jpg",
-    "../images/WindowGraphics/WGImg45.jpg",
-    "../images/WindowGraphics/WGImg46.jpg",
+    {
+      src: "../portfolio/WindowGraphics/Custom Window & Glass Signage Toowoomba.webp",
+      alt: "One way vision window signage Toowoomba – retail glass graphics",
+    },
+    {
+      src: "../portfolio/WindowGraphics/Door Frosting Toowoomba.webp",
+      alt: "Frosted glass signage Toowoomba – privacy film installation",
+    },
+    {
+      src: "../portfolio/WindowGraphics/Door Glass Signage Toowoomba.webp",
+      alt: "Window decal Toowoomba – business branding",
+    },
+    {
+      src: "../portfolio/WindowGraphics/One Way Vision Window Signage Toowoomba.webp",
+      alt: "Glass film signage Toowoomba – interior design element",
+    },
+    {
+      src: "../portfolio/WindowGraphics/Shopfront Glass Signage Toowoomba.webp",
+      alt: "Shopfront window graphics Toowoomba – custom decals",
+    },
+    {
+      src: "../portfolio/WindowGraphics/Store Glass Signs Toowoomba.webp",
+      alt: "Branded glass signage Toowoomba – vinyl application",
+    },
+    {
+      src: "../portfolio/WindowGraphics/Window & Glass Frosting Toowoomba.webp",
+      alt: "Frosted glass signage Toowoomba – privacy and business display",
+    },
+    {
+      src: "../portfolio/WindowGraphics/Window Frosting & One Way Vision Toowoomba.webp",
+      alt: "Entry door glass film signage Toowoomba – privacy and branding",
+    },
+    {
+      src: "../portfolio/WindowGraphics/Window Frosting Toowoomba Decorative.webp",
+      alt: "Decorative glass film Toowoomba – modern finish",
+    },
+    {
+      src: "../portfolio/WindowGraphics/Window Signage Toowoomba.webp",
+      alt: "Completed window signage Toowoomba project",
+    },
   ];
 
   return (
@@ -229,11 +237,26 @@ function WindowGraphics() {
         </div>
       </section>
 
-      <section>
-        <Gallery
-          images={galleryUrls}
-          title="Window Frosting & Window Signage Gallery"
-        />
+      <section className="product-detail-section">
+        <div className="text-center mx-auto px-3">
+          <h2 className="mb-3 fw-bold text-heading">Portfolio Highlights</h2>
+          <p
+            className="description-text text-muted"
+            style={{ fontSize: "1.3rem" }}
+          >
+            Our window and glass signage projects range from subtle frosted
+            designs in offices to bold retail promotions. See our Portfolio for
+            inspiration.
+          </p>
+          <Button className="py-2 mt-4">
+            <a
+              href="/gallery-window-graphics"
+              className="text-white text-decoration-none"
+            >
+              View Portfolio
+            </a>
+          </Button>
+        </div>
       </section>
 
       <section className="product-detail-section my-4">

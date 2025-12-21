@@ -10,12 +10,20 @@ import DirectionalWayfinding from './pages/DirectionalWayfinding';
 import WindowGraphics from './pages/WindowGraphics';
 import VehicleBranding from './pages/VehicleBranding';
 import RetailPOS from './pages/RetailPOS';
-// import TruckLining from './pages/TruckLining';
 import CommercialSignage from './pages/CommercialSignage';
 import OurProcess from './pages/OurProcess';
 import Success from './pages/Success';
 import AboutUsPage from './pages/AboutUs';
-
+import Portfolio from './pages/Portfolio';
+import GalleryBuildingShopface from './pages/GalleryBuildingShopface';
+import GalleryIlluminatedDesigns from './pages/GalleryIlluminatedDesigns';
+import GalleryReceptionInterior from './pages/GalleryReceptionInterior';
+import GalleryStructuralSignage from './pages/GalleryStructuralSignage';
+import GalleryDirectionalWayfinding from './pages/GalleryDirectionalWayfinding';
+import GalleryWindowGraphics from './pages/GalleryWindowGraphics';
+import GalleryVehicleBranding from './pages/GalleryVehicleBranding';
+import GalleryRetailPOS from './pages/GalleryRetailPOS';
+import GalleryCommercialSignage from './pages/GalleryCommericalSignage';
 
 function App() {
   useEffect(() => {
@@ -44,13 +52,20 @@ function App() {
         <Route path="/window-graphics" element={<WindowGraphics />} />
         <Route path="/vehicle-branding" element={<VehicleBranding />} />
         <Route path="/retail-pos" element={<RetailPOS />} />
-        {/* <Route path="/truck-lining" element={<TruckLining />} /> */}
         <Route path="/commercial-signage" element={<CommercialSignage />} />
         <Route path="/our-process" element={<OurProcess />} />
         <Route path="/about-us" element={<AboutUsPage />} />
         <Route path="/success" element={<Success />} />
-
-
+        <Route path="/portfolio-gallery" element={<Portfolio />} />
+        <Route path="/gallery-building-shopface" element={<GalleryBuildingShopface />} />
+        <Route path="/gallery-illuminated-designs" element={<GalleryIlluminatedDesigns />} />
+        <Route path="/gallery-reception-interior" element={<GalleryReceptionInterior />} />
+        <Route path="/gallery-structural-signage" element={<GalleryStructuralSignage />} />
+        <Route path="/gallery-directional-wayfinding" element={<GalleryDirectionalWayfinding />} />
+        <Route path="/gallery-window-graphics" element={<GalleryWindowGraphics />} />
+        <Route path="/gallery-vehicle-branding" element={<GalleryVehicleBranding />} />
+        <Route path="/gallery-retail-pos" element={<GalleryRetailPOS />} />
+        <Route path="/gallery-commercial-signage" element={<GalleryCommercialSignage />} />
       </Routes>
     </BrowserRouter>
   );

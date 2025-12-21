@@ -3,9 +3,9 @@ import Navbar from "../components/Navbar";
 import Header from "../components/Header";
 import CustomFooter from "../components/CustomFooter";
 import GallerySlide from "../components/GallerySlide";
-import Gallery from "../components/Gallery";
 import FixedQuoteBtn from "../components/FixedQuoteBtn";
 import FaqAccordion from "../components/Faqs";
+import { Button } from "react-bootstrap";
 
 function DirectionalWayfinding() {
   const faqItems = [
@@ -37,46 +37,46 @@ function DirectionalWayfinding() {
   }, []);
 
   const imageUrls = [
-    "../images/DirectionalWayfinding/DWImg9.jpg",
-    "../images/DirectionalWayfinding/DWImg21.jpg",
-    "../images/DirectionalWayfinding/DWImg23.jpg",
-    "../images/DirectionalWayfinding/DWImg10.jpg",
-    "../images/DirectionalWayfinding/DWImg15.jpg",
-    "../images/DirectionalWayfinding/DWImg12.jpg",
-    "../images/DirectionalWayfinding/DWImg22.jpg",
-    "../images/DirectionalWayfinding/DWImg19.jpg",
-    "../images/DirectionalWayfinding/DWImg2.jpg",
-    "../images/DirectionalWayfinding/DWImg5.jpg",
-  ];
-
-  const galleryUrls = [
-    "../images/DirectionalWayfinding/DWImg2.jpg",
-    "../images/DirectionalWayfinding/DWImg5.jpg",
-    "../images/DirectionalWayfinding/DWImg8.jpg",
-    "../images/DirectionalWayfinding/DWImg21.jpg",
-    "../images/DirectionalWayfinding/DWImg22.jpg",
-    "../images/DirectionalWayfinding/DWImg9.jpg",
-    "../images/DirectionalWayfinding/DWImg10.jpg",
-    "../images/DirectionalWayfinding/DWImg11.jpg",
-    "../images/DirectionalWayfinding/DWImg3.jpg",
-    "../images/DirectionalWayfinding/DWImg4.jpg",
-    "../images/DirectionalWayfinding/DWImg16.jpg",
-    "../images/DirectionalWayfinding/DWImg12.jpg",
-    "../images/DirectionalWayfinding/DWImg6.jpg",
-    "../images/DirectionalWayfinding/DWImg13.jpg",
-    "../images/DirectionalWayfinding/DWImg14.jpg",
-    "../images/DirectionalWayfinding/DWImg17.jpg",
-    "../images/DirectionalWayfinding/DWImg18.jpg",
-    "../images/DirectionalWayfinding/DWImg19.jpg",
-    "../images/DirectionalWayfinding/DWImg15.jpg",
-    "../images/DirectionalWayfinding/DWImg23.jpg",
-    "../images/DirectionalWayfinding/DWImg99.jpg",
-    "../images/DirectionalWayfinding/DWImg40.jpg",
-    "../images/DirectionalWayfinding/DWImg41.jpg",
-    "../images/DirectionalWayfinding/DWImg42.jpg",
-    "../images/DirectionalWayfinding/DWImg43.jpg",
-    "../images/DirectionalWayfinding/DWImg44.jpg",
-    "../images/DirectionalWayfinding/DWImg45.jpg",
+    {
+      src: "../portfolio/DirectionalWayfinding/Custom Directional Signage Toowoomba.webp",
+      alt: "Directional signage Toowoomba – internal business signs",
+    },
+    {
+      src: "../portfolio/DirectionalWayfinding/Custom Street Signs Toowoomba.webp",
+      alt: "Outdoor wayfinding signage Toowoomba – public space",
+    },
+    {
+      src: "../portfolio/DirectionalWayfinding/Customer Parking Signs Toowoomba.webp",
+      alt: "Directional signage Toowoomba – Customer parking sign",
+    },
+    {
+      src: "../portfolio/DirectionalWayfinding/Directional Pylon Signs Toowoomba.webp",
+      alt: "Directional pylon sign Toowoomba - large scale sign",
+    },
+    {
+      src: "../portfolio/DirectionalWayfinding/Directional Signs Toowoomba.webp",
+      alt: "Multi tenant directional signage Toowoomba – custom arrows",
+    },
+    {
+      src: "../portfolio/DirectionalWayfinding/Marker Signage Toowoomba.webp",
+      alt: "Custom fabricated wayfinding sign Toowoomba – garden display sign",
+    },
+    {
+      src: "../portfolio/DirectionalWayfinding/Statutory Signs Toowoomba.webp",
+      alt: "Statutory bathroom signage Toowoomba – visual navigation solution",
+    },
+    {
+      src: "../portfolio/DirectionalWayfinding/Street Address Signs Toowoomba.webp",
+      alt: "Street address sign Toowoomba – location signage",
+    },
+    {
+      src: "../portfolio/DirectionalWayfinding/Wayfinding Signs Toowoomba.webp",
+      alt: "Garden wayfinding signage Toowoomba – professional design",
+    },
+    {
+      src: "../portfolio/DirectionalWayfinding/Wheel Stop Signs Toowoomba.webp",
+      alt: "Completed directional carpark signage Toowoomba project",
+    },
   ];
 
   return (
@@ -198,11 +198,26 @@ function DirectionalWayfinding() {
         </div>
       </section>
 
-      <section>
-        <Gallery
-          images={galleryUrls}
-          title="Directional & Wayfinding Signage Gallery"
-        />
+      <section className="product-detail-section">
+        <div className="text-center mx-auto px-3">
+          <h2 className="mb-3 fw-bold text-heading">Portfolio Highlights</h2>
+          <p
+            className="description-text text-muted"
+            style={{ fontSize: "1.3rem" }}
+          >
+            We’ve installed wayfinding signage in healthcare, education, retail,
+            and commercial environments across Toowoomba. See our Portfolio for
+            examples
+          </p>
+          <Button className="py-2 mt-4">
+            <a
+              href="/gallery-directional-wayfinding"
+              className="text-white text-decoration-none"
+            >
+              View Portfolio
+            </a>
+          </Button>
+        </div>
       </section>
 
       <section className="product-detail-section my-4">

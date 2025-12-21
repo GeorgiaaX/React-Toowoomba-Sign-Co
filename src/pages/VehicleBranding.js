@@ -3,9 +3,9 @@ import Navbar from "../components/Navbar";
 import Header from "../components/Header";
 import CustomFooter from "../components/CustomFooter";
 import GallerySlide from "../components/GallerySlide";
-import Gallery from "../components/Gallery";
 import FixedQuoteBtn from "../components/FixedQuoteBtn";
 import FaqAccordion from "../components/Faqs";
+import { Button } from "react-bootstrap";
 
 function VehicleBranding() {
   useEffect(() => {
@@ -36,37 +36,46 @@ function VehicleBranding() {
 
   //gallerySlide Urls
   const imageUrls = [
-    "../images/VehicleBranding/VFImg12.jpg",
-    "../images/VehicleBranding/VFImg44.jpg",
-    "../images/VehicleBranding/VFImg3.jpg",
-    "../images/VehicleBranding/VFImg9.jpg",
-    "../images/VehicleBranding/VFImg46.jpg",
-    "../images/VehicleBranding/VFImg2.jpg",
-    "../images/VehicleBranding/VFImg45.jpg",
-    "../images/VehicleBranding/VFImg13.jpg",
-    "../images/VehicleBranding/VFImg14.jpg",
-    "../images/VehicleBranding/VFImg11.jpg",
-  ];
-
-  //gallery stills urls
-  const galleryUrls = [
-    "../images/VehicleBranding/VFImg2.jpg",
-    "../images/VehicleBranding/VFImg12.jpg",
-    "../images/VehicleBranding/VFImg10.jpg",
-    "../images/VehicleBranding/VFImg11.jpg",
-    "../images/VehicleBranding/VFImg13.jpg",
-    "../images/VehicleBranding/VFImg14.jpg",
-    "../images/VehicleBranding/VFImg3.jpg",
-    "../images/VehicleBranding/VFImg9.jpg",
-    "../images/VehicleBranding/VFImg40.jpg",
-    "../images/VehicleBranding/VFImg41.jpg",
-    "../images/VehicleBranding/VFImg42.jpg",
-    "../images/VehicleBranding/VFImg43.jpg",
-    "../images/VehicleBranding/VFImg44.jpg",
-    "../images/VehicleBranding/VFImg45.jpg",
-    "../images/VehicleBranding/VFImg46.jpg",
-    "../images/VehicleBranding/VFImg47.jpg",
-    "../images/VehicleBranding/VFImg48.jpg",
+    {
+      src: "../portfolio/VehicleBranding/Car Decal Signage Toowoomba.webp",
+      alt: "Car signage Toowoomba – vinyl wrap installation",
+    },
+    {
+      src: "../portfolio/VehicleBranding/Car Signage Toowoomba.webp",
+      alt: "Partial wrap Toowoomba – custom vehicle branding",
+    },
+    {
+      src: "../portfolio/VehicleBranding/Car Wraps Toowoomba.webp",
+      alt: "Vehicle wrap Toowoomba – business fleet graphics",
+    },
+    {
+      src: "../portfolio/VehicleBranding/One Way Vision Signs Toowoomba.webp",
+      alt: "Van wrap Toowoomba – full coverage vehicle sign",
+    },
+    {
+      src: "../portfolio/VehicleBranding/Tanker & Trailer Signs Toowoomba.webp",
+      alt: "Truck Trailer signage Toowoomba – logo graphics",
+    },
+    {
+      src: "../portfolio/VehicleBranding/Trailer Signage Toowoomba.webp",
+      alt: "Trailer Signage Toowoomba – large format vehicle signage",
+    },
+    {
+      src: "../portfolio/VehicleBranding/Truck Signage Toowoomba.webp",
+      alt: "Truck signage Toowoomba – professional design",
+    },
+    {
+      src: "../portfolio/VehicleBranding/Ute Signage Toowoomba.webp",
+      alt: "Ute wrap Toowoomba – custom vehicle branding",
+    },
+    {
+      src: "../portfolio/VehicleBranding/Vehicle Door Decals Toowoomba.webp",
+      alt: "Fleet vehicle wraps Toowoomba by local sign writers",
+    },
+    {
+      src: "../portfolio/VehicleBranding/Vehicle Signage & Wraps Toowoomba.webp",
+      alt: "Vehicle graphics Toowoomba – commercial car wraps",
+    },
   ];
 
   return (
@@ -188,11 +197,24 @@ function VehicleBranding() {
         </div>
       </section>
 
-      <section>
-        <Gallery
-          images={galleryUrls}
-          title=" Vehicle Branding Signage Gallery"
-        />
+      <section className="product-detail-section">
+        <div className="text-center mx-auto px-3">
+          <h2 className="mb-3 fw-bold text-heading">Portfolio Highlights</h2>
+          <p
+            className="description-text text-muted"
+            style={{ fontSize: "1.3rem" }}
+          >
+            From small business utes to large transport fleets, we’ve wrapped vehicles of all sizes across Toowoomba. Explore our Portfolio to see the results.
+          </p>
+          <Button className="py-2 mt-4">
+            <a
+              href="/gallery-vehicle-branding"
+              className="text-white text-decoration-none"
+            >
+              View Portfolio
+            </a>
+          </Button>
+        </div>
       </section>
 
       <section className="product-detail-section my-4">

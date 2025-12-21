@@ -3,9 +3,9 @@ import Navbar from "../components/Navbar";
 import Header from "../components/Header";
 import CustomFooter from "../components/CustomFooter";
 import GallerySlide from "../components/GallerySlide";
-import Gallery from "../components/Gallery";
 import FixedQuoteBtn from "../components/FixedQuoteBtn";
 import FaqAccordion from "../components/Faqs";
+import { Button } from "react-bootstrap";
 
 function BuildingShopface() {
   useEffect(() => {
@@ -37,35 +37,46 @@ function BuildingShopface() {
   ];
 
   const imageUrls = [
-    "../images/BuildingShopface/BSImg45.jpg",
-    "../images/BuildingShopface/BSImg98.jpg",
-    "../images/BuildingShopface/BSImg46.jpg",
-    "../images/BuildingShopface/BSImg21.jpg",
-    "../images/BuildingShopface/BSImg22.jpg",
-    "../images/BuildingShopface/BSImg7.jpg",
-    "../images/BuildingShopface/BSImg23.jpg",
-    "../images/BuildingShopface/BSImg9.jpg",
-    "../images/BuildingShopface/BSImg10.jpg",
-  ];
-
-  const galleryUrls = [
-    "../images/BuildingShopface/BSImg7.jpg",
-    "../images/BuildingShopface/BSImg9.jpg",
-    "../images/BuildingShopface/BSImg10.jpg",
-    "../images/BuildingShopface/BSImg21.jpg",
-    "../images/BuildingShopface/BSImg22.jpg",
-    "../images/BuildingShopface/BSImg23.jpg",
-    "../images/BuildingShopface/BSImg30.jpg",
-    "../images/BuildingShopface/BSImg99.jpg",
-    "../images/BuildingShopface/BSImg98.jpg",
-    "../images/BuildingShopface/BSImg97.jpg",
-    "../images/BuildingShopface/BSImg40.jpg",
-    "../images/BuildingShopface/BSImg41.jpg",
-    "../images/BuildingShopface/BSImg42.jpg",
-    "../images/BuildingShopface/BSImg43.jpg",
-    "../images/BuildingShopface/BSImg44.jpg",
-    "../images/BuildingShopface/BSImg45.jpg",
-    "../images/BuildingShopface/BSImg46.jpg",
+    {
+      src: "../portfolio/CommercialSignage/3D Illuminated Letters Toowoomba.webp",
+      alt: "",
+    },
+    {
+      src: "../portfolio/CommercialSignage/Commercial Illuminated Signage Toowoomba.webp",
+      alt: "",
+    },
+    {
+      src: "../portfolio/CommercialSignage/Commercial New Build Signage Toowoomba.webp",
+      alt: "",
+    },
+    {
+      src: "../portfolio/CommercialSignage/Commercial Signage Print Rollouts Toowoomba.webp",
+      alt: "",
+    },
+    {
+      src: "../portfolio/CommercialSignage/Custom Commercial Signage.webp",
+      alt: "",
+    },
+    {
+      src: "../portfolio/CommercialSignage/Custom Illuminated Commercial Signs Toowoomba.webp",
+      alt: "",
+    },
+    {
+      src: "../portfolio/CommercialSignage/Custom Lightboxes Toowoomba.webp",
+      alt: "",
+    },
+    {
+      src: "../portfolio/CommercialSignage/Entire Building Commercial Signage Toowoomba.webp",
+      alt: "",
+    },
+    {
+      src: "../portfolio/CommercialSignage/Large Scale Commercial Signage Toowoomba.webp",
+      alt: "",
+    },
+    {
+      src: "../portfolio/CommercialSignage/Pylon Sign Refurbishments Toowoomba.webp",
+      alt: "",
+    },
   ];
 
   return (
@@ -202,8 +213,24 @@ function BuildingShopface() {
         </div>
       </section>
 
-      <section>
-        <Gallery images={galleryUrls} title="Building Signage Gallery" />
+      <section className="product-detail-section">
+        <div className="text-center mx-auto px-3">
+          <h2 className="mb-3 fw-bold text-heading">Portfolio Highlights</h2>
+          <p
+            className="description-text text-muted"
+            style={{ fontSize: "1.3rem" }}
+          >
+            Our commercial projects include offices, industrial estates, and corporate buildings across Toowoomba. Browse our Portfolio to see what we’ve created.
+          </p>
+          <Button className="py-2 mt-4">
+            <a
+              href="/gallery-commercial-signage"
+              className="text-white text-decoration-none"
+            >
+              View Portfolio
+            </a>
+          </Button>
+        </div>
       </section>
 
       <section className="product-detail-section my-4">

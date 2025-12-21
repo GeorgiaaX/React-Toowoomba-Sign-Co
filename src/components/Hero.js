@@ -54,7 +54,11 @@ export default function Hero(props) {
 
       <div className="hero-card d-flex flex-column justify-content-center align-items-center">
         <div className="header-logo d-flex justify-content-center align-items-center">
-          <img src="./images/logo.png" className="brand-image brand-image-mobile" alt="logo" />
+          <img
+            src="./images/logo.png"
+            className="brand-image brand-image-mobile"
+            alt="logo"
+          />
           <h1 className="brand-name">
             Toowoomba <b className="bold-word">Sign</b> Co
           </h1>
@@ -65,8 +69,18 @@ export default function Hero(props) {
               <h2 className="mb-3 hero-title">
                 {title} <b className="hero-text">{lastWord}</b>
               </h2>
-              <p className="mb-3 hero-subheading">At Toowoomba Sign Co, we provide expert signage solutions in Toowoomba. From shopfront signage and 3D illuminated signs to vehicle wraps and retail displays, our local team designs, manufactures, and installs high-quality signs that help your business stand out.</p> 
-              <p className="mb-3 hero-subheading hero-subheading-mobile">Serving Toowoomba, the Darling Downs & throughout QLD we deliver signage that not only looks professional but also drives customer engagement.</p>
+              <p className="mb-3 hero-subheading">
+                At Toowoomba Sign Co, we provide expert signage solutions in
+                Toowoomba. From shopfront signage and 3D illuminated signs to
+                vehicle wraps and retail displays, our local team designs,
+                manufactures, and installs high-quality signs that help your
+                business stand out.
+              </p>
+              <p className="mb-3 hero-subheading hero-subheading-mobile">
+                Serving Toowoomba, the Darling Downs & throughout QLD we deliver
+                signage that not only looks professional but also drives
+                customer engagement.
+              </p>
               {props.isHomePage && <ModalButton />}
               <div style={{ textAlign: "center" }}>{props.children}</div>
             </Col>

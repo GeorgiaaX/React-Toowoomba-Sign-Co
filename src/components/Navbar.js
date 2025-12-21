@@ -22,9 +22,6 @@ export default function CustomNavbar() {
         <Navbar.Toggle aria-controls="navbarText" />
         <Navbar.Collapse id="navbarText">
           <Nav className="mr-auto">
-            <Link className="nav-link mr-4" to="/">
-              Home
-            </Link>
 
             <NavDropdown title="Products and Services" className="mr-4">
               <NavDropdown.Item as={Link} to="/building-shopface">
@@ -64,6 +61,9 @@ export default function CustomNavbar() {
             </Nav.Link>
             <Nav.Link href="/about-us" className="mr-4">
               About Us
+            </Nav.Link>
+             <Nav.Link href="/portfolio-gallery" className="mr-4">
+              Portfolio
             </Nav.Link>
             <Nav.Link href="/contact" className="mr-4">
               Contact Us

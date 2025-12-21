@@ -3,9 +3,9 @@ import Navbar from "../components/Navbar";
 import Header from "../components/Header";
 import CustomFooter from "../components/CustomFooter";
 import GallerySlide from "../components/GallerySlide";
-import Gallery from "../components/Gallery";
 import FixedQuoteBtn from "../components/FixedQuoteBtn";
 import FaqAccordion from "../components/Faqs";
+import { Button } from "react-bootstrap";
 
 function RetailPOS() {
   useEffect(() => {
@@ -39,37 +39,47 @@ function RetailPOS() {
 
   //gallerySlide Urls
   const imageUrls = [
-    "../images/RetailPOS/POSImg1.jpg",
-    "../images/RetailPOS/POSImg12.jpg",
-    "../images/RetailPOS/POSImg3.jpg",
-    "../images/RetailPOS/POSImg9.jpg",
-    "../images/RetailPOS/POSImg14.jpg",
-    "../images/RetailPOS/POSImg13.jpg",
-    "../images/RetailPOS/POSImg10.jpg",
-    "../images/RetailPOS/POSImg2.jpg",
-    "../images/RetailPOS/POSImg5.jpg",
-    "../images/RetailPOS/POSImg16.jpg",
-  ];
-
-  //gallery stills urls
-  const galleryUrls = [
-    "../images/RetailPOS/POSImg1.jpg",
-    "../images/RetailPOS/POSImg2.jpg",
-    "../images/RetailPOS/POSImg7.jpg",
-    "../images/RetailPOS/POSImg4.jpg",
-    "../images/RetailPOS/POSImg5.jpg",
-    "../images/RetailPOS/POSImg10.jpg",
-    "../images/RetailPOS/POSImg11.jpg",
-    "../images/RetailPOS/POSImg8.jpg",
-    "../images/RetailPOS/POSImg9.jpg",
-    "../images/RetailPOS/POSImg3.jpg",
-    "../images/RetailPOS/POSImg13.jpg",
-    "../images/RetailPOS/POSImg12.jpg",
-    "../images/RetailPOS/POSImg16.jpg",
-    "../images/RetailPOS/POSImg6.jpg",
-    "../images/RetailPOS/POSImg14.jpg",
-    "../images/RetailPOS/POSImg15.jpg",
-  ];
+  {
+    src: "../portfolio/RetailPOS/A Frame Signs Toowoomba.webp",
+    alt: "Retail signage Toowoomba – promotional display sign",
+  },
+  {
+    src: "../portfolio/RetailPOS/Banner Mesh Toowoomba.webp",
+    alt: "Point of sale signage Toowoomba – product highlight",
+  },
+  {
+    src: "../portfolio/RetailPOS/Hoarding Signage Toowoomba.webp",
+    alt: "Event signage Toowoomba – short-term branding",
+  },
+  {
+    src: "../portfolio/RetailPOS/Illuminated Short Term Signage Toowoomba.webp",
+    alt: "Sale signage Toowoomba – temporary retail display",
+  },
+  {
+    src: "../portfolio/RetailPOS/Point Of Sale Signage Toowoomba.webp",
+    alt: "Banner signage Toowoomba – promotional print",
+  },
+  {
+    src: "../portfolio/RetailPOS/Promotional Illuminated Signs Toowoomba.webp",
+    alt: "Window sale graphics Toowoomba – retail advertising",
+  },
+  {
+    src: "../portfolio/RetailPOS/Promotional Signs Toowoomba.webp",
+    alt: "Poster signage Toowoomba – in-store marketing",
+  },
+  {
+    src: "../portfolio/RetailPOS/Short Term Prints Toowoomba.webp",
+    alt: "Pop-up signage Toowoomba – event display",
+  },
+  {
+    src: "../portfolio/RetailPOS/Short Term Reception Signage Toowoomba.webp",
+    alt: "Short-term retail signage Toowoomba – seasonal graphics",
+  },
+  {
+    src: "../portfolio/RetailPOS/Short Term Signage Toowoomba.webp",
+    alt: "Completed retail signage Toowoomba project",
+  },
+];
 
   return (
     <div>
@@ -204,8 +214,24 @@ function RetailPOS() {
         </div>
       </section>
 
-      <section>
-        <Gallery images={galleryUrls} title="Retail POS Gallery" />
+      <section className="product-detail-section">
+        <div className="text-center mx-auto px-3">
+          <h2 className="mb-3 fw-bold text-heading">Portfolio Highlights</h2>
+          <p
+            className="description-text text-muted"
+            style={{ fontSize: "1.3rem" }}
+          >
+            From short-term sales promotions to long-term POS displays, our retail signage has helped Toowoomba stores boost visibility and sales. Check out our Porfolio for examples..
+          </p>
+          <Button className="py-2 mt-4">
+            <a
+              href="/gallery-retail-pos"
+              className="text-white text-decoration-none"
+            >
+              View Portfolio
+            </a>
+          </Button>
+        </div>
       </section>
 
       <section className="product-detail-section my-4">

@@ -4,9 +4,9 @@ import Header from "../components/Header";
 import CustomFooter from "../components/CustomFooter";
 // import ProductDetail from "../components/ProductDetail";
 import GallerySlide from "../components/GallerySlide";
-import Gallery from "../components/Gallery";
 import FixedQuoteBtn from "../components/FixedQuoteBtn";
 import FaqAccordion from "../components/Faqs";
+import { Button } from "react-bootstrap";
 
 function IlluminatedDesigns() {
   useEffect(() => {
@@ -37,40 +37,47 @@ function IlluminatedDesigns() {
     },
   ];
 
-  //gallerySlide Urls
   const imageUrls = [
-    "../images/IlluminatedDesigns/IDImg12.jpg",
-    "../images/IlluminatedDesigns/IDImg21.jpg",
-    "../images/IlluminatedDesigns/IDImg31.jpg",
-    "../images/IlluminatedDesigns/IDImg19.jpg",
-    "../images/IlluminatedDesigns/IDImg16.jpg",
-    "../images/IlluminatedDesigns/IDImg11.jpg",
-    "../images/IlluminatedDesigns/IDImg18.jpg",
-    "../images/IlluminatedDesigns/IDImg10.jpg",
-    "../images/IlluminatedDesigns/IDImg6.jpg",
-    "../images/IlluminatedDesigns/IDImg33.jpg",
-  ];
-
-  //gallery stills urls
-  const galleryUrls = [
-    "../images/IlluminatedDesigns/IDImg12.jpg",
-    "../images/IlluminatedDesigns/IDImg21.jpg",
-    "../images/IlluminatedDesigns/IDImg8.jpg",
-    "../images/IlluminatedDesigns/IDImg18.jpg",
-    "../images/IlluminatedDesigns/IDImg11.jpg",
-    "../images/IlluminatedDesigns/IDImg23.jpg",
-    "../images/IlluminatedDesigns/IDImg10.jpg",
-    "../images/IlluminatedDesigns/IDImg16.jpg",
-    "../images/IlluminatedDesigns/IDImg17.jpg",
-    "../images/IlluminatedDesigns/IDImg19.jpg",
-    "../images/IlluminatedDesigns/IDImg20.jpg",
-    "../images/IlluminatedDesigns/IDImg6.jpg",
-    "../images/IlluminatedDesigns/IDImg22.jpg",
-    "../images/IlluminatedDesigns/IDImg14.jpg",
-    "../images/IlluminatedDesigns/IDImg31.jpg",
-    "../images/IlluminatedDesigns/IDImg32.jpg",
-    "../images/IlluminatedDesigns/IDImg33.jpg",
-    "../images/IlluminatedDesigns/IDImg34.jpg",
+    {
+      src: "../portfolio/IlluminatedDesigns/3D Acrylic Signage Toowoomba.webp",
+      alt: "3D acrylic sign Toowoomba – custom fabricated logo signage",
+    },
+    {
+      src: "../portfolio/IlluminatedDesigns/Custom 3D Lettering Toowoomba.webp",
+      alt: "Reception wall business sign Toowoomba – bright reception design",
+    },
+    {
+      src: "../portfolio/IlluminatedDesigns/Freestanding Lightbox Signs Toowoomba.webp",
+      alt: "Backlit signage Toowoomba – premium business sign",
+    },
+    {
+      src: "../portfolio/IlluminatedDesigns/Illuminated Letter Signs Toowoomba.webp",
+      alt: "Halo-lit 3D letters Toowoomba – illuminated wall signage",
+    },
+    {
+      src: "../portfolio/IlluminatedDesigns/Illuminated Push Through Letter Signs Toowoomba.webp",
+      alt: "Corporate 3d illuminated sign Toowoomba – creative branding",
+    },
+    {
+      src: "../portfolio/IlluminatedDesigns/Laser Cut Acrylic Signage Toowoomba.webp",
+      alt: "3d lettering sign Toowoomba installed by sign writers",
+    },
+    {
+      src: "../portfolio/IlluminatedDesigns/Light Up Signage Toowoomba.webp",
+      alt: "Corporate 3D illuminated signage Toowoomba – modern finish",
+    },
+    {
+      src: "../portfolio/IlluminatedDesigns/Lightbox Signage Toowoomba.webp",
+      alt: "Lightbox sign Toowoomba – high-impact advertising",
+    },
+    {
+      src: "../portfolio/IlluminatedDesigns/Painted 3D Signs Toowoomba.webp",
+      alt: "Exterior 3D letters Toowoomba – custom signage installation",
+    },
+    {
+      src: "../portfolio/IlluminatedDesigns/Router Cut 3D Signage Toowoomba.webp",
+      alt: "Completed 3D signage Toowoomba project",
+    },
   ];
 
   return (
@@ -196,8 +203,24 @@ function IlluminatedDesigns() {
         </div>
       </section>
 
-      <section>
-        <Gallery images={galleryUrls} title="3D Illuminated Signage Gallery" />
+      <section className="product-detail-section">
+        <div className="text-center mx-auto px-3">
+          <h2 className="mb-3 fw-bold text-heading">Portfolio Highlights</h2>
+          <p
+            className="description-text text-muted"
+            style={{ fontSize: "1.3rem" }}
+          >
+            We’ve produced 3D & illuminated signage for retail, hospitality, and corporate clients across Toowoomba & throughout QLD. Explore our Portfolio to see how these signs transform businesses at night.
+          </p>
+          <Button className="py-2 mt-4">
+            <a
+              href="/gallery-illuminated-designs"
+              className="text-white text-decoration-none"
+            >
+              View Portfolio
+            </a>
+          </Button>
+        </div>
       </section>
 
       <section className="product-detail-section my-4">

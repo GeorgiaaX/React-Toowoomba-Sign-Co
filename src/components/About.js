@@ -2,6 +2,7 @@ import AboutCarousel from "./AboutCarousel";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import ProcessSteps from "./ProcessSteps";
 import ModalButton from "./ModalButton";
+import { Button } from "react-bootstrap";
 
 function About() {
   return (
@@ -144,6 +145,17 @@ function About() {
               portfolio includes shopfront transformations, 3D & illuminated
               signs, retail signage, and more.
             </Card.Text>
+
+            <div className="text-center mx-auto px-3">
+              <Button className="py-2 mt-4">
+                <a
+                  href="/portfolio-gallery"
+                  className="text-white text-decoration-none"
+                >
+                  View Portfolio
+                </a>
+              </Button>
+            </div>
           </Card.Body>
         </Card>
       </div>

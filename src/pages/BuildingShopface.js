@@ -4,9 +4,10 @@ import Header from "../components/Header";
 import CustomFooter from "../components/CustomFooter";
 // import ProductDetail from "../components/ProductDetail";
 import GallerySlide from "../components/GallerySlide";
-import Gallery from "../components/Gallery";
+// import Gallery from "../components/Gallery";
 import FixedQuoteBtn from "../components/FixedQuoteBtn";
 import FaqAccordion from "../components/Faqs";
+import { Button } from "react-bootstrap";
 
 function BuildingShopface() {
   useEffect(() => {
@@ -38,35 +39,46 @@ function BuildingShopface() {
   ];
 
   const imageUrls = [
-    "../images/BuildingShopface/BSImg45.jpg",
-    "../images/BuildingShopface/BSImg98.jpg",
-    "../images/BuildingShopface/BSImg46.jpg",
-    "../images/BuildingShopface/BSImg21.jpg",
-    "../images/BuildingShopface/BSImg22.jpg",
-    "../images/BuildingShopface/BSImg7.jpg",
-    "../images/BuildingShopface/BSImg23.jpg",
-    "../images/BuildingShopface/BSImg9.jpg",
-    "../images/BuildingShopface/BSImg10.jpg",
-  ];
-
-  const galleryUrls = [
-    "../images/BuildingShopface/BSImg7.jpg",
-    "../images/BuildingShopface/BSImg9.jpg",
-    "../images/BuildingShopface/BSImg10.jpg",
-    "../images/BuildingShopface/BSImg21.jpg",
-    "../images/BuildingShopface/BSImg22.jpg",
-    "../images/BuildingShopface/BSImg23.jpg",
-    "../images/BuildingShopface/BSImg30.jpg",
-    "../images/BuildingShopface/BSImg99.jpg",
-    "../images/BuildingShopface/BSImg98.jpg",
-    "../images/BuildingShopface/BSImg97.jpg",
-    "../images/BuildingShopface/BSImg40.jpg",
-    "../images/BuildingShopface/BSImg41.jpg",
-    "../images/BuildingShopface/BSImg42.jpg",
-    "../images/BuildingShopface/BSImg43.jpg",
-    "../images/BuildingShopface/BSImg44.jpg",
-    "../images/BuildingShopface/BSImg45.jpg",
-    "../images/BuildingShopface/BSImg46.jpg",
+    {
+      src: "../portfolio/BuildingShopface/3D Painted Shopfront Signage Toowoomba.webp",
+      alt: "Completed shopfront sign Toowoomba – 3d signage example",
+    },
+    {
+      src: "../portfolio/BuildingShopface/3D Shopfront Signs Toowoomba.webp",
+      alt: "Business building signage Toowoomba – modern branding",
+    },
+    {
+      src: "../portfolio/BuildingShopface/Building Signage Toowoomba Flat Panel.webp",
+      alt: "Custom building signage Toowoomba – company branding signs installation",
+    },
+    {
+      src: "../portfolio/BuildingShopface/Complete Building Signage Toowoomba.webp",
+      alt: "Retail fascia signage Toowoomba designed by sign writers",
+    },
+    {
+      src: "../portfolio/BuildingShopface/Custom Frame Building Signs Toowoomba.webp",
+      alt: "Large outdoor building sign Toowoomba – commercial property signage",
+    },
+    {
+      src: "../portfolio/BuildingShopface/Hanging Signs Toowoomba.webp",
+      alt: "Boutique shop signage Toowoomba – premium finish",
+    },
+    {
+      src: "../portfolio/BuildingShopface/Painted & Router Cut Building Signs Toowoomba.webp",
+      alt: "Complete building business signs Toowoomba – creative business signage",
+    },
+    {
+      src: "../portfolio/BuildingShopface/Roof Signs Toowoomba.webp",
+      alt: "Custom roof signs Toowoomba – high visibility signage",
+    },
+    {
+      src: "../portfolio/BuildingShopface/Router Cut Text Signage Toowoomba.webp",
+      alt: "Completed building signage Toowoomba project",
+    },
+    {
+      src: "../portfolio/BuildingShopface/Shed Signs Toowoomba.webp",
+      alt: "Aluminium panel sign Toowoomba – shed branding project",
+    },
   ];
 
   return (
@@ -197,24 +209,46 @@ function BuildingShopface() {
         </div>
       </section>
 
-      <section>
-        <Gallery images={galleryUrls} title="Building Signage Gallery" />
+      <section className="product-detail-section">
+        <div className="text-center mx-auto px-3">
+          <h2 className="mb-3 fw-bold text-heading">Portfolio Highlights</h2>
+          <p className="description-text text-muted" style={{ fontSize: "1.3rem" }}>
+            From cafés to multi-storey businesses, we’ve delivered building and
+            shopfront signage across Toowoomba that reflects each client’s brand
+            and personality. Explore more examples in our Portfolio
+          </p>
+          <Button className="py-2 mt-4 ">
+            <a
+              href="/gallery-building-shopface"
+              className="text-white text-decoration-none"
+            >
+              View Portfolio
+            </a>
+          </Button>
+        </div>
       </section>
 
-    <section className="product-detail-section my-4">
-      <h2 className="mb-3 text-heading">FAQs</h2>
-      <FaqAccordion
-        id="accordion" 
-        items={faqItems}
-        alwaysOpen={false}
-        defaultOpenIndex={0} 
-        buttonClassName="btn btn-link text-left w-100"
-      />
-    </section>
+      {/* <section>
+        <Gallery images={galleryUrls} title="Building Signage Gallery" />
+      </section> */}
 
-    <section className="product-detail-section my-4">
-      <p style={{ fontSize: "1.3rem" }} className="text-center">Ready to refresh your shopfront? Contact Toowoomba Sign Co today for custom building signage that gets your business noticed.</p>
-    </section>
+      <section className="product-detail-section my-4">
+        <h2 className="mb-3 text-heading">FAQs</h2>
+        <FaqAccordion
+          id="accordion"
+          items={faqItems}
+          alwaysOpen={false}
+          defaultOpenIndex={0}
+          buttonClassName="btn btn-link text-left w-100"
+        />
+      </section>
+
+      <section className="product-detail-section my-4">
+        <p style={{ fontSize: "1.3rem" }} className="text-center">
+          Ready to refresh your shopfront? Contact Toowoomba Sign Co today for
+          custom building signage that gets your business noticed.
+        </p>
+      </section>
 
       <section>
         <CustomFooter />

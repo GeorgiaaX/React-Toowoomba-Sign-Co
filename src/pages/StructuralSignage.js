@@ -3,9 +3,9 @@ import Navbar from "../components/Navbar";
 import Header from "../components/Header";
 import CustomFooter from "../components/CustomFooter";
 import GallerySlide from "../components/GallerySlide";
-import Gallery from "../components/Gallery";
 import FixedQuoteBtn from "../components/FixedQuoteBtn";
 import FaqAccordion from "../components/Faqs";
+import { Button } from "react-bootstrap";
 
 function StructuralSignage() {
   useEffect(() => {
@@ -39,35 +39,46 @@ function StructuralSignage() {
 
   //gallerySlide Urls
   const imageUrls = [
-    "../images/StructuralSignage/SSImg14.jpg",
-    "../images/StructuralSignage/SSImg12.jpg",
-    "../images/StructuralSignage/SSImg9.jpg",
-    "../images/StructuralSignage/SSImg13.jpg",
-    "../images/StructuralSignage/SSImg18.jpg",
-    "../images/StructuralSignage/SSImg24.jpg",
-    "../images/StructuralSignage/SSImg19.jpg",
-    "../images/StructuralSignage/SSImg24.jpg",
-    "../images/StructuralSignage/SSImg19.jpg",
-    "../images/StructuralSignage/SSImg40.jpg",
-  ];
-
-  //gallery stills urls
-  const galleryUrls = [
-    "../images/StructuralSignage/SSImg9.jpg",
-    "../images/StructuralSignage/SSImg10.jpg",
-    "../images/StructuralSignage/SSImg11.jpg",
-    "../images/StructuralSignage/SSImg12.jpg",
-    "../images/StructuralSignage/SSImg13.jpg",
-    "../images/StructuralSignage/SSImg14.jpg",
-    "../images/StructuralSignage/SSImg18.jpg",
-    "../images/StructuralSignage/SSImg19.jpg",
-    "../images/StructuralSignage/SSImg20.jpg",
-    "../images/StructuralSignage/SSImg15.jpg",
-    "../images/StructuralSignage/SSImg17.jpg",
-    "../images/StructuralSignage/SSImg24.jpg",
-    "../images/StructuralSignage/SSImg40.jpg",
-    "../images/StructuralSignage/SSImg41.jpg",
-    "../images/StructuralSignage/SSImg42.jpg",
+    {
+      src: "../portfolio/StructuralSignage/Billboard Signage Toowoomba.webp",
+      alt: "Structural signage Toowoomba – outdoor billboard signage",
+    },
+    {
+      src: "../portfolio/StructuralSignage/Billboard Signs Toowoomba.webp",
+      alt: "Large freestanding signage Toowoomba – structural installation",
+    },
+    {
+      src: "../portfolio/StructuralSignage/Custom Billboard Signs Toowoomba.webp",
+      alt: "Custom billboard signage Toowoomba – durable outdoor signs",
+    },
+    {
+      src: "../portfolio/StructuralSignage/Custom Frame Signage Toowoomba.webp",
+      alt: "Structural aluminium sign Toowoomba – custom fabrication",
+    },
+    {
+      src: "../portfolio/StructuralSignage/Freestanding School Signage Toowoomba.webp",
+      alt: "Freestanding frame signage Toowoomba – business exposure",
+    },
+    {
+      src: "../portfolio/StructuralSignage/Hanging 3D Signage Toowoomba.webp",
+      alt: "Monument sign Toowoomba – structural ground signage",
+    },
+    {
+      src: "../portfolio/StructuralSignage/Illuminated Frame Signs Toowoomba.webp",
+      alt: "Outdoor illuminated structural signage Toowoomba – large format sign",
+    },
+    {
+      src: "../portfolio/StructuralSignage/Monolith & Pylon Signs Toowoomba.webp",
+      alt: "Multi-tenant signage Toowoomba – commercial area branding",
+    },
+    {
+      src: "../portfolio/StructuralSignage/Outdoor Frame Signs Toowoomba.webp",
+      alt: "Completed structural signage Toowoomba project",
+    },
+    {
+      src: "../portfolio/StructuralSignage/Pylon Signs Toowoomba.webp",
+      alt: "Pylon sign Toowoomba – commercial directional signage",
+    },
   ];
 
   return (
@@ -219,8 +230,24 @@ function StructuralSignage() {
         </div>
       </section>
 
-      <section>
-        <Gallery images={galleryUrls} title="Structural Signage Gallery" />
+      <section className="product-detail-section">
+        <div className="text-center mx-auto px-3">
+          <h2 className="mb-3 fw-bold text-heading">Portfolio Highlights</h2>
+          <p
+            className="description-text text-muted"
+            style={{ fontSize: "1.3rem" }}
+          >
+         We’ve designed structural signage for retail centres, service stations, schools, and industrial estates across Toowoomba. View examples in our Portfolio.
+          </p>
+          <Button className="py-2 mt-4">
+            <a
+              href="/gallery-structural-signage"
+              className="text-white text-decoration-none"
+            >
+              View Portfolio
+            </a>
+          </Button>
+        </div>
       </section>
 
       <section className="product-detail-section my-4">
