@@ -39,43 +39,43 @@ function BuildingShopface() {
   const imageUrls = [
     {
       src: "../portfolio/CommercialSignage/3D Illuminated Letters Toowoomba.webp",
-      alt: "",
+      alt: "Commercial 3d signage Toowoomba – business exterior sign",
     },
     {
       src: "../portfolio/CommercialSignage/Commercial Illuminated Signage Toowoomba.webp",
-      alt: "",
+      alt: "Corporate signage Toowoomba – full branding solution",
     },
     {
       src: "../portfolio/CommercialSignage/Commercial New Build Signage Toowoomba.webp",
-      alt: "",
+      alt: "Illuminated business sign Toowoomba – exterior installation",
     },
     {
       src: "../portfolio/CommercialSignage/Commercial Signage Print Rollouts Toowoomba.webp",
-      alt: "",
+      alt: "Drive thru signage Toowoomba – retail site branding",
     },
     {
       src: "../portfolio/CommercialSignage/Custom Commercial Signage.webp",
-      alt: "",
+      alt: "Custom commercial sign Toowoomba – post locker structure",
     },
     {
       src: "../portfolio/CommercialSignage/Custom Illuminated Commercial Signs Toowoomba.webp",
-      alt: "",
+      alt: "Office signage Toowoomba – internal illuminated graphics",
     },
     {
       src: "../portfolio/CommercialSignage/Custom Lightboxes Toowoomba.webp",
-      alt: "",
+      alt: "Shopfront signage Toowoomba – retail building sign",
     },
     {
       src: "../portfolio/CommercialSignage/Entire Building Commercial Signage Toowoomba.webp",
-      alt: "",
+      alt: "Exterior business signage Toowoomba – custom design",
     },
     {
       src: "../portfolio/CommercialSignage/Large Scale Commercial Signage Toowoomba.webp",
-      alt: "",
+      alt: "Large commercial banner signage Toowoomba – corporate branding",
     },
     {
       src: "../portfolio/CommercialSignage/Pylon Sign Refurbishments Toowoomba.webp",
-      alt: "",
+      alt: "Completed commercial signage Toowoomba project",
     },
   ];
 
