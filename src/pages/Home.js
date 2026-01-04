@@ -44,7 +44,7 @@ export default function Home() {
         <ElevateBrand targetRef={productsServicesRef} />
       </section>
 
-      <section ref={productsServicesRef}>
+      <section ref={productsServicesRef} id="services-section">
         <ProductsServices />
       </section>
 

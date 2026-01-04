@@ -5,6 +5,7 @@ import CustomFooter from "../components/CustomFooter";
 import FixedQuoteBtn from "../components/FixedQuoteBtn";
 import { Container, Row, Col } from "react-bootstrap";
 import ModalButton from "../components/ModalButton";
+import { Link } from "react-router-dom";
 
 function OurProcess() {
   useEffect(() => {
@@ -50,6 +51,24 @@ function OurProcess() {
     },
   ];
 
+  const items = [
+    {
+      title: "Portfolio of Signage Projects",
+      desc: "Browse a selection of signage projects we’ve delivered for businesses across the region.",
+      to: "/portfolio-gallery",
+    },
+    {
+      title: "About Our Team",
+      desc: "Get to know the people behind Toowoomba Sign Co and how we work with our clients.",
+      to: "/about-us",
+    },
+      {
+    title: "Contact Us",
+    desc: "Get in touch with our team to discuss your signage needs or request a free quote.",
+    to: "/contact",
+  },
+  ];
+
   return (
     <div>
       <section>
@@ -69,6 +88,7 @@ function OurProcess() {
             lastWord: "Work",
             subheading:
               "At Toowoomba Sign Co, we make signage simple. Our clear step-by-step process ensures your project runs smoothly from start to finish.",
+            link: "/our-process",
           }}
         />
       </section>
@@ -114,6 +134,35 @@ function OurProcess() {
         </p>
         <div className="d-flex justify-content-center">
           <ModalButton />
+        </div>
+      </section>
+
+      <section className="my-5 mx-4">
+        <div className="row gap-3 justify-content-center">
+          {items.map((item) => (
+            <div key={item.to} className="col-12 col-md-4">
+              <Link to={item.to} className="text-decoration-none d-block">
+                <div className="shadow-sm rounded-4 p-4 other-products-card">
+                  <div className="d-flex align-items-center justify-content-between gap-3">
+                    <div className="flex-grow-1">
+                      <h4
+                        className="mb-1 text-heading"
+                        style={{ fontSize: "1.05rem" }}
+                      >
+                        {item.title}
+                      </h4>
+                      <p
+                        className="text-muted mb-0"
+                        style={{ lineHeight: 1.5 }}
+                      >
+                        {item.desc}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            </div>
+          ))}
         </div>
       </section>
 

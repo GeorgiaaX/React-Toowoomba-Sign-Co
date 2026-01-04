@@ -5,6 +5,7 @@ import CustomFooter from "../components/CustomFooter";
 import FixedQuoteBtn from "../components/FixedQuoteBtn";
 import AboutCarousel from "../components/AboutCarousel";
 import ModalButton from "../components/ModalButton";
+import { Link } from "react-router-dom";
 
 function AboutUsPage() {
   useEffect(() => {
@@ -16,6 +17,24 @@ function AboutUsPage() {
         "Learn more about Toowoomba Sign Co – your trusted local sign writers in Toowoomba. We create custom signage solutions for businesses across the Darling Downs."
       );
   }, []);
+
+  const items = [
+    {
+      title: "View Our Process",
+      desc: "Learn how we take your signage from concept and design through to installation.",
+      to: "/our-process",
+    },
+    {
+      title: "Portfolio of Completed Signs",
+      desc: "Explore real projects we've delivered for businesses across Toowoomba and beyond.",
+      to: "/portfolio-gallery",
+    },
+    {
+      title: "Contact Us",
+      desc: "Get in touch with our team to discuss your signage needs or request a free quote.",
+      to: "/contact",
+    },
+  ];
 
   return (
     <div>
@@ -36,6 +55,7 @@ function AboutUsPage() {
             lastWord: "Signwriters",
             subheading:
               "At Toowoomba Sign Co, we’re more than just signwriters, we’re brand builders. With years of industry experience, we’ve helped local businesses across Toowoomba, the Darling Downs and throughout QLD stand out with high-quality signage that delivers real results.",
+            link: "/",
           }}
         />
       </section>
@@ -146,6 +166,35 @@ function AboutUsPage() {
               </article>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="my-5 mx-4">
+        <div className="row gap-3 justify-content-center">
+          {items.map((item) => (
+            <div key={item.to} className="col-12 col-md-4">
+              <Link to={item.to} className="text-decoration-none d-block">
+                <div className="shadow-sm rounded-4 p-4 other-products-card">
+                  <div className="d-flex align-items-center justify-content-between gap-3">
+                    <div className="flex-grow-1">
+                      <h4
+                        className="mb-1 text-heading"
+                        style={{ fontSize: "1.05rem" }}
+                      >
+                        {item.title}
+                      </h4>
+                      <p
+                        className="text-muted mb-0"
+                        style={{ lineHeight: 1.5 }}
+                      >
+                        {item.desc}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            </div>
+          ))}
         </div>
       </section>
 

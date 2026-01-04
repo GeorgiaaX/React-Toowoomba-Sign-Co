@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 export default function Header({heading, isGenericPage, isContactPage, contactFormRef, children }) {
     const { title, subheading, lastWord, link } = heading;
 
+
    const headerStyle = {
     backgroundImage: `
     linear-gradient(rgba(12, 19, 31, 0.5), rgba(12, 19, 31, 0.6)),
@@ -34,7 +35,7 @@ export default function Header({heading, isGenericPage, isContactPage, contactFo
                 <Row className="justify-content-start">
                     <Col xs={12} className="text-white">
                         <h1 className="mb-3 hero-title">
-                            <Link to={link} className="text-white">{title} <b className="bold-word">{lastWord}</b></Link>
+                            <Link to={`${link}`} className="text-white">{title} <b className="bold-word">{lastWord}</b></Link>
                         </h1>
                         <h2 className="mb-3 header-subheading">{subheading}</h2>
                         {isGenericPage && <ModalButton />}
