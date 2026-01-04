@@ -33,9 +33,6 @@ export default function Home() {
       <section>
         <Hero
           isHomePage={true}
-          heading={{
-            title: "Signs Toowoomba – Custom Signage & Sign Writers Toowoomba",
-          }}
         />
       </section>
 

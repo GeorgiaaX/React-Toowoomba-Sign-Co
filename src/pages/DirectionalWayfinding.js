@@ -6,6 +6,8 @@ import GallerySlide from "../components/GallerySlide";
 import FixedQuoteBtn from "../components/FixedQuoteBtn";
 import FaqAccordion from "../components/Faqs";
 import { Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import ModalButton from "../components/ModalButton";
 
 function DirectionalWayfinding() {
   const faqItems = [
@@ -79,6 +81,19 @@ function DirectionalWayfinding() {
     },
   ];
 
+  const items = [
+    {
+      title: "Reception & Interior Signage",
+      desc: "Create a professional, welcoming space with custom interior signage.",
+      to: "/reception-interior",
+    },
+    {
+      title: "Structural Signage",
+      desc: "Durable building and structural signage designed for visibility and impact.",
+      to: "/structural-signage",
+    },
+  ];
+
   return (
     <div>
       <section>
@@ -98,6 +113,7 @@ function DirectionalWayfinding() {
             lastWord: "Toowoomba",
             subheading:
               "Clear signage helps people navigate spaces with ease. At Toowoomba Sign Co, we design directional and wayfinding signs that guide staff, visitors, and customers through offices, campuses, shopping centres, and more. Our signage blends clarity with professional branding, ensuring people never feel lost.",
+              link: "/directional-wayfinding"
           }}
         />
       </section>
@@ -105,17 +121,6 @@ function DirectionalWayfinding() {
       <section>
         <GallerySlide images={imageUrls} />
       </section>
-
-      {/* <section>
-        <ProductDetail
-          firstPhrase="Help your customers find you"
-          secondPhrase="Easy to follow directional signage for your business or organisaion"
-          descriptionFirst="Our directional and wayfinding signs offer clear and concise guidance. Whether on a sprawling university or school campus, a busy hospital or public venue, our directional signs ensure customers or visitors can find their way quickly and easily."
-          descriptionSecond="For a more comprehensive understanding of your surroundings, our wayfinding signs map out routes and highlight key landmarks."
-          buttonLink="/window-graphics"
-          buttonTitle="View our window signage & window frosting"
-        ></ProductDetail>
-      </section> */}
 
       <section className="product-detail-section">
         <div>
@@ -231,11 +236,66 @@ function DirectionalWayfinding() {
         />
       </section>
 
-      <section className="product-detail-section my-4">
-        <p style={{ fontSize: "1.3rem" }} className="text-center">
-          Help people find their way with professional directional signage.
-          Contact Toowoomba Sign Co today for a custom solution.
-        </p>
+      <section className="w-100 d-flex justify-content-center">
+        <div
+          className="product-detail-section rounded-4 shadow-sm p-4 p-md-5 text-center"
+          style={{ maxWidth: 900 }}
+        >
+          <p className="mb-3" style={{ fontSize: "1.15rem", lineHeight: 1.6 }}>
+            Help people find their way with professional directional signage.
+            <Link to="/contact" className="text-white">
+              {" "}
+              Contact Toowoomba Sign Co{" "}
+            </Link>{" "}
+            for a custom solution.
+          </p>
+
+          <div className="mt-2">
+            <ModalButton />
+          </div>
+        </div>
+      </section>
+
+      <section className="my-5 mx-4">
+        <div className="text-center mb-4 px-2">
+          <h3 className="mb-2 fw-bold text-heading">
+            Explore our other products
+          </h3>
+
+          <p
+            className="description-text text-muted mb-0"
+            style={{ fontSize: "clamp(1.05rem, 2.2vw, 1.3rem)" }}
+          >
+            Looking for something different? Browse our most popular services.
+          </p>
+        </div>
+
+        <div className="row gap-3 justify-content-center">
+          {items.map((item) => (
+            <div key={item.to} className="col-12 col-md-4">
+              <Link to={item.to} className="text-decoration-none d-block">
+                <div className="shadow-sm rounded-4 p-4 other-products-card">
+                  <div className="d-flex align-items-center justify-content-between gap-3">
+                    <div className="flex-grow-1">
+                      <h4
+                        className="mb-1 text-heading"
+                        style={{ fontSize: "1.05rem" }}
+                      >
+                        {item.title}
+                      </h4>
+                      <p
+                        className="text-muted mb-0"
+                        style={{ lineHeight: 1.5 }}
+                      >
+                        {item.desc}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            </div>
+          ))}
+        </div>
       </section>
 
       <section>

@@ -6,6 +6,8 @@ import GallerySlide from "../components/GallerySlide";
 import FixedQuoteBtn from "../components/FixedQuoteBtn";
 import FaqAccordion from "../components/Faqs";
 import { Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import ModalButton from "../components/ModalButton";
 
 function WindowGraphics() {
   useEffect(() => {
@@ -78,6 +80,19 @@ function WindowGraphics() {
     },
   ];
 
+  const items = [
+    {
+      title: "Retail Signage",
+      desc: "Eye-catching retail signage designed to attract customers and boost sales.",
+      to: "/retail-pos",
+    },
+    {
+      title: "Vehicle Wraps",
+      desc: "Turn your vehicle into a moving billboard with high-quality custom wraps.",
+      to: "/vehicle-branding",
+    },
+  ];
+
   return (
     <div>
       <section>
@@ -97,6 +112,7 @@ function WindowGraphics() {
             lastWord: "Toowoomba",
             subheading:
               "Windows and glass surfaces are valuable branding opportunities. At Toowoomba Sign Co, we design and install custom films and graphics that turn plain glass into eye-catching features. From frosted privacy films to promotional graphics, our solutions combine function and style.",
+            link: "/window-graphics",
           }}
         />
       </section>
@@ -104,17 +120,6 @@ function WindowGraphics() {
       <section>
         <GallerySlide images={imageUrls} />
       </section>
-
-      {/* <section>
-        <ProductDetail
-          firstPhrase="Transform your windows"
-          secondPhrase="Enhance your storefront"
-          descriptionFirst="Our custom-designed window graphics add a touch of vibrancy and intrigue to your business. From eye-catching displays that promote your products or services to elegant window decals that convey your brand message, we offer a variety of creative solutions."
-          descriptionSecond="Frosting and signage on your office windows or storefront not only grab the attention of potential customers driving by, but also help to showcase the services and products that your business offers."
-          buttonLink="/vehicle-branding"
-          buttonTitle="View our vehicle branding signage"
-        ></ProductDetail>
-      </section> */}
 
       <section className="product-detail-section">
         <div>
@@ -270,11 +275,66 @@ function WindowGraphics() {
         />
       </section>
 
-      <section className="product-detail-section my-4">
-        <p style={{ fontSize: "1.3rem" }} className="text-center">
-          Enhance your windows with stylish, functional signage. Contact
-          Toowoomba Sign Co today for a free consultation.
-        </p>
+      <section className="w-100 d-flex justify-content-center">
+        <div
+          className="product-detail-section rounded-4 shadow-sm p-4 p-md-5 text-center"
+          style={{ maxWidth: 900 }}
+        >
+          <p className="mb-3" style={{ fontSize: "1.15rem", lineHeight: 1.6 }}>
+            Enhance your windows with stylish, functional signage.
+            <Link to="/contact" className="text-white">
+              {" "}
+              Contact Toowoomba Sign Co{" "}
+            </Link>{" "}
+            for a free consultation.
+          </p>
+
+          <div className="mt-2">
+            <ModalButton />
+          </div>
+        </div>
+      </section>
+
+      <section className="my-5 mx-4">
+        <div className="text-center mb-4 px-2">
+          <h3 className="mb-2 fw-bold text-heading">
+            Explore our other products
+          </h3>
+
+          <p
+            className="description-text text-muted mb-0"
+            style={{ fontSize: "clamp(1.05rem, 2.2vw, 1.3rem)" }}
+          >
+            Looking for something different? Browse our most popular services.
+          </p>
+        </div>
+
+        <div className="row gap-3 justify-content-center">
+          {items.map((item) => (
+            <div key={item.to} className="col-12 col-md-4">
+              <Link to={item.to} className="text-decoration-none d-block">
+                <div className="shadow-sm rounded-4 p-4 other-products-card">
+                  <div className="d-flex align-items-center justify-content-between gap-3">
+                    <div className="flex-grow-1">
+                      <h4
+                        className="mb-1 text-heading"
+                        style={{ fontSize: "1.05rem" }}
+                      >
+                        {item.title}
+                      </h4>
+                      <p
+                        className="text-muted mb-0"
+                        style={{ lineHeight: 1.5 }}
+                      >
+                        {item.desc}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            </div>
+          ))}
+        </div>
       </section>
 
       <section>

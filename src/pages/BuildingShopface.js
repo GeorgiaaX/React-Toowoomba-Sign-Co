@@ -2,12 +2,12 @@ import React, { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Header from "../components/Header";
 import CustomFooter from "../components/CustomFooter";
-// import ProductDetail from "../components/ProductDetail";
 import GallerySlide from "../components/GallerySlide";
-// import Gallery from "../components/Gallery";
 import FixedQuoteBtn from "../components/FixedQuoteBtn";
 import FaqAccordion from "../components/Faqs";
 import { Button } from "react-bootstrap";
+import ModalButton from "../components/ModalButton";
+import { Link } from "react-router-dom";
 
 function BuildingShopface() {
   useEffect(() => {
@@ -81,6 +81,24 @@ function BuildingShopface() {
     },
   ];
 
+  const items = [
+    {
+      title: "Commercial Signage",
+      desc: "Shopfront, window, and business signage built to stand out.",
+      to: "/commercial-signage",
+    },
+    {
+      title: "Structural Signage",
+      desc: "Building and directional signage designed for clarity and impact.",
+      to: "/structural-signage",
+    },
+    {
+      title: "Vehicle Wraps",
+      desc: "Turn your vehicle into a moving billboard with premium wraps.",
+      to: "/vehicle-wraps",
+    },
+  ];
+
   return (
     <div>
       <section>
@@ -100,6 +118,7 @@ function BuildingShopface() {
             lastWord: "Toowoomba",
             subheading:
               "Your shopfront is your business’s first impression, and the right signage makes all the difference. At Toowoomba Sign Co, we design and install custom shopfront and building signage that draws attention, communicates your brand, and brings customers through the door. Whether you run a retail store, café, office, or large commercial building, our experienced signwriters in Toowoomba deliver tailored solutions that stand out.",
+            link: "/building-shopface",
           }}
         />
       </section>
@@ -107,17 +126,6 @@ function BuildingShopface() {
       <section>
         <GallerySlide images={imageUrls} />
       </section>
-
-      {/* <section>
-        <ProductDetail
-          firstPhrase="Elevate the curb appeal of your business"
-          secondPhrase="Make a lasting impression"
-          descriptionFirst="We specialise in creating eye-catching and professional signage solutions that reflect your brand's identity and capture the attention of passersby and potential customers."
-          descriptionSecond="Whether you're looking to enhance your storefront's visibility, promote your business, or create a unique aesthetic, our customised signs are designed to meet your specific needs."
-          buttonLink="/illuminated-designs"
-          buttonTitle="View our 3D Illuminated Signs"
-        ></ProductDetail>
-      </section> */}
 
       <section className="product-detail-section">
         <div>
@@ -212,7 +220,10 @@ function BuildingShopface() {
       <section className="product-detail-section">
         <div className="text-center mx-auto px-3">
           <h2 className="mb-3 fw-bold text-heading">Portfolio Highlights</h2>
-          <p className="description-text text-muted" style={{ fontSize: "1.3rem" }}>
+          <p
+            className="description-text text-muted"
+            style={{ fontSize: "1.3rem" }}
+          >
             From cafés to multi-storey businesses, we’ve delivered building and
             shopfront signage across Toowoomba that reflects each client’s brand
             and personality. Explore more examples in our Portfolio
@@ -228,10 +239,6 @@ function BuildingShopface() {
         </div>
       </section>
 
-      {/* <section>
-        <Gallery images={galleryUrls} title="Building Signage Gallery" />
-      </section> */}
-
       <section className="product-detail-section my-4">
         <h2 className="mb-3 text-heading">FAQs</h2>
         <FaqAccordion
@@ -243,11 +250,66 @@ function BuildingShopface() {
         />
       </section>
 
-      <section className="product-detail-section my-4">
-        <p style={{ fontSize: "1.3rem" }} className="text-center">
-          Ready to refresh your shopfront? Contact Toowoomba Sign Co today for
-          custom building signage that gets your business noticed.
-        </p>
+      <section className="my-5 w-100 d-flex justify-content-center">
+        <div
+          className="product-detail-section rounded-4 shadow-sm p-4 p-md-5 text-center"
+          style={{ maxWidth: 900 }}
+        >
+          <p className="mb-3" style={{ fontSize: "1.15rem", lineHeight: 1.6 }}>
+            Ready to refresh your shopfront?{" "}
+            <Link to="/contact" className="text-white">
+              {" "}
+              Contact Toowoomba Sign Co{" "}
+            </Link>{" "}
+            today for custom building signage that gets your business noticed.
+          </p>
+
+          <div className="mt-2">
+            <ModalButton />
+          </div>
+        </div>
+      </section>
+
+      <section className="my-5 mx-4">
+        <div className="text-center mb-4 px-2">
+          <h3 className="mb-2 fw-bold text-heading">
+            Explore our other products
+          </h3>
+
+          <p
+            className="description-text text-muted mb-0"
+            style={{ fontSize: "clamp(1.05rem, 2.2vw, 1.3rem)" }}
+          >
+            Looking for something different? Browse our most popular services.
+          </p>
+        </div>
+
+        <div className="row gap-3 justify-content-center">
+          {items.map((item) => (
+            <div key={item.to} className="col-12 col-md-4">
+              <Link to={item.to} className="text-decoration-none d-block">
+                <div className="shadow-sm rounded-4 p-4 other-products-card">
+                  <div className="d-flex align-items-center justify-content-between gap-3">
+                    <div className="flex-grow-1">
+                      <h4
+                        className="mb-1 text-heading"
+                        style={{ fontSize: "1.05rem" }}
+                      >
+                        {item.title}
+                      </h4>
+                      <p
+                        className="text-muted mb-0"
+                        style={{ lineHeight: 1.5 }}
+                      >
+                        {item.desc}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            </div>
+          ))}
+        </div>
       </section>
 
       <section>

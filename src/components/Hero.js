@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ModalButton from "./ModalButton";
+import { Link } from "react-router-dom";
 
 const images = [
   "./images/hero-greatsouthern.jpg",
@@ -27,8 +28,6 @@ export default function Hero(props) {
 
     return () => clearInterval(interval);
   }, []);
-
-  const { title, lastWord } = props.heading;
 
   return (
     <Container
@@ -67,7 +66,13 @@ export default function Hero(props) {
           <Row className="justify-content-start">
             <Col xs={12} className="text-white text-center">
               <h2 className="mb-3 hero-title">
-                {title} <b className="hero-text">{lastWord}</b>
+                <Link to="/" className="text-white">
+                  Signs Toowoomba
+                </Link>{" "}
+                – Custom Signage &{" "}
+                <Link to="/" className="text-white">
+                  Sign Writers Toowoomba
+                </Link>
               </h2>
               <p className="mb-3 hero-subheading">
                 At Toowoomba Sign Co, we provide expert signage solutions in

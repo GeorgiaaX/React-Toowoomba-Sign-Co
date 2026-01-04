@@ -6,6 +6,8 @@ import GallerySlide from "../components/GallerySlide";
 import FixedQuoteBtn from "../components/FixedQuoteBtn";
 import FaqAccordion from "../components/Faqs";
 import { Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import ModalButton from "../components/ModalButton";
 
 function RetailPOS() {
   useEffect(() => {
@@ -39,47 +41,60 @@ function RetailPOS() {
 
   //gallerySlide Urls
   const imageUrls = [
-  {
-    src: "../portfolio/RetailPOS/A Frame Signs Toowoomba.webp",
-    alt: "Retail signage Toowoomba – promotional display sign",
-  },
-  {
-    src: "../portfolio/RetailPOS/Banner Mesh Toowoomba.webp",
-    alt: "Point of sale signage Toowoomba – product highlight",
-  },
-  {
-    src: "../portfolio/RetailPOS/Hoarding Signage Toowoomba.webp",
-    alt: "Event signage Toowoomba – short-term branding",
-  },
-  {
-    src: "../portfolio/RetailPOS/Illuminated Short Term Signage Toowoomba.webp",
-    alt: "Sale signage Toowoomba – temporary retail display",
-  },
-  {
-    src: "../portfolio/RetailPOS/Point Of Sale Signage Toowoomba.webp",
-    alt: "Banner signage Toowoomba – promotional print",
-  },
-  {
-    src: "../portfolio/RetailPOS/Promotional Illuminated Signs Toowoomba.webp",
-    alt: "Window sale graphics Toowoomba – retail advertising",
-  },
-  {
-    src: "../portfolio/RetailPOS/Promotional Signs Toowoomba.webp",
-    alt: "Poster signage Toowoomba – in-store marketing",
-  },
-  {
-    src: "../portfolio/RetailPOS/Short Term Prints Toowoomba.webp",
-    alt: "Pop-up signage Toowoomba – event display",
-  },
-  {
-    src: "../portfolio/RetailPOS/Short Term Reception Signage Toowoomba.webp",
-    alt: "Short-term retail signage Toowoomba – seasonal graphics",
-  },
-  {
-    src: "../portfolio/RetailPOS/Short Term Signage Toowoomba.webp",
-    alt: "Completed retail signage Toowoomba project",
-  },
-];
+    {
+      src: "../portfolio/RetailPOS/A Frame Signs Toowoomba.webp",
+      alt: "Retail signage Toowoomba – promotional display sign",
+    },
+    {
+      src: "../portfolio/RetailPOS/Banner Mesh Toowoomba.webp",
+      alt: "Point of sale signage Toowoomba – product highlight",
+    },
+    {
+      src: "../portfolio/RetailPOS/Hoarding Signage Toowoomba.webp",
+      alt: "Event signage Toowoomba – short-term branding",
+    },
+    {
+      src: "../portfolio/RetailPOS/Illuminated Short Term Signage Toowoomba.webp",
+      alt: "Sale signage Toowoomba – temporary retail display",
+    },
+    {
+      src: "../portfolio/RetailPOS/Point Of Sale Signage Toowoomba.webp",
+      alt: "Banner signage Toowoomba – promotional print",
+    },
+    {
+      src: "../portfolio/RetailPOS/Promotional Illuminated Signs Toowoomba.webp",
+      alt: "Window sale graphics Toowoomba – retail advertising",
+    },
+    {
+      src: "../portfolio/RetailPOS/Promotional Signs Toowoomba.webp",
+      alt: "Poster signage Toowoomba – in-store marketing",
+    },
+    {
+      src: "../portfolio/RetailPOS/Short Term Prints Toowoomba.webp",
+      alt: "Pop-up signage Toowoomba – event display",
+    },
+    {
+      src: "../portfolio/RetailPOS/Short Term Reception Signage Toowoomba.webp",
+      alt: "Short-term retail signage Toowoomba – seasonal graphics",
+    },
+    {
+      src: "../portfolio/RetailPOS/Short Term Signage Toowoomba.webp",
+      alt: "Completed retail signage Toowoomba project",
+    },
+  ];
+
+  const items = [
+    {
+      title: "Window Signage",
+      desc: "Custom window signage and glass films for branding, privacy, and impact.",
+      to: "/window-graphics",
+    },
+    {
+      title: "Directional & Wayfinding Signage",
+      desc: "Clear, professional signage to guide customers through your space.",
+      to: "/directional-wayfinding",
+    },
+  ];
 
   return (
     <div>
@@ -100,6 +115,7 @@ function RetailPOS() {
             lastWord: "Toowoomba",
             subheading:
               "When you need signage that grabs attention quickly, retail and short-term solutions are the way to go. At Toowoomba Sign Co, we design and install promotional signage that drives sales, highlights offers, and creates memorable in-store experiences.",
+            link: "/retail-pos",
           }}
         />
       </section>
@@ -107,17 +123,6 @@ function RetailPOS() {
       <section>
         <GallerySlide images={imageUrls} />
       </section>
-
-      {/* <section>
-        <ProductDetail
-          firstPhrase="Elevate your retail space"
-          secondPhrase="Boost your sales"
-          descriptionFirst="These eye-catching displays are strategically positioned to captivate shoppers' attention and influence their purchasing decisions. From enticing product promotions to showcasing your products or services, our custom-designed signs enhance the overall shopping experience for your customers."
-          descriptionSecond="With a focus on clarity and aesthetics, our POS signage adds a professional touch to your retail store, office or workshop, helping you to maximise sales and keep your customers engaged."
-          buttonLink="/truck-lining"
-          buttonTitle="View our truck lining & scrolling signage"
-        ></ProductDetail>
-      </section> */}
 
       <section className="product-detail-section">
         <div>
@@ -221,7 +226,9 @@ function RetailPOS() {
             className="description-text text-muted"
             style={{ fontSize: "1.3rem" }}
           >
-            From short-term sales promotions to long-term POS displays, our retail signage has helped Toowoomba stores boost visibility and sales. Check out our Porfolio for examples..
+            From short-term sales promotions to long-term POS displays, our
+            retail signage has helped Toowoomba stores boost visibility and
+            sales. Check out our Porfolio for examples..
           </p>
           <Button className="py-2 mt-4">
             <a
@@ -245,11 +252,66 @@ function RetailPOS() {
         />
       </section>
 
-      <section className="product-detail-section my-4">
-        <p style={{ fontSize: "1.3rem" }} className="text-center">
-          Promote smarter with retail signage that sells. Contact Toowoomba Sign
-          Co today to discuss your campaign needs.
-        </p>
+      <section className="w-100 d-flex justify-content-center">
+        <div
+          className="product-detail-section rounded-4 shadow-sm p-4 p-md-5 text-center"
+          style={{ maxWidth: 900 }}
+        >
+          <p className="mb-3" style={{ fontSize: "1.15rem", lineHeight: 1.6 }}>
+            Promote smarter with retail signage that sells.
+            <Link to="/contact" className="text-white">
+              {" "}
+              Contact Toowoomba Sign Co{" "}
+            </Link>{" "}
+            to discuss your campaign needs.
+          </p>
+
+          <div className="mt-2">
+            <ModalButton />
+          </div>
+        </div>
+      </section>
+
+      <section className="my-5 mx-4">
+        <div className="text-center mb-4 px-2">
+          <h3 className="mb-2 fw-bold text-heading">
+            Explore our other products
+          </h3>
+
+          <p
+            className="description-text text-muted mb-0"
+            style={{ fontSize: "clamp(1.05rem, 2.2vw, 1.3rem)" }}
+          >
+            Looking for something different? Browse our most popular services.
+          </p>
+        </div>
+
+        <div className="row gap-3 justify-content-center">
+          {items.map((item) => (
+            <div key={item.to} className="col-12 col-md-4">
+              <Link to={item.to} className="text-decoration-none d-block">
+                <div className="shadow-sm rounded-4 p-4 other-products-card">
+                  <div className="d-flex align-items-center justify-content-between gap-3">
+                    <div className="flex-grow-1">
+                      <h4
+                        className="mb-1 text-heading"
+                        style={{ fontSize: "1.05rem" }}
+                      >
+                        {item.title}
+                      </h4>
+                      <p
+                        className="text-muted mb-0"
+                        style={{ lineHeight: 1.5 }}
+                      >
+                        {item.desc}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            </div>
+          ))}
+        </div>
       </section>
 
       <section>

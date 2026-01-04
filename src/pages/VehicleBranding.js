@@ -6,6 +6,8 @@ import GallerySlide from "../components/GallerySlide";
 import FixedQuoteBtn from "../components/FixedQuoteBtn";
 import FaqAccordion from "../components/Faqs";
 import { Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import ModalButton from "../components/ModalButton";
 
 function VehicleBranding() {
   useEffect(() => {
@@ -78,6 +80,19 @@ function VehicleBranding() {
     },
   ];
 
+  const items = [
+  {
+    title: "Shopfront Signage",
+    desc: "Make a strong first impression with eye-catching shopfront signage.",
+    to: "/building-shopface",
+  },
+  {
+    title: "Window Graphics & Glass Films",
+    desc: "Enhance branding, privacy, and style with custom window graphics.",
+    to: "/window-graphics",
+  },
+]
+
   return (
     <div>
       <section>
@@ -97,6 +112,7 @@ function VehicleBranding() {
             lastWord: "Toowoomba",
             subheading:
               "Your vehicles can do more than just get you from A to B — they can advertise your business 24/7. At Toowoomba Sign Co, we design and install custom car wraps and signage that transform your fleet into powerful mobile billboards. Whether you need a single car wrap or branding for an entire fleet, we create standout designs that get noticed on the road.",
+              link: "/vehicle-branding"
           }}
         />
       </section>
@@ -104,17 +120,6 @@ function VehicleBranding() {
       <section>
         <GallerySlide images={imageUrls} />
       </section>
-
-      {/* <section>
-        <ProductDetail
-          firstPhrase="Drive your brand forward with a mobile billboard"
-          secondPhrase="Car wrapping Toowoomba"
-          descriptionFirst="With attention-grabbing graphics logos, and contact information, your brand message is on the move, reaching a broader audience every time you jump in your car"
-          descriptionSecond="Not only do these graphics enhance brand recognition, but they also add a professional touch to your vehicles, leaving a lasting impression on potential customers everywhere you go. Help your business stand out when driving around Toowoomba and the Darling Downs with car wrapping and vehicle signage."
-          buttonLink="/retail-pos"
-          buttonTitle="View our retail point of sale signage"
-        ></ProductDetail>
-      </section> */}
 
       <section className="product-detail-section">
         <div>
@@ -228,12 +233,68 @@ function VehicleBranding() {
         />
       </section>
 
-      <section className="product-detail-section my-4">
-        <p style={{ fontSize: "1.3rem" }} className="text-center">
-          Turn your vehicle into a moving advertisement with Toowoomba Sign Co.
-          Contact us today to get a custom wrap design.
-        </p>
-      </section>
+     
+            <section className="w-100 d-flex justify-content-center">
+              <div
+                className="product-detail-section rounded-4 shadow-sm p-4 p-md-5 text-center"
+                style={{ maxWidth: 900 }}
+              >
+                <p className="mb-3" style={{ fontSize: "1.15rem", lineHeight: 1.6 }}>
+         Turn your vehicle into a moving advertisement with Toowoomba Sign Co.
+                  <Link to="/contact" className="text-white">
+                    {" "}
+                    Contact Toowoomba Sign Co{" "}
+                  </Link>{" "}
+                  to get a custom wrap design.
+                </p>
+      
+                <div className="mt-2">
+                  <ModalButton />
+                </div>
+              </div>
+            </section>
+      
+            <section className="my-5 mx-4">
+              <div className="text-center mb-4 px-2">
+                <h3 className="mb-2 fw-bold text-heading">
+                  Explore our other products
+                </h3>
+      
+                <p
+                  className="description-text text-muted mb-0"
+                  style={{ fontSize: "clamp(1.05rem, 2.2vw, 1.3rem)" }}
+                >
+                  Looking for something different? Browse our most popular services.
+                </p>
+              </div>
+      
+              <div className="row gap-3 justify-content-center">
+                {items.map((item) => (
+                  <div key={item.to} className="col-12 col-md-4">
+                    <Link to={item.to} className="text-decoration-none d-block">
+                      <div className="shadow-sm rounded-4 p-4 other-products-card">
+                        <div className="d-flex align-items-center justify-content-between gap-3">
+                          <div className="flex-grow-1">
+                            <h4
+                              className="mb-1 text-heading"
+                              style={{ fontSize: "1.05rem" }}
+                            >
+                              {item.title}
+                            </h4>
+                            <p
+                              className="text-muted mb-0"
+                              style={{ lineHeight: 1.5 }}
+                            >
+                              {item.desc}
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </Link>
+                  </div>
+                ))}
+              </div>
+            </section>
 
       <section>
         <CustomFooter />

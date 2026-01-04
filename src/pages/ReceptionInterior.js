@@ -2,11 +2,12 @@ import React, { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Header from "../components/Header";
 import CustomFooter from "../components/CustomFooter";
-// import ProductDetail from "../components/ProductDetail";
 import GallerySlide from "../components/GallerySlide";
 import FixedQuoteBtn from "../components/FixedQuoteBtn";
 import FaqAccordion from "../components/Faqs";
 import { Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import ModalButton from "../components/ModalButton";
 
 function ReceptionInterior() {
   useEffect(() => {
@@ -81,6 +82,19 @@ function ReceptionInterior() {
     },
   ];
 
+  const items = [
+    {
+      title: "Directional & Wayfinding Signage",
+      desc: "Help customers navigate your space clearly and confidently.",
+      to: "/directional-wayfinding",
+    },
+    {
+      title: "Window Graphics & Glass Films",
+      desc: "Enhance privacy, branding, and style with custom window graphics.",
+      to: "/window-graphics",
+    },
+  ];
+
   return (
     <div>
       <section>
@@ -100,6 +114,7 @@ function ReceptionInterior() {
             lastWord: "Toowoomba",
             subheading:
               "First impressions don’t stop at the front door. Interior signage plays a vital role in creating a welcoming, professional, and branded environment. At Toowoomba Sign Co, we design and install reception and interior signs that enhance your workplace and impress clients from the moment they arrive.",
+            link: "/reception-interior",
           }}
         />
       </section>
@@ -107,17 +122,6 @@ function ReceptionInterior() {
       <section>
         <GallerySlide images={imageUrls} />
       </section>
-
-      {/* <section>
-        <ProductDetail
-          firstPhrase="Reception signage that makes a lasting impression"
-          secondPhrase="Impress customers with elegant signage"
-          descriptionFirst="From elegant reception desk signs that convey professionalism to interior signs that guide visitors seamlessly through your office, shop or warehouse, we offer a range of customisable solutions."
-          descriptionSecond="Our attention to detail ensures your brand identity is consistently reinforced throughout your space, leaving a lasting and positive impression on all customers and visitors."
-          buttonLink="/structural-signage"
-          buttonTitle="View our structural signage"
-        ></ProductDetail>
-      </section> */}
 
       <section className="product-detail-section">
         <div>
@@ -233,11 +237,67 @@ function ReceptionInterior() {
         />
       </section>
 
-      <section className="product-detail-section my-4">
-        <p style={{ fontSize: "1.3rem" }} className="text-center">
-          Transform your workplace with custom interior signage from Toowoomba
-          Sign Co. Get in touch today to start your project.
-        </p>
+      <section className="w-100 d-flex justify-content-center">
+        <div
+          className="product-detail-section rounded-4 shadow-sm p-4 p-md-5 text-center"
+          style={{ maxWidth: 900 }}
+        >
+          <p className="mb-3" style={{ fontSize: "1.15rem", lineHeight: 1.6 }}>
+            Transform your workplace with custom interior signage from Toowoomba
+            Sign Co.
+            <Link to="/contact" className="text-white">
+              {" "}
+              Contact Toowoomba Sign Co{" "}
+            </Link>{" "}
+            to start your project.
+          </p>
+
+          <div className="mt-2">
+            <ModalButton />
+          </div>
+        </div>
+      </section>
+
+      <section className="my-5 mx-4">
+        <div className="text-center mb-4 px-2">
+          <h3 className="mb-2 fw-bold text-heading">
+            Explore our other products
+          </h3>
+
+          <p
+            className="description-text text-muted mb-0"
+            style={{ fontSize: "clamp(1.05rem, 2.2vw, 1.3rem)" }}
+          >
+            Looking for something different? Browse our most popular services.
+          </p>
+        </div>
+
+        <div className="row gap-3 justify-content-center">
+          {items.map((item) => (
+            <div key={item.to} className="col-12 col-md-4">
+              <Link to={item.to} className="text-decoration-none d-block">
+                <div className="shadow-sm rounded-4 p-4 other-products-card">
+                  <div className="d-flex align-items-center justify-content-between gap-3">
+                    <div className="flex-grow-1">
+                      <h4
+                        className="mb-1 text-heading"
+                        style={{ fontSize: "1.05rem" }}
+                      >
+                        {item.title}
+                      </h4>
+                      <p
+                        className="text-muted mb-0"
+                        style={{ lineHeight: 1.5 }}
+                      >
+                        {item.desc}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            </div>
+          ))}
+        </div>
       </section>
 
       <section>

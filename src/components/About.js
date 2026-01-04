@@ -3,6 +3,7 @@ import { Container, Row, Col, Card } from "react-bootstrap";
 import ProcessSteps from "./ProcessSteps";
 import ModalButton from "./ModalButton";
 import { Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 function About() {
   return (
@@ -13,7 +14,7 @@ function About() {
             <Card.Body>
               <Card.Title>
                 <h2 className="text-center about-title">
-                  About Toowoomba <b className="bold-word">Sign </b>Co
+                  <Link to="/about-us" className="text-white">About Toowoomba <b className="bold-word">Sign </b>Co </Link>
                 </h2>
               </Card.Title>
               <Card.Subtitle className="mb-3 text-muted text-center ">
@@ -173,7 +174,7 @@ function About() {
                 Ready to make your business stand out? Contact Toowoomba Sign Co
                 today for a free, no-obligation quote. Whether you need a bold
                 new shopfront sign, a vehicle wrap, or in-store promotional
-                signage, our team is here to help.
+                signage, our team is here to help. <Link to="/contact" className="text-white">Contact us here.</Link>
               </p>
 
               <div>

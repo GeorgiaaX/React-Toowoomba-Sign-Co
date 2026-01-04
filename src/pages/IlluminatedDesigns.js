@@ -2,11 +2,12 @@ import React, { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Header from "../components/Header";
 import CustomFooter from "../components/CustomFooter";
-// import ProductDetail from "../components/ProductDetail";
 import GallerySlide from "../components/GallerySlide";
 import FixedQuoteBtn from "../components/FixedQuoteBtn";
 import FaqAccordion from "../components/Faqs";
 import { Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import ModalButton from "../components/ModalButton";
 
 function IlluminatedDesigns() {
   useEffect(() => {
@@ -80,6 +81,19 @@ function IlluminatedDesigns() {
     },
   ];
 
+  const items = [
+    {
+      title: "Shopfront Signage",
+      desc: "Make a strong first impression with eye-catching shopfront signage.",
+      to: "/building-shopface",
+    },
+    {
+      title: "Reception & Interior Signage",
+      desc: "Create a professional, welcoming space with custom interior signage.",
+      to: "/reception-interior",
+    },
+  ];
+
   return (
     <div>
       <section>
@@ -99,6 +113,7 @@ function IlluminatedDesigns() {
             lastWord: "Toowoomba",
             subheading:
               "When you want your business to have depth & shine — literally — 3D and illuminated signage is the answer. Toowoomba Sign Co designs and installs eye-catching signs that deliver maximum impact both day and night. From LED lightboxes to backlit 3D letters, we create signage that ensures your brand never fades into the background.",
+            link: "/illuminated-designs",
           }}
         />
       </section>
@@ -107,21 +122,13 @@ function IlluminatedDesigns() {
         <GallerySlide images={imageUrls} />
       </section>
 
-      {/* <section>
-              <ProductDetail 
-              firstPhrase = "Illuminate your brand in the Toowoomba region"
-              secondPhrase = "Put your business up in lights"
-              descriptionFirst= "These striking illuminated signs light up your business and brand, day or night. Our customisable 3D letters are designed to showcase your brand's personality, with a variety of colours, styles and sizes available to suit your business and location."
-              descriptionSecond = "From sleek sophistication to eye-catching vibrancy, our 3D illuminated letters and display signage add a touch of elegance and professionalism to your business, leaving a lasting impression on customers."
-              buttonLink = "/reception-interior"
-                buttonTitle = "View our reception and interior signage">
-              </ProductDetail>
-            </section> */}
-
       <section className="product-detail-section">
         <div>
           <h2 className="section-title mt-4">
-            <span className="bold-word">Why</span> Choose 3D & Illuminated Sign
+            <Link to="/illuminated-designs" className="text-white">
+              <span className="bold-word">Why</span> Choose 3D & Illuminated
+              Signs
+            </Link>
           </h2>
         </div>
 
@@ -210,7 +217,9 @@ function IlluminatedDesigns() {
             className="description-text text-muted"
             style={{ fontSize: "1.3rem" }}
           >
-            We’ve produced 3D & illuminated signage for retail, hospitality, and corporate clients across Toowoomba & throughout QLD. Explore our Portfolio to see how these signs transform businesses at night.
+            We’ve produced 3D & illuminated signage for retail, hospitality, and
+            corporate clients across Toowoomba & throughout QLD. Explore our
+            Portfolio to see how these signs transform businesses at night.
           </p>
           <Button className="py-2 mt-4">
             <a
@@ -224,7 +233,7 @@ function IlluminatedDesigns() {
       </section>
 
       <section className="product-detail-section my-4">
-        <h2 className="mb-3 text-heading">FAQs</h2>
+        <h2 className="text-heading">FAQs</h2>
         <FaqAccordion
           id="accordion"
           items={faqItems}
@@ -234,11 +243,67 @@ function IlluminatedDesigns() {
         />
       </section>
 
-      <section className="product-detail-section my-4">
-        <p style={{ fontSize: "1.3rem" }} className="text-center">
-          Shine brighter & stand out with 3D and illuminated signage from
-          Toowoomba Sign Co. Contact us today to discuss your custom design.
-        </p>
+      <section className="w-100 d-flex justify-content-center">
+        <div
+          className="product-detail-section rounded-4 shadow-sm p-4 p-md-5 text-center"
+          style={{ maxWidth: 900 }}
+        >
+          <p className="mb-3" style={{ fontSize: "1.15rem", lineHeight: 1.6 }}>
+            Shine brighter & stand out with 3D and illuminated signage from
+            Toowoomba Sign Co.
+            <Link to="/contact" className="text-white">
+              {" "}
+              Contact Toowoomba Sign Co{" "}
+            </Link>{" "}
+            to discuss your custom design.
+          </p>
+
+          <div className="mt-2">
+            <ModalButton />
+          </div>
+        </div>
+      </section>
+
+      <section className="my-5 mx-4">
+        <div className="text-center mb-4 px-2">
+          <h3 className="mb-2 fw-bold text-heading">
+            Explore our other products
+          </h3>
+
+          <p
+            className="description-text text-muted mb-0"
+            style={{ fontSize: "clamp(1.05rem, 2.2vw, 1.3rem)" }}
+          >
+            Looking for something different? Browse our most popular services.
+          </p>
+        </div>
+
+        <div className="row gap-3 justify-content-center">
+          {items.map((item) => (
+            <div key={item.to} className="col-12 col-md-4">
+              <Link to={item.to} className="text-decoration-none d-block">
+                <div className="shadow-sm rounded-4 p-4 other-products-card">
+                  <div className="d-flex align-items-center justify-content-between gap-3">
+                    <div className="flex-grow-1">
+                      <h4
+                        className="mb-1 text-heading"
+                        style={{ fontSize: "1.05rem" }}
+                      >
+                        {item.title}
+                      </h4>
+                      <p
+                        className="text-muted mb-0"
+                        style={{ lineHeight: 1.5 }}
+                      >
+                        {item.desc}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            </div>
+          ))}
+        </div>
       </section>
 
       <section>
