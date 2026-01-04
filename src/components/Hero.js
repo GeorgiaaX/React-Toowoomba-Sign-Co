@@ -4,11 +4,12 @@ import ModalButton from "./ModalButton";
 import { Link } from "react-router-dom";
 
 const images = [
-  "./images/hero-greatsouthern.jpg",
-  "./images/hero-ez-kandy.jpg",
-  "./images/hero-kfc.jpg",
-  "./images/hero-gsmp.jpg",
-  "./images/hero-byd.jpg",
+  "./images/business-signs-toowoomba-QLD.webp",
+  "./images/illuminated-entrance-signs-toowoomba.webp",
+  "./images/illuminated-signage-toowoomba.webp",
+  "./images/painted-building-signage-toowoomba.webp",
+  "./images/pylon-signs-toowoomba.webp",
+  "./images/structural-LED-pylon-signage-toowoomba.webp",
 ];
 
 export default function Hero(props) {
