@@ -58,15 +58,15 @@ function OurProcess() {
       to: "/portfolio-gallery",
     },
     {
-      title: "About Our Team",
+      title: "About Us",
       desc: "Get to know the people behind Toowoomba Sign Co and how we work with our clients.",
       to: "/about-us",
     },
-      {
-    title: "Contact Us",
-    desc: "Get in touch with our team to discuss your signage needs or request a free quote.",
-    to: "/contact",
-  },
+    {
+      title: "Contact Us",
+      desc: "Get in touch with our team to discuss your signage needs or request a free quote.",
+      to: "/contact",
+    },
   ];
 
   return (
