@@ -12,7 +12,7 @@ function ElevateBrand({targetRef}) {
                 Elevate your brand in Toowoomba & Darling Downs
               </h2>
             </Card.Title>
-            <Card.Text className="text-center" style={{fontSize: "1.3rem"}}>
+            <Card.Text className="text-center" style={{fontSize: "1.1rem"}}>
               <p>
                 Want your business to stand out with eye-catching, bold signage?
                 Toowoomba Sign Co offer the perfect blend of local expertise and
