@@ -66,7 +66,7 @@ function Portfolio() {
               <h2 className="display-6 fw-bold text-heading">
                 Explore Our Work
               </h2>
-              <p className="lead text-muted">
+              <p className="text-muted description-text ">
                 From bold shopfronts to full vehicle wraps, we design and
                 install signage that showcases your brand and gets you noticed
                 around Toowoomba and beyond.
@@ -163,7 +163,7 @@ function Portfolio() {
         </Container>
       </section>
 
-      <section className="d-flex justify-content-center py-5">
+      <section className="d-flex justify-content-center py-5 px-2">
         <div className="product-description">
           <h2 className="description-text text-heading font-lg mb-3">
             Why Choose Toowoomba Sign Co?
