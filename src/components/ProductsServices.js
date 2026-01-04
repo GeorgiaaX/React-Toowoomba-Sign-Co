@@ -8,7 +8,7 @@ function ProductsServices() {
       <h2 className="services-title">
         Signage Products and <b className="bold-word">Services</b>
       </h2>
-      <p className="text-center mb-3 text-muted about-text mx-1">
+      <p className="text-center mb-3 text-muted mx-1" style={{fontSize: "1.3rem"}}>
         Let us help you create the perfect signage for your business from our
         range of signage products and services.
       </p>

@@ -14,15 +14,17 @@ function About() {
             <Card.Body>
               <Card.Title>
                 <h2 className="text-center about-title">
-                  <Link to="/about-us" className="text-white">About Toowoomba <b className="bold-word">Sign </b>Co </Link>
+                  <Link to="/about-us" className="text-white">
+                    About Toowoomba <b className="bold-word">Sign </b>Co{" "}
+                  </Link>
                 </h2>
               </Card.Title>
               <Card.Subtitle className="mb-3 text-muted text-center ">
-                <h3 className="about-subheading">
+                <h3 className="about-subheading" style={{fontSize: "1.3rem"}}>
                   Your trusted Toowoomba signwriter
                 </h3>
               </Card.Subtitle>
-              <Card.Text className="about-text text-center d-flex flex-column justify-content-center">
+              <Card.Text className="text-center d-flex flex-column justify-content-center" style={{fontSize: "1.3rem"}}>
                 <p>
                   At Toowoomba Sign Co, we are a local family business that has
                   been helping businesses across Toowoomba and the surrounding
@@ -57,7 +59,7 @@ function About() {
             <Card.Title>
               <h2 className="text-center text-heading">Why Choose us?</h2>
             </Card.Title>
-            <Card.Text className="about-text text-center">
+            <Card.Text className="text-center" style={{fontSize: "1.3rem"}}>
               <div>
                 <p>
                   When it comes to signage, experience and attention to detail
@@ -140,7 +142,7 @@ function About() {
                 Our Portfolio of Signage Projects
               </h2>
             </Card.Title>
-            <Card.Text className="about-text text-center">
+            <Card.Text className="text-center" style={{fontSize: "1.3rem"}}>
               We’ve worked with businesses across Toowoomba, the Darling Downs &
               throughout QLD to deliver custom signage that gets results. Our
               portfolio includes shopfront transformations, 3D & illuminated
@@ -169,12 +171,15 @@ function About() {
                 Get a Free Signage Quote Today
               </h2>
             </Card.Title>
-            <Card.Text className="about-text text-center">
+            <Card.Text className=" text-center" style={{ fontSize: "1.3rem" }}>
               <p>
                 Ready to make your business stand out? Contact Toowoomba Sign Co
                 today for a free, no-obligation quote. Whether you need a bold
                 new shopfront sign, a vehicle wrap, or in-store promotional
-                signage, our team is here to help. <Link to="/contact" className="text-white">Contact us here.</Link>
+                signage, our team is here to help.{" "}
+                <Link to="/contact" className="text-white">
+                  Contact us here.
+                </Link>
               </p>
 
               <div>

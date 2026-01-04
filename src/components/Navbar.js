@@ -22,7 +22,9 @@ export default function CustomNavbar() {
         <Navbar.Toggle aria-controls="navbarText" />
         <Navbar.Collapse id="navbarText">
           <Nav className="mr-auto">
-
+            <Nav.Link as={Link} to="/" className="mr-4 d-lg-none">
+              Home
+            </Nav.Link>
             <NavDropdown title="Products and Services" className="mr-4">
               <NavDropdown.Item as={Link} to="/building-shopface">
                 Shopfront & Building Signage
@@ -48,9 +50,6 @@ export default function CustomNavbar() {
               <NavDropdown.Item as={Link} to="/retail-pos">
                 Retail & Short Term Signage
               </NavDropdown.Item>
-              {/* <NavDropdown.Item as={Link} to="/truck-lining">
-                Truck Lining & Scrolling
-              </NavDropdown.Item> */}
               <NavDropdown.Item as={Link} to="/commercial-signage">
                 Commercial Signage
               </NavDropdown.Item>
@@ -62,7 +61,7 @@ export default function CustomNavbar() {
             <Nav.Link href="/about-us" className="mr-4">
               About Us
             </Nav.Link>
-             <Nav.Link href="/portfolio-gallery" className="mr-4">
+            <Nav.Link href="/portfolio-gallery" className="mr-4">
               Portfolio
             </Nav.Link>
             <Nav.Link href="/contact" className="mr-4">
