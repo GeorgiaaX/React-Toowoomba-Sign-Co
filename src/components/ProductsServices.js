@@ -98,7 +98,7 @@ function ProductsServices() {
               service:
                 "From corporate branding to large-scale commercial projects, our commercial signage solutions combine durability, visibility, and design. We create signs that suit offices, factories, warehouses, and commercial properties, ensuring your brand is professional, consistent, and easy to find.",
               description:
-                "Truck & Trailer Lining & Scrolling / Printed Vinyl Graphics / Cut Vinyl Lettering",
+                "Building Signage & Shop Fitouts / 3D & Illuminated Signage / Structural Signage / Signage Rollouts & Uplifts",
               link: "commercial-signage",
               bordered: true,
             })}
